@@ -1,1 +1,5 @@
-.gitignore/NukeScanVenv/
+# Add valid .gitignore entries
+node_modules/
+dist/
+.env
+venv/
