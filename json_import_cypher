@@ -1,0 +1,23 @@
+CALL apoc.load.json("file:///scraped_data.json") YIELD value
+MERGE (p:Paper {title: value.title, year: value.year, url: value.url, abstract: value.abstract});
+
+CALL apoc.load.json("file:///scraped_data.json") YIELD value
+MERGE (j:Journal {name: value.journal})
+WITH j, value
+MATCH (p:Paper {title: value.title})
+MERGE (p)-[:PUBLISHED_IN]->(j);
+
+CALL apoc.load.json("file:///scraped_data.json") YIELD value
+WITH value, 
+     CASE WHEN size(value.authors) = size(value.affiliations) 
+          THEN value.authors ELSE [] END AS authors,
+     CASE WHEN size(value.authors) = size(value.affiliations) 
+          THEN value.affiliations ELSE [] END AS affiliations
+
+UNWIND range(0, size(authors)-1) AS i
+MERGE (a:Author {name: authors[i]})
+MERGE (af:Affiliation {name: affiliations[i]})
+WITH a, af, value
+MATCH (p:Paper {title: value.title})
+MERGE (a)-[:AUTHORED]->(p)
+MERGE (a)-[:AFFILIATED_WITH]->(af);
