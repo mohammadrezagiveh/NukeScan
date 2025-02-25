@@ -7,4 +7,3 @@ The project consits of three main sections:
     1. Scraoing data
     2. Storing the data into a neo4j database
     3. Training the ML model
-    hello
