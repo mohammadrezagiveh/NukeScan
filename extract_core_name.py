@@ -2,10 +2,10 @@ import json
 import openai
 
 # Path to your JSON file
-json_file_path = "/Users/mohammadrezagiveh/Desktop/ScrapeCivilica/scraped_test.json"
+json_file_path = "/Users/mohammadrezagiveh/Desktop/ScrapeCivilica/translated_data.json"
 
 # OpenAI API key
-openai.api_key = "open-ai-API-key"
+openai.api_key = "openai-api-key"
 
 # Function to extract the main organization or journal name using OpenAI API
 
@@ -31,7 +31,7 @@ Only return the cleaned-up name without any explanations. If you can't extract a
 Text: "{text}"
 Core Name:"""
 
-    client = openai.OpenAI(api_key="OpenAI-API-key")  # ✅ Pass API key here
+    client = openai.OpenAI(api_key="openai-api-key")
     
     response = client.chat.completions.create(
         model="gpt-4o",

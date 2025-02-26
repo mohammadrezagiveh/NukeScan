@@ -9,7 +9,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/mohammadrezagiveh/Downloa
 client = translate.Client()
 
 # File paths
-input_json_path = "/Users/mohammadrezagiveh/Desktop/ScrapeCivilica/scraped_data_original.json"
+input_json_path = "/Users/mohammadrezagiveh/Desktop/ScrapeCivilica/scraped_data.json"
 output_json_path = "/Users/mohammadrezagiveh/Desktop/ScrapeCivilica/translated_data.json"
 
 # Function to translate Persian text to English
