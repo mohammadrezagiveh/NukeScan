@@ -1,0 +1,17 @@
+# Finding Communities Clusters
+
+CALL gds.louvain.stream('socialGraph')
+YIELD nodeId, communityId
+RETURN gds.util.asNode(nodeId).name AS Author, communityId
+ORDER BY communityId;
+
+# Degree Centrality
+
+MATCH (p:Author)-[r]->() 
+RETURN p.name, COUNT(r) AS connections ORDER BY connections DESC;
+
+# Betweenness Centrality
+
+CALL gds.betweenness.stream('socialGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).name AS person, score ORDER BY score DESC;
