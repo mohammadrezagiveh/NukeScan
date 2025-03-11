@@ -1,23 +1,25 @@
 CALL apoc.load.json("file:///scraped_data.json") YIELD value
-MERGE (p:Paper {title: value.title, year: value.year, url: value.url, abstract: value.abstract});
 
-CALL apoc.load.json("file:///scraped_data.json") YIELD value
+// Merge Paper node
+MERGE (p:Paper {title: value.title})
+ON CREATE SET p.year = value.year, p.url = value.url, p.abstract = value.abstract
+
+// Merge Journal node and relationship
 MERGE (j:Journal {name: value.journal})
-WITH j, value
-MATCH (p:Paper {title: value.title})
-MERGE (p)-[:PUBLISHED_IN]->(j);
+MERGE (p)-[:PUBLISHED_IN]->(j)
 
-CALL apoc.load.json("file:///scraped_data.json") YIELD value
-WITH value, 
-     CASE WHEN size(value.authors) = size(value.affiliations) 
-          THEN value.authors ELSE [] END AS authors,
-     CASE WHEN size(value.authors) = size(value.affiliations) 
-          THEN value.affiliations ELSE [] END AS affiliations
+WITH value, p
+WHERE size(value.authors) = size(value.affiliations)
+UNWIND range(0, size(value.authors)-1) AS i
 
-UNWIND range(0, size(authors)-1) AS i
-MERGE (a:Author {name: authors[i]})
-MERGE (af:Affiliation {name: affiliations[i]})
-WITH a, af, value
-MATCH (p:Paper {title: value.title})
+// Merge Authors and Affiliations
+MERGE (a:Author {name: value.authors[i]})
+MERGE (af:Affiliation {name: value.affiliations[i]})
 MERGE (a)-[:AUTHORED]->(p)
-MERGE (a)-[:AFFILIATED_WITH]->(af);
+MERGE (a)-[:AFFILIATED_WITH]->(af)
+
+WITH p, collect(a) AS authors
+UNWIND authors AS a1
+UNWIND authors AS a2
+WITH a1, a2 WHERE a1 <> a2 // Ensures no self-links
+MERGE (a1)-[:COAUTHORED]->(a2);
