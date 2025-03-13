@@ -1,8 +1,8 @@
 ﻿{
     "\"Imam Hossein Comprehensive University\"": {
-        "standard_form": "\"Imam Hossein Comprehensive University\"",
+        "standard_form": "Imam Hossein University",
         "variants": [],
-        "confirmed": false
+        "confirmed": true
     },
     "\"Sharif University of Technology\"": {
         "standard_form": "\"Sharif University of Technology\"",
@@ -27,11 +27,11 @@
         "confirmed": false
     },
     "\"Khajeh Nasiruddin Toosi University of Technology\"": {
-        "standard_form": "\"Khajeh Nasiruddin Toosi University of Technology\"",
+        "standard_form": "K. N. Toosi University of Technology",
         "variants": [
             "\"Khajeh Nasiruddin Toosi University\""
         ],
-        "confirmed": false
+        "confirmed": true
     },
     "Unable to extract core name as the text does not contain any research organization or journal/conference.": {
         "standard_form": "Unable to extract core name as the text does not contain any research organization or journal/conference.",
@@ -179,6 +179,62 @@
     },
     "\"Islamic Azad University Science & Research Bosher Branch\"": {
         "standard_form": "\"Islamic Azad University Science & Research Bosher Branch\"",
+        "variants": [],
+        "confirmed": false
+    },
+    "\"Malek Ashtar University of Technology\"": {
+        "standard_form": "\"Malek Ashtar University of Technology\"",
+        "variants": [
+            "\"Amirkabir University of Technology\"",
+            "\"Sharif University of Technology\"",
+            "\"Shahrood University of Technology\""
+        ],
+        "confirmed": false
+    },
+    "\"Imam Hussein Comprehensive University\"": {
+        "standard_form": "Imam Hossein University",
+        "variants": [
+            "\"Imam Hossein Comprehensive University\""
+        ],
+        "confirmed": true
+    },
+    "\"University of Kilan\"": {
+        "standard_form": "University of Guilan",
+        "variants": [
+            "\"University of Damghan\"",
+            "\"University of Tehran\"",
+            "\"University of Guilan\"",
+            "\"University of Isfahan\""
+        ],
+        "confirmed": true
+    },
+    "\"Ivanki University\"": {
+        "standard_form": "\"Ivanki University\"",
+        "variants": [
+            "\"Arak University\"",
+            "\"Ivanka University\""
+        ],
+        "confirmed": false
+    },
+    "\"K. N. Toosi University of Technology\"": {
+        "standard_form": "\"K. N. Toosi University of Technology\"",
+        "variants": [
+            "\"Khajeh Nasiruddin Toosi University of Technology\""
+        ],
+        "confirmed": false
+    },
+    "\"Damghan University\"": {
+        "standard_form": "\"Damghan University\"",
+        "variants": [],
+        "confirmed": false
+    },
+    "\"Shiraz University\"": {
+        "standard_form": "\"Shiraz University\"",
+        "variants": [],
+        "confirmed": false
+    },
+    "\"Khajeh Nasiruddin Toosi University\"": {
+        "standard_form": "\"Khajeh Nasiruddin Toosi University\"",
         "variants": [],
         "confirmed": false
     }

@@ -770,5 +770,45 @@
         "standard_form": "Arezo Riahi",
         "variants": [],
         "confirmed": false
+    },
+    "Hossein Khodarahmi": {
+        "standard_form": "Hossein Khodarahmi",
+        "variants": [
+            "Hossein Jarahi"
+        ],
+        "confirmed": false
+    },
+    "Mohammad Hossein Choupan Dastjerdi": {
+        "standard_form": "Mohammad Hossein Choupan Dastjerdi",
+        "variants": [
+            "Mohammad Hossein Choopan Dastjerdi"
+        ],
+        "confirmed": false
+    },
+    "Mohammad Ali Khazai": {
+        "standard_form": "Mohammad Ali Khazai",
+        "variants": [
+            "Mohammad Ali Zarei"
+        ],
+        "confirmed": false
+    },
+    "Seyyed Reza Shoja Razavi": {
+        "standard_form": "Seyyed Reza Shoja Razavi",
+        "variants": [
+            "Reza Shoja Razavi"
+        ],
+        "confirmed": false
+    },
+    "Parviz Hosseinkhani": {
+        "standard_form": "Parviz Hosseinkhani",
+        "variants": [
+            "Parviz Hossein Khani"
+        ],
+        "confirmed": false
+    },
+    "Hossein Jamali": {
+        "standard_form": "Hossein Jamali",
+        "variants": [],
+        "confirmed": false
     }
 }
