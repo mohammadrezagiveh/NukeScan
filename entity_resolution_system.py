@@ -1,66 +1,101 @@
 import json
-import difflib
+import os
+import csv
+from sentence_transformers import SentenceTransformer, util
+import torch
 
-# Step 1: Load JSON output from "extract_core_name.py"
+# Step 1: Load JSON output
 with open("/Users/mohammadrezagiveh/Desktop/ScrapeCivilica/translated_data.json", "r", encoding="utf-8-sig") as file:
     data = json.load(file)
 
-# Step 2 & 3: Extract unique values from JSON file
-authors_list = list(set(author for entry in data if "authors" in entry for author in entry["authors"]))
-affiliations_list = list(set(affiliation for entry in data if "affiliations" in entry for affiliation in entry["affiliations"]))
-journals_list = list(set(entry["journal"] for entry in data if "journal" in entry))
+# Step 2: Utility functions for loading and saving CSV lists
+def load_standard_list(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, newline='', encoding='utf-8') as f:
+            return [row[0] for row in csv.reader(f) if row]
+    return []
 
-# Step 4: Command-line Interface for editing lists
-def edit_list(category, values):
-    new_values = values.copy()
-    print(f"Editing {category} list. Current values:")
-    for i, v in enumerate(new_values, 1):
-        print(f"{i}. {v}")
-    
-    while True:
-        user_input = input(f"Enter number to edit/delete, or 'done' to finish: ")
-        if user_input.lower() == "done":
-            break
-        
-        try:
-            index = int(user_input) - 1
-            if 0 <= index < len(new_values):
-                action = input("Enter new value or type 'delete' to remove: ")
-                if action.lower() == "delete":
-                    new_values.pop(index)
-                else:
-                    new_values[index] = action
-            else:
-                print("Invalid selection. Try again.")
-        except ValueError:
-            print("Enter a valid number or 'done'.")
-    
-    return new_values
+def save_standard_list(file_path, data_list):
+    existing = set()
+    if os.path.exists(file_path):
+        with open(file_path, newline='', encoding='utf-8') as f:
+            existing = {row[0] for row in csv.reader(f) if row}
 
-# Let user edit each list
-standard_authors = edit_list("Authors", authors_list)
-standard_affiliations = edit_list("Affiliations", affiliations_list)
-standard_journals = edit_list("Journals", journals_list)
+    combined = sorted(existing.union(data_list))
+    with open(file_path, "w", newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        for item in combined:
+            writer.writerow([item])
 
-# Step 6: Function to match values to the standard list
-def match_to_standard(value, standard_list):
-    match = difflib.get_close_matches(value, standard_list, n=1, cutoff=0.7)
-    return match[0] if match else value
+# Load embedding model
+model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 
-# Step 7: Standardize JSON file
+def resolve_name(name, standard_list, category, url):
+    if not standard_list:
+        print(f"\nUnrecognized {category} in {url}:\n{name}")
+        user_input = input(f"Enter standardized version or press Enter to keep as is: ").strip()
+        if user_input:
+            standard_list.append(user_input)
+            return user_input, standard_list
+        return name, standard_list
+
+    name_embedding = model.encode(name, convert_to_tensor=True)
+    standard_embeddings = model.encode(standard_list, convert_to_tensor=True)
+    cosine_scores = util.cos_sim(name_embedding, standard_embeddings)[0]
+
+    best_score_idx = torch.argmax(cosine_scores).item()
+    best_score = cosine_scores[best_score_idx].item()
+
+    if best_score > 0.85:
+        return standard_list[best_score_idx], standard_list
+    else:
+        print(f"\nUnrecognized {category} in {url}:\n{name}")
+        user_input = input(f"Enter standardized version or press Enter to keep as is: ").strip()
+        if user_input:
+            standard_list.append(user_input)
+            return user_input, standard_list
+        return name, standard_list
+
+# Step 4: File paths for standard lists
+authors_csv = "/Users/mohammadrezagiveh/Desktop/standard_authors.csv"
+affiliations_csv = "/Users/mohammadrezagiveh/Desktop/standard_affiliations.csv"
+journals_csv = "/Users/mohammadrezagiveh/Desktop/standard_journals.csv"
+
+standard_authors = load_standard_list(authors_csv)
+standard_affiliations = load_standard_list(affiliations_csv)
+standard_journals = load_standard_list(journals_csv)
+
+# Step 5: Standardize the data
 standardized_data = []
 for entry in data:
     standardized_entry = entry.copy()
+
     if "authors" in entry:
-        standardized_entry["authors"] = match_to_standard(entry["authors"], standard_authors)
+        new_authors = []
+        for author in entry["authors"]:
+            resolved, standard_authors = resolve_name(author, standard_authors, "Author", entry["url"])
+            new_authors.append(resolved)
+        standardized_entry["authors"] = new_authors
+
     if "affiliations" in entry:
-        standardized_entry["affiliations"] = match_to_standard(entry["affiliations"], standard_affiliations)
+        new_affils = []
+        for affil in entry["affiliations"]:
+            resolved, standard_affiliations = resolve_name(affil, standard_affiliations, "Affiliation", entry["url"])
+            new_affils.append(resolved)
+        standardized_entry["affiliations"] = new_affils
+
     if "journal" in entry:
-        standardized_entry["journal"] = match_to_standard(entry["journal"], standard_journals)
+        resolved, standard_journals = resolve_name(entry["journal"], standard_journals, "Journal", entry["url"])
+        standardized_entry["journal"] = resolved
+
     standardized_data.append(standardized_entry)
 
-# Save the standardized JSON
+# Step 6: Save output
 with open("standardized_output.json", "w", encoding="utf-8") as outfile:
     json.dump(standardized_data, outfile, indent=4, ensure_ascii=False)
+
+save_standard_list(authors_csv, standard_authors)
+save_standard_list(affiliations_csv, standard_affiliations)
+save_standard_list(journals_csv, standard_journals)
 
 print("Standardized JSON saved as standardized_output.json")
