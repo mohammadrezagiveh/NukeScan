@@ -54,6 +54,7 @@ def resolve_name(name, standard_list, category, url):
         if user_input:
             standard_list.append(user_input)
             return user_input, standard_list
+        standard_list.append(name)
         return name, standard_list
 
 # Step 4: File paths for standard lists
