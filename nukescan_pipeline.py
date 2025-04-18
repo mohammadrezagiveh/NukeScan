@@ -11,6 +11,12 @@ import openai
 from sentence_transformers import SentenceTransformer, util
 import torch
 
+_prompt_handler = None
+
+def set_prompt_handler(handler):
+    global _prompt_handler
+    _prompt_handler = handler
+
 # === Setup ===
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -72,8 +78,12 @@ def resolve_name(name, standard_list, category, url):
     return prompt_user(name, category, url, standard_list)
 
 def prompt_user(name, category, url, standard_list):
-    print(f"\nUnrecognized {category} in {url}:\n{name}")
-    user_input = input("Enter standardized version or press Enter to keep as-is: ").strip()
+    if _prompt_handler:
+        user_input = _prompt_handler(category, name)
+    else:
+        print(f"\nUnrecognized {category} in {url}:\n{name}")
+        user_input = input("Enter standardized version or press Enter to keep as-is: ").strip()
+
     if user_input:
         standard_list.append(user_input)
         return user_input, standard_list

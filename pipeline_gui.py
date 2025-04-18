@@ -30,7 +30,7 @@ def launch_gui():
     label = tk.Label(root, text="Click below to select input CSV and output path", wraplength=300)
     label.pack(pady=20)
 
-    run_button = tk.Button(root, text="Run Pipeline", command=run)
+    run_button = tk.Button(root, text="Click here to start", command=run)
     run_button.pack(pady=10)
 
     root.mainloop()
