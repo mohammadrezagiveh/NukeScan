@@ -1,0 +1,1226 @@
+[
+    {
+        "title": "Computational model for predicting shock wave attenuation resulting from propellant explosions",
+        "authors": [
+            "Nasser Hassanzadeh",
+            "Mohammad Hossein Keshavarz"
+        ],
+        "affiliations": [
+            "Unable to extract core name.",
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2022,
+        "journal": "\"National Conference on the Application of New Technologies in Chemistry and Chemical Engineering\"",
+        "abstract": "Using the AUTODYN hydrodynamic code, it is possible to simulate the blast caused by the explosion of high explosives, such as Cl-20, HMX, RDX, TNT, etc. The results of such calculations can be used to investigate the effects of the shock wave caused by the blast on structures located at different distances from the center of the explosion. Sometimes the geometry of the system limits the possibility of using simulation software. For example, in simulating an explosion inside a reactor, determining the peak pressure of the explosion at distances far from the reactor requires a very high computational cost. To overcome this shortcoming, it is possible to calculate the peak pressure at two or more points near the reactor and, using a statistical regression model, predict the trend of changes in the peak pressure at different distances and, based on this, determine the safe distance for industrial equipment or people in the vicinity of the explosion site.",
+        "url": "https://en.civilica.com/doc/1504010/"
+    },
+    {
+        "title": "Design and fabrication of flexible polymer composite radiation shields for mixed neutron-gamma fields",
+        "authors": [
+            "Seyed Reza Hashemi",
+            "Mojtaba Tajik",
+            "Eskandar Asadi Amirabadi"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Damghan University\"",
+            "\"University of Mazandaran\""
+        ],
+        "year": 2019,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "In this research, a flexible composite shield with a combination of polyethylene, tungsten and boron carbide for mixed neutron-gamma fields was designed and manufactured. For this purpose, in the first stage, theoretical studies were conducted using the multi-purpose MCNP code, and in the second stage, based on the results of simulation studies, for the first time in the country, a multi-purpose composite was manufactured using a hard phase combination of boron carbide particles with tungsten metal powder and a combination of different types of soft and hard polyethylene in a laboratory at the Iranian Polymer and Petrochemical Center. In the third stage, the neutron flux attenuation of the Am-Be241 source was measured using a 3BF detector and the gamma flux attenuation of the cesium source µCi 100 was measured using a NaI detector. The results show that in the polyethylene/boron carbide/tungsten composite (PE/B4C/W), due to the micrometric dimensions of the reinforcing particles and the high cross-sectional area of interaction of radioactive rays with these particles, the composite shield with a much smaller thickness has a greater absorption power against gamma rays and neutrons than conventional shields. A shield with a thickness of 0.5 cm with 30% tungsten and 30% boron absorbs approximately 90% of the neutrons from the amersium-beryllium source, and with a thickness of 2 cm, it reduces the gamma photon flux from the Cs-137 source by approximately 40%.",
+        "url": "https://en.civilica.com/doc/1423189/"
+    },
+    {
+        "title": "An Optical Measurement System to Measure Velocity and Provide Shock Wave Pressure Diagrams",
+        "authors": [
+            "J. Modern",
+            "MA Sincere",
+            "F. Sardarzadeh",
+            "MH Ghezelayagh"
+        ],
+        "affiliations": [
+            "\"K.N.Toosi University\"",
+            "\"K.N.Toosi University\"",
+            "\"K.N.Toosi University\"",
+            "\"K.N.Toosi University\""
+        ],
+        "year": 2020,
+        "journal": "\"International Journal of Engineering (IJE)\"",
+        "abstract": "This paper introduces an optical measurement system for shock wave characteristics. The system works by mountinga metal plate attached to spring mounts against the shock wavefront. This set is sealed and can plot the shock wave pressure diagram by measuring plate s displacement, radiation and changing the reflection of light during shock wave conflict, and converting these optical data to voltage. In the experiments with the optical system, there was no delay time in the wave impact response. Using the optical system and the fixture designed and built, it is also possible to measure the velocity of moving objects and monitor the planar shock wave formation in addition to the shock wave velocity. Then the calibration was performed with the help of a standard piezoresistive sensor in a cold diaphragm shock tube, with a pressure of 5.5 to 12.5 bar by performing 12 tests. Relations and figures for output voltage and shock pressure are also explained.",
+        "url": "https://en.civilica.com/doc/1021699/"
+    },
+    {
+        "title": "‎Assessment of shielding performance of nitrile butadiene rubber through simulation and experiments at MNSR beam line",
+        "authors": [
+            "Zohreh Gholamzadeh",
+            "Reza Ebrahimzadeh",
+            "Mohammad Hossein Choopan Dastjerdi",
+            "Javad Mokhtari"
+        ],
+        "affiliations": [
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\""
+        ],
+        "year": 2024,
+        "journal": "\"Radiation Physics and Engineering\"",
+        "abstract": "New nitrile butadiene rubber (NBR) materials are being considered to use for neutron shielding especially for the positions which needs a flexible neutron shield. Such light, low-cost, and suitable material could be used for sealing of the gaps or even for shielding of low radiation environments. In the present work, experimental investigation of NBR shielding performance of neutrons and gamma rays was proposed using the beam line of the Isfahan Miniature Neutron Source Reactor . MCNPX code was used to simulate the ۳۰ kW research reactor beam line. Six NBR sheet with ۲ cm thickness were used at the outlet of the beam line respectively to measure its neutron shielding as well as gamma shielding power on thickness. The experiment situations were modeled using the computational code. The obtained results showed the flexible and cheap material could be used as a good neutron shield while it acts as a very weak shield for gamma rays too. Also there is good conformity between simulation and experimental data with maximum ۳۷% relative discrepancy.",
+        "url": "https://en.civilica.com/doc/1961788/"
+    },
+    {
+        "title": "Benchmark MCNP computer code simulation results against experimental data of neutron flux and spectrum from neutron imaging system of Tehran research reactor",
+        "authors": [
+            "Majid Zamani",
+            "Mohsen Shayesteh"
+        ],
+        "affiliations": [
+            "\"Imam Hossein University\"",
+            "\"Imam Hossein University\""
+        ],
+        "year": 2024,
+        "journal": "\"Radiation Physics and Engineering\"",
+        "abstract": "Using the experimental data in nuclear computing to verify the calculation methods and tools based on numerical and statistical methods has many benefits such as illustrating the quality, ensuring the capabilities, and computer codes validating. Simulation by computer tools is also applicable in the safety analysis of research reactors. In this research, the computer tool (MCNPX ۲.۷.۰: ۲۰۱۱) was verified against the experimental data of neutron flux and spectrum on the sample position of the Tehran Research Reactor (TRR) neutron imaging system by the neutron activation method. To determine the benchmark specifications, the simulation of the system was done at the first step by considering a well-defined facility geometric, material specification and reactor core configuration, fuel elements, and radiation facility (beam tubes and collimator, reactor core, and neutron imaging components). Then the flux and neutron spectrum at the sample position were calculated. In the second step, a set of In (bare and covered by cd) and Au foils and a set of Au, Ni, Ti, and Zr, were placed and exposed almost in front of the reactor E beam tube. The neutron energy spectrum was unfolded by calculating the saturation activity of each foil by SAND-II code, and the neutron flux was calculated. A comparison of the results obtained in two steps shows a relatively good and acceptable agreement (Max. ۳۰% deviation) between the flux and the shape of the flux profile obtained from calculations and experimental data.",
+        "url": "https://en.civilica.com/doc/1876565/"
+    },
+    {
+        "title": "Calculating dose distribution in proton therapy for gastric cancer using the Monte Carlo method",
+        "authors": [
+            "Sarah Sadrzadeh",
+            "Mojtaba Tajik"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Damghan University\""
+        ],
+        "year": 2018,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "Proton therapy, a common form of external beam radiotherapy based on Bragg peak manipulation, can treat tumors by delivering high doses to the tumor while sparing surrounding healthy tissues. In this work, the dose distribution of protons and secondary particles such as neutrons, photons, electrons, and positrons in proton therapy for gastric cancer was studied. For this purpose, using a single-energy proton beam, the appropriate energy range for tumor treatment in the gastric tissue of an adult male MIRD-UF phantom was calculated, and then the dosimetry results were used to construct a matrix-based SOBP. The primary and secondary doses were also examined in 12 surrounding healthy organs, and the results showed that the primary dose in healthy organs was much smaller than the dose received by the tumor. Although the secondary dose was small, it was higher in the stomach, spleen, pancreas, and left kidney than in other organs. The results of the studies show that proton therapy for gastric cancer can represent an almost ideal radiation therapy by determining the risks caused by the dose of secondary particles, especially the neutron equivalent dose.",
+        "url": "https://en.civilica.com/doc/1423209/"
+    },
+    {
+        "title": "Calculation of neutronic and kinetic parameters of Isfahan Miniature Neutron Source Reactor using slope fit and perturbation methods",
+        "authors": [
+            "Mahdi Ghaed Rahmati",
+            "Mostafa Hassanadeh",
+            "Seyed Amir Hossein Feghhi"
+        ],
+        "affiliations": [
+            "\"Islamic Azad University Science & Research Bosher Branch\"",
+            "\"Nuclear Science and Technology\"",
+            "\"Shahid Beheshti University\""
+        ],
+        "year": 2020,
+        "journal": "\"Radiation Physics and Engineering\"",
+        "abstract": "Kinetic and neutronic parameters play an important role in analysis of reactors dynamic behavior. Some of these parameters include: effective multiplication factor (keff), reactivity (ρ), neutron flux as well as power spatial distributions, effective delayed neutron fraction (βeff) and prompt neutron lifetime (lp  ). In this work, Monte Carlo modeling and analysis of Isfahan MNSR is performed for calculation of the kinetic and neutronic parameters of using MCNPX2.6 code, slope fit and perturbation methods. Relative differences between results of the MCNPX2.6 code in calculation of the ρ and βeff and the reference values are about 0.5% and 2.1%, respectively. The relative differences between the results of the slope fit and perturbation methods and MCNPX2.6 code in calculation of the parameter with the reference values are about 17.6%, 4.8% and 29.19%, respectively. Therefore, the results of these research show that the MCNPX2.6 code is suitable for calculation of the reactor kinetic parameters such as the βeff, while the perturbation method is a simple and convenient method for calculating the .",
+        "url": "https://en.civilica.com/doc/1142023/"
+    },
+    {
+        "title": "Miniature reactor power calibration using solid-state footprint detectors.",
+        "authors": [
+            "Afroz Asgari",
+            "Seyyed Abolfazl Hosseini",
+            "Mohammad Hossein Choupan Dastjerdi",
+            "Javad Mokhtari"
+        ],
+        "affiliations": [
+            "\"Sharif University of Technology\"",
+            "\"Sharif University of Technology\"",
+            "\"Atomic Energy of Iran\"",
+            "\"Nuclear Science and Technology Research Institute\""
+        ],
+        "year": 2023,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "There are various methods for measuring reactor power. In nuclear reactors, power is directly related to neutron flux, so the usual method for measuring power is to detect the neutron flux in the reactor core. The Miniature Neutron Source Reactor (MNSR[1]) uses two fission chamber neutron detectors (FC[2]) connected to computer and console control systems to determine power. These detectors are instruments that indicate the reactor power, and the accuracy of their output plays a significant role in the accuracy of the test results and the safety of the reactor. As a result, calibration of these detectors is essential. It is important that the calibration measurements be performed in a neutron-gamma environment very similar to the environment in which the detector will later be used. In this study, the calibration of the fission chamber detectors in the core of the miniature reactor was performed using solid-state nuclear footprint detectors (SSNTD[3]). The calibration coefficients of the detectors connected to the computer control system and the console are 1.02 and 0.88, respectively.[1] Miniature Neutron Source Reactor[2] Fission Chamber [3] Solid-State Nuclear Track Detectors",
+        "url": "https://en.civilica.com/doc/1934101/"
+    },
+    {
+        "title": "Development of comprehensive software to determine ideal conditions for explosive welding window for stainless steel-titanium coating",
+        "authors": [
+            "Javad Bayat"
+        ],
+        "affiliations": [
+            "\"Kurdistan University of Science and Research\""
+        ],
+        "year": 2024,
+        "journal": "\"National Conference on New Technologies in Electrical, Computer and Mechanical Engineering of Iran\"",
+        "abstract": "In this study, the calculation of explosive welding window by software has been investigated. The variables that affect explosive welding are introduced and the area of formation of the welding window joint is examined. Various theories about the boundaries of the welding window have been stated. For an ideal joint, a welding window should be drawn for each metal and the area of intersection of the two windows is considered the ideal weld boundaries. To draw the minimum and maximum contact angles, the proposal of Crossland and Behrani, where the maximum contact angle for creating a joint is 31 degrees and the minimum is 2 degrees, has been used. For the left boundary, which is the minimum speed of advance of the contact point, based on the analysis provided by ((Kwan)), the transition from the wave to non-wave interface occurs for most metals at R = 10.6, which has been confirmed in various experiments. The maximum speed of advance of the contact point is estimated to be 2.1 the speed of sound in the metal. The minimum contact speed has been used according to the proposal of Deribas and Whitman. After the boundaries of the welding window are determined, the formulas and coefficients are written in the form of software code. For the accuracy and precision of the written code, the explosive welding window of titanium to 316 stainless steel is calculated and drawn. And in the research conducted by Amini on the explosive welding of titanium - 316 steel, we calculate with the software and examine the result. To ensure the accuracy of the research, the qualification of the connection of steel and phosphorus-bronze by explosive welding is checked with the software. Due to the difference in the coefficients used in the formulas, there were slight changes in the welding window, which is acceptable. Considering the windows obtained by the software, the written code can be used to draw the welding window.",
+        "url": "https://en.civilica.com/doc/2050456/"
+    },
+    {
+        "title": "Neutron conceptual design of Tehran research reactor using ring fuel",
+        "authors": [
+            "Mustafa Hassanzadeh",
+            "Farrokh Khoshhaul",
+            "Masoud Amin Mozaffari",
+            "Mohammad Amin Amirkhani",
+            "Ahmad Lashkari",
+            "Mohammad Rajaee"
+        ],
+        "affiliations": [
+            "\"Institute of Nuclear Science and Technology\"",
+            "\"Institute of Nuclear Science and Technology\"",
+            "\"Institute of Nuclear Science and Technology\"",
+            "\"Institute of Nuclear Science and Technology\"",
+            "\"Institute of Nuclear Science and Technology\"",
+            "\"Institute of Nuclear Science and Technology\""
+        ],
+        "year": 2022,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "The purpose of this paper is to investigate the possibility of using a fuel with a ring geometry in order to optimize it in the Tehran Research Reactor from a neutron point of view. In using ring fuels, due to the production of higher flux and greater reactivity, a lower fuel loading is required. Therefore, in this study, a new fuel with a ring geometry has been used in the Tehran Research Reactor to replace the current fuel that has a plate geometry. This fuel is similar in terms of materials to the Tehran Reactor fuel. For this purpose, the core neutron parameters including effective multiplication factor, reactivity, three-group neutron flux distribution, maximum power factor, reactivity safety factor, and control rod value have been calculated using the MCNPX2.7 and WIMS-CITATION codes. Then, the results obtained from these codes were compared with the results of the Safety Analysis Report (SAR) of the Tehran Research Reactor (TRR). The results show that the relative percentage difference for the reactivity parameters and the maximum power factor for the tubular reactor obtained from the MCNPX code compared to the TRR-SAR results is about 0.2 and -22%, respectively. The results obtained in this paper also show that to achieve the reactivity equivalent to the first core of the Tehran Research Reactor, which is about 6916 pcm, the mass of the tubular core fuel is reduced by about 17%. On the other hand, by using annular fuel, the neutron flux in the irradiation channels is increased by about 14%. Also, according to the results of this study, the proposed tubular core is a core with a 16-rod arrangement and at least 7 bundles of 6 control rods are required to achieve safety criteria.",
+        "url": "https://en.civilica.com/doc/1430015/"
+    },
+    {
+        "title": "Synthesis of copper particles by chemical reduction for use in printed electronics",
+        "authors": [
+            "Mahsa Nejadjabari",
+            "Seyyed Reza Shoja Razavi",
+            "Reza Mozaffarinia"
+        ],
+        "affiliations": [
+            "\"Malek Ashtar University\"",
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2020,
+        "journal": "\"International Conference & Exhibition on Materials Science & Metallurgical Engineering\"",
+        "abstract": "In this research and study, it was concluded that synthesis by chemical reduction is a desirable method for producing copper particles and this method can prevent the formation of oxide phases. The most commonly used reducing agents and stabilizers in the chemical reduction method are ascorbic acid and polyvinylpyrrolidone, respectively. The effective parameters in synthesis by chemical reduction are the reducing agent concentration, the stabilizing agent concentration, and the temperature. To achieve the desired result, optimal values for each variable should be used. By increasing the reducing agent concentration, the size of the produced particles decreases, and by increasing the stabilizing agent concentration, the tendency for particles to clump together decreases.",
+        "url": "https://en.civilica.com/doc/1133398/"
+    },
+    {
+        "title": "Design and manufacture of a solid target with a cooling system to investigate the phenomenon of surface fusion",
+        "authors": [
+            "Amine Kargarian",
+            "Maryam Qapanuri",
+            "Morteza Sedaghat",
+            "Alireza Asl Zaeem",
+            "Ali Bagheri"
+        ],
+        "affiliations": [
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\""
+        ],
+        "year": 2022,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "In this paper, in order to investigate the phenomenon of surface fusion in an industrial neutron generator, a solid target with coolability was designed and manufactured. In the first step to achieve such a goal, the material and thickness of the layers and substrates suitable for use as solid targets of industrial neutron generators were thoroughly investigated using simulation with Cerium software. Then, using the simulation results, samples of the solid target were manufactured using the slow and sputter deposition method. In addition, considering the importance of the target temperature and its effect on surface fusion, a cooling system was designed and then manufactured using simulation with Comsol software. Also, considering the high voltage applied to the target and its contact with the cooling system, in order to insulate it, various electrical insulators were studied and a suitable insulator was designed and manufactured. Subsequently, and in order to be able to test the solid targets and their side parts, a suitable vacuum system was designed and manufactured. Finally, after designing and manufacturing all parts, the system was assembled and commissioned for final testing. In tests conducted with deuterium gas, the neutron flux was measured using the 6411LB detector. At a voltage of about 25 kV and a current of about 20 mA, we succeeded in producing neutrons with a flux of 6 x 105 n/s. This neutron flux represents a doubling of the neutron production rate due to the surface fusion phenomenon.",
+        "url": "https://en.civilica.com/doc/1487475/"
+    },
+    {
+        "title": "Design and construction of a space plasma simulator chamber",
+        "authors": [
+            "Muslim Kazmi",
+            "Hamidreza Mirzaei",
+            "Gholamreza Eataati",
+            "Ehsan Roustai"
+        ],
+        "affiliations": [
+            "\"Amirkabir University of Technology\"",
+            "\"Institute of Nuclear Sciences and Technologies\"",
+            "\"Amirkabir University of Technology\"",
+            "\"University of Tehran\""
+        ],
+        "year": 2021,
+        "journal": "\"National Vacuum Conference of Iran\"",
+        "abstract": "The plasma simulator chamber is used for experimental study and simulation of ionospheric and magnetospheric plasma, and also this chamber is used to test satellites, space engines, electronic components, space-based equipment and sensors used in the ionosphere by creating conditions similar to the ionosphere. Another application of this chamber, due to its large dimensions, is to create a disturbance-free plasma for calibration and testing of plasma diagnostic systems. This chamber consists of a large torus (a cylinder with a length of 5 meters and a diameter of 1.8 meters) surrounded by a plasma source including a source producing an axial magnetic field of about 150 Gauss. The chamber contains 32 ports for access to diagnostic systems and other instruments. The ultimate pressure of the chamber and its working pressure are 6-10 and 4-10 Torr, respectively.",
+        "url": "https://en.civilica.com/doc/1453620/"
+    },
+    {
+        "title": "Design and fabrication of flexible polymer composite radiation shields for mixed neutron-gamma fields",
+        "authors": [
+            "Seyed Reza Hashemi",
+            "Mojtaba Tajik",
+            "Eskandar Asadi Amirabadi"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Damghan University\"",
+            "\"University of Mazandaran\""
+        ],
+        "year": 2019,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "In this research, a flexible composite shield with a combination of polyethylene, tungsten and boron carbide for mixed neutron-gamma fields was designed and manufactured. For this purpose, in the first stage, theoretical studies were conducted using the multi-purpose MCNP code, and in the second stage, based on the results of simulation studies, for the first time in the country, a multi-purpose composite was manufactured using a hard phase combination of boron carbide particles with tungsten metal powder and a combination of different types of soft and hard polyethylene in a laboratory at the Iranian Polymer and Petrochemical Center. In the third stage, the neutron flux attenuation of the Am-Be241 source was measured using a 3BF detector and the gamma flux attenuation of the cesium source µCi 100 was measured using a NaI detector. The results show that in the polyethylene/boron carbide/tungsten composite (PE/B4C/W), due to the micrometric dimensions of the reinforcing particles and the high cross-sectional area of interaction of radioactive rays with these particles, the composite shield with a much smaller thickness has a greater absorption power against gamma rays and neutrons than conventional shields. A shield with a thickness of 0.5 cm with 30% tungsten and 30% boron absorbs approximately 90% of the neutrons from the amersium-beryllium source, and with a thickness of 2 cm, it reduces the gamma photon flux from the Cs-137 source by approximately 40%.",
+        "url": "https://en.civilica.com/doc/1423189/"
+    },
+    {
+        "title": "Determining the optimal length of the breakwater and analyzing the steel explosion-proof door in a tunnel with a breakwater",
+        "authors": [
+            "Safa Peyman",
+            "Hadi Tolabi"
+        ],
+        "affiliations": [
+            "\"Imam Hussein University\"",
+            "\"Imam Hussein Comprehensive University\""
+        ],
+        "year": 2021,
+        "journal": "\"Scientific Journal of Advanced Defense Science and Technology\"",
+        "abstract": "The aim of this research is to investigate the effect of the breakwater in reducing the effect of the explosion in the tunnel and reducing the load on the blast door at the end of the tunnel and to analyze the types of doors to determine better performance against the explosion. To achieve this goal, the propagation of the wave caused by the explosion of TNT charges of different weights in the opening of the tunnel with the breakwater has been simulated. The AUTODYN hydrocode has been used for numerical simulation. The numerical simulation and modeling were compared and validated with the analytical and experimental relations of previous studies. Considering the maximum pressure applied to the tunnel intersection, the appropriate location of the breakwater, the optimal length of the breakwater and its effect on the maximum pressure at the end of the tunnel have been investigated. The output of the load applied to the end of the tunnel (location of the blast door) resulting from this modeling, which is in the form of a time-dependent explosive load, was transferred to the ABAQUS software to analyze and compare the types of blast doors. Considering the load on the explosion-proof door, hinged doors with different flat and arched geometries were analyzed using ABAQUS software and the maximum displacement and von Mises stress of the doors were compared. The results of the studies show that the performance of the arched door is better than that of the flat door.",
+        "url": "https://en.civilica.com/doc/1434811/"
+    },
+    {
+        "title": "Developing a systematic plan to deal with environmental radiation threats in nuclear defense",
+        "authors": [
+            "Muhammad Nikosfat",
+            "Ardeshir Bagheri",
+            "Hamidreza Shakour",
+            "Zahra Shahbazi Rad",
+            "Nabi Javadi",
+            "Iman Setayeshfar"
+        ],
+        "affiliations": [
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\"",
+            "\"Shahid Beheshti University\"",
+            "\"Imam Hossein University\"",
+            "\"Imam Hossein University\""
+        ],
+        "year": 2022,
+        "journal": "\"National Defense Science and Engineering Conference\"",
+        "abstract": "In today&#39;s world, the arms race is still going on with great enthusiasm, and beyond international arms control agreements, world powers are still greedily moving towards stockpiling deadly weapons, especially nuclear weapons. Therefore, studying and examining all dimensions and aspects of potential nuclear threats, whether intentional or unintentional, is of great importance, and from the perspective of nuclear safety and security, efforts should be made to present comprehensive plans and emergency plans to deal with these threats, especially in cities and regions that are most exposed to these threats. In this regard, field sampling is very important, and the limitation of human and financial resources is always one of the problems facing the development of any sampling program; therefore, one of the important issues in achieving an appropriate sampling program is the selection of the number and location of samples based on the study needs and available resources. Therefore, paying attention to these issues can greatly help the sampling expert in achieving the goals of environmental sampling studies. In this study, by reviewing reliable documents related to nuclear threats, a systematic plan for field sampling related to nuclear defense is presented.",
+        "url": "https://en.civilica.com/doc/1753375/"
+    },
+    {
+        "title": "Enhancing inertial confinement fusion with doped beryllium ablator layer in indirect drive scheme",
+        "authors": [
+            "Khanbabaei Chapter"
+        ],
+        "affiliations": [
+            "\"Damghan University\""
+        ],
+        "year": 2023,
+        "journal": "\"Radiation Physics and Engineering\"",
+        "abstract": "Indirect drive inertial confinement fusion (ICF) holds promise for achieving practical energy generation through controlled fusion reactions. However, the efficiency of ICF is constrained by the Be ablator material used to contain the fuel. To overcome this limitation, researchers have proposed doping Be with various elements. In this study, we investigate the effects of Na and Br dopants, incorporated at concentrations of ۴.۸۶% and ۲.۱%, respectively, using a one-dimensional MULTI-IFE hydrodynamic code. This code serves as a numerical tool dedicated to analyzing Inertial Fusion Energy microcapsules, facilitating the examination of the Be ablator's performance in indirect drive ICF. Our results indicate that the addition of a beryllium layer doped with Na and Br significantly enhances the target gain, elevating it from the break-even value (G ≈ ۱) to approximately G ≈ ۱۲. Furthermore, we delve into the impact of these dopants on the plasma fuel conditions during the implosion, shedding light on the underlying physics of the system. These findings demonstrate that Na and Br doping in the Be ablator represents a viable approach for improving the efficiency of indirect drive ICF, potentially paving the way for the development of practical fusion energy systems.",
+        "url": "https://en.civilica.com/doc/1764238/"
+    },
+    {
+        "title": "Estimating the distance of a radioactive source of cesium-137 from a gamma camera using convolutional neural networks",
+        "authors": [
+            "Seyyed Mohammadreza Hashemi",
+            "Parviz Hosseinkhani",
+            "Hamidreza Shakour"
+        ],
+        "affiliations": [
+            "\"Imam Hussein University\"",
+            "\"Imam Hussein University\"",
+            "\"Imam Hussein University\""
+        ],
+        "year": 2022,
+        "journal": "\"Artificial Intelligence and Intelligent Processing\"",
+        "abstract": "In nuclear medicine and nuclear safety issues, localization of radiation in nuclear imaging is of particular importance. In static imaging systems, it is not possible to measure the distance of the radioactive source from the imaging system. In this study, by simulating a gamma camera with coded holes and the radioactive source in the GATE software, nuclear imaging was performed in a range of distances from 5 to 110 cm from a point source of cesium-137 to provide the images required for training and evaluating the convolutional neural network. The images obtained from the gamma camera were called after reconstruction by MATLAB software in the Python programming language and by designing a convolutional neural network, the distance of the cesium-137 source from the gamma camera was classified into 3 categories: less than 20 cm, between 20 and 70 cm, and more than 70 cm, completely correctly.",
+        "url": "https://en.civilica.com/doc/1549649/"
+    },
+    {
+        "title": "Evaluation of neutron dose around a DD/DT neutron generator and design of appropriate shielding for the user to stand on",
+        "authors": [
+            "Hossein Jarahi",
+            "Yasser the bowl maker"
+        ],
+        "affiliations": [
+            "\"K. N. Toosi University of Technology\"",
+            "\"Nuclear Science and Technology Research Institute\""
+        ],
+        "year": 2020,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "Neutron generators have various applications as neutron sources. In recent years, many efforts have been made to develop neutron generators with high production coefficients. Thus, it is necessary to consider radiation protection aspects during the operation of neutron generators. In this study, the effective dose due to neutrons around a neutron generator was first calculated and evaluated using the MCNPX code. The results show that the dose due to neutrons in neutron generators depends on the angle of placement relative to the device and the type of neutron generator. The dose due to DT generators is about 500 times higher than that of DD generators. The results also show that by increasing the distance to five meters, the dose rate decreases by about twenty times. Increasing the distance is one of the effective ways to reduce the dose rate, but in laboratories where there is not enough space, a suitable shield must be designed. To design a suitable shield, shields were designed in 6 different materials (ALF3, Borated-Polyethylene, concrete 806, Paraffine, Polyethylene, Non-borated, Solid-boric-acid) and in thicknesses of 10, 20, 30, 40, 50 and 60 cm, and the gamma flux components, gamma effective dose, thermal neutron flux, hyperthermal neutron flux, fast neutron flux, total neutron flux and neutron effective dose in a hypothetical spherical phantom were calculated. The results showed that the Borated-Polyethylene shield has the lowest neutron dose for both DD and DT sources at a thickness of 60 cm, and also this shield at a thickness of 60 cm has a lower gamma dose than the other shields in both DD and DT source cases.",
+        "url": "https://en.civilica.com/doc/1423093/"
+    },
+    {
+        "title": "Assessment of the transition state of local melting events without emergency shutdown events by combining MCNPx and COBRA/En computational codes",
+        "authors": [
+            "Behzad Salmasian",
+            "Ataullah Rabiei",
+            "Mohammadreza Nematollahi",
+            "Ahmad Pirouzmand"
+        ],
+        "affiliations": [
+            "\"Shiraz University\"",
+            "\"Shiraz University\"",
+            "\"Shiraz University\"",
+            "\"Shiraz University\""
+        ],
+        "year": 2022,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "The risks arising from local meltdown events are of particular importance in terms of nuclear power plant safety due to the difficulty of monitoring. The lack of heat removal can compromise the safety of the reactor, both locally and globally. Local flow events that do not lead to an emergency shutdown event can cause local steam above zero percent (by volume) and local cladding meltdown. In the recent study, with the aim of analyzing the transient and steady state of events likely to cause local fuel meltdown events, the main events corresponding to ATWS events, including pump loss, local flow blockage, and power level increase and some combinations, have been investigated. After integrating the MCNPx and COBRA/En computational codes, the calculations were performed considering subchannel analysis and boundary conditions and validated by FSAR. The results of the investigation of possible scenarios and reactor emergency shutdown criteria for pessimistic conditions showed that there is a margin of at least 18%, 470 kPa and 204 degrees Kelvin from the limits required for an emergency shutdown to occur as a result of the reduction in coolant flow rate, maximum channel pressure drop, and fuel cladding temperature ceiling. The results of the recent study show that the volumetric percentage of steam above zero to about 70% for 12 minutes occurred in some channels and in more severe conditions the steam ratio is higher. Considering the frequency of the incidents under study, under normal conditions, there are dry spots and consequently local fuel melting. The distance of the quantities from the emergency shutdown limits, the uncertainty values and the validation of the model by reliable documents confirm the accuracy of the results.",
+        "url": "https://en.civilica.com/doc/1430036/"
+    },
+    {
+        "title": "Experimental and numerical analysis of the effect of using perforated plates in front of the target plate against ballistic impact",
+        "authors": [
+            "Javad Nik Zare",
+            "Gholamhossein Liaqat",
+            "Hamed Ahmadi"
+        ],
+        "affiliations": [
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\""
+        ],
+        "year": 2022,
+        "journal": "\"Iranian Journal of Manufacturing Engineering\"",
+        "abstract": "Previously, in order to protect personnel and equipment, integral armor plates were used. Today, the use of armor plates with unique designs (a combination of perforated and base plates) is of interest. This new design is a structure consisting of at least two plates, one perforated and the other solid (without holes), and their arrangement is such that the perforated plate is placed in front of the solid plate (base plate), and this combination prevents projectiles from penetrating and damaging the target under protection. Experimental and numerical studies conducted on these structures have shown that this combination of plates weighs up to 31% less than integral armor plates with the same ballistic protection capabilities. In the tests conducted, it was determined that the edge effect causes a deviation in the trajectory of the projectile and causes abrasion at the sharp tip of the projectile, which in turn prevents the projectile from penetrating the base plate and passing through it. The distance between the two perforated plates and the base was also studied, and it was determined that in order for the perforated plate to be effective, a minimum distance of more than the length of the projectile should be considered between the two plates. By comparing the results obtained from experimental tests and numerical simulations performed using LS-DYNA software, a good convergence between the results has been observed.",
+        "url": "https://en.civilica.com/doc/1574175/"
+    },
+    {
+        "title": "Experimental and numerical analysis of the effect of using two perforated plates in front of the target plate against ballistic impact",
+        "authors": [
+            "Javad Nik Zare",
+            "Gholamhossein Liaqat",
+            "Hamed Ahmadi"
+        ],
+        "affiliations": [
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\""
+        ],
+        "year": 2022,
+        "journal": "\"Journal of Solid and Fluid Mechanics\"",
+        "abstract": "The use of perforated plates as part of an armor plate assembly to protect personnel and equipment in front of the target plate has been of interest to researchers for some time. For this purpose, the use of a perforated plate in front of the target plate has been studied so far and it has been determined that the use of a perforated plate in an armor plate assembly has several advantages. However, this plate assembly will not be able to provide 100% ballistic protection. For this reason, the idea of using two perforated plates in front of the base plate was proposed and in this study, the consequences of this type of arrangement were analyzed by conducting various experimental and numerical studies. The observations made indicate that although the use of two perforated plates in front of the base plate increases their thickness and weight, it also improves the ballistic protection of the armor plate assembly against incoming projectiles, especially in the weak points of using a perforated plate in front of the base plate. By comparing the deformations obtained in experimental tests and numerical simulations performed with the help of LS-DYNA software, a good convergence between the results has been observed.",
+        "url": "https://en.civilica.com/doc/1596856/"
+    },
+    {
+        "title": "Experimental and Numerical Investigation on the Flexural Behavior of Composite-Reinforced Top-Hat Shape Beam",
+        "authors": [
+            "What is Zahedan?",
+            "Hamed Ahmadi",
+            "Gholam Hossein Liaghat"
+        ],
+        "affiliations": [
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University, Kingston University\""
+        ],
+        "year": 2021,
+        "journal": "\"Mechanics of Advanced Composite Structures\"",
+        "abstract": "Top-hat hollow-section beams are widely used in passenger vehicle’s body-in-white structure because of their proper shape for the montage process and also crashworthiness advantages. Hollow section beams with top-hat cross-section are mostly employed in structures like B-pillar, rocker sill, and roof rail which are engaged in side impact collisions. In the present investigation, simplified top-hat beams are developed based on a conventional B-pillar with the aim of improving energy absorption characteristics. Reinforcements are conducted by employing fiber glass-epoxy composite material. Three types of reinforced beams are presented which are either improved by composite-laminating, or by installation of an extra composite-made internal reinforcement. Experimental tests are performed in quasi-static three-point bending condition and based on results, a FE simulation is developed using LS-Dyna explicit code. Specimens are compared based on peak load, total energy absorption (TEA) and specific energy absorption (SEA) amounts. Also, to illustrate the extent of improvements, a not-reinforced top-hat beam is experimentally subjected under three-point bending test. Results depict a significant difference between the performance of beams reinforced by different methods. Comparison between specimens, considering their respective load-displacement diagram and crashworthiness characteristics, show that applying composite laminates to the inside surface of a hat-shaped beam would produce a beam with satisfying flexural behavior.",
+        "url": "https://en.civilica.com/doc/1262836/"
+    },
+    {
+        "title": "Investigation of explosive welding of 304 stainless steel pipe to 5083 aluminum pipe by simulation in AUTODYN finite element software",
+        "authors": [
+            "Hamid Arabi"
+        ],
+        "affiliations": [
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2022,
+        "journal": "\"International Conference on Welding and Non Destructive Testing & National Conference on Welding & Inspection & National Conference on NDT\"",
+        "abstract": "Explosive welding is a solid-state joining process that uses controlled explosive energy to create a metallurgical bond between dissimilar metals. In this study, the internal coating of a 5083 aluminum pipe with 304 stainless steel by explosive welding using ANFO filler metal at an explosive velocity of 3000 m/s, under different dwell intervals at a constant explosive rain rate, was investigated. Simulations with AUTODYN software were used to investigate and analyze process parameters such as impact velocity and pressure, stress, plastic strain, and temperature in the impact zone. The maximum pressure obtained in the pressure contours in all simulations showed values between 15 and 30 GPa. The plastic stress in the impact zone reached its maximum value of about 900 MPa and exceeded the yield strength of the metals to be joined, which will cause the joint to form. The temperature increase is in the range of 300 to 500 degrees Kelvin, which is lower than the melting temperature of the metals to be joined and predicts the creation of a quality weld without local melting.",
+        "url": "https://en.civilica.com/doc/1618461/"
+    },
+    {
+        "title": "Low-energy neutrino event generator based on Fluka",
+        "authors": [
+            "Hassan Akhtari Qomi",
+            "Mohammad Javad Safari",
+            "Fereydoun Abbasi Davani"
+        ],
+        "affiliations": [
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Amirkabir University of Technology\"",
+            "\"Shahid Beheshti University\""
+        ],
+        "year": 2018,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "The detection of low-energy antineutrinos has applications in science and engineering. Recently, the Fluka team has developed a model called PEANUT, which is capable of simulating interactions of all neutrino flavors from threshold to TeV. In this paper, Fluka is introduced as a neutrino event generator, with an emphasis on low-energy electron antineutrinos (i.e., reactor-derived antineutrinos). The results obtained demonstrate the validity and applicability of the code. Notably, Fluka has a satisfactory ability to transport many other types of particles in more complex geometries, making Fluka a powerful tool for neutrino engineering purposes.",
+        "url": "https://en.civilica.com/doc/1361555/"
+    },
+    {
+        "title": "Separation of hydrogen isotopes by modified metal-organic frameworks.",
+        "authors": [
+            "Masoud Arabieh",
+            "Assistant Taghipour Azar",
+            "Syed Shahabuddin Naqvi",
+            "Seyyed Javad Ahmadi",
+            "Mohammad Ali Khazai"
+        ],
+        "affiliations": [
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Shahid Beheshti University\"",
+            "\"Nuclear Science and Technology Research Institute, Atomic Energy Organization of Iran\"",
+            "\"Nuclear Science and Technology Research Institute\""
+        ],
+        "year": 2023,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "Separation of light isotopes can be achieved through the mechanism of confinement in mesoporous structures or strong adsorption. Organic frameworks seem to be suitable options for isotope separation due to their tunable porous structure and relatively strong adsorption sites. In this study, the formation of dihydrogen complexes in the vicinity of open metal sites of metal-organic frameworks has been studied. In this regard, in the first step, the electronic structure of metal-organic frameworks based on the first row of transition metals has been studied using density functional theory. Then, using a quantum chemical approach and considerations related to the potential energy level of the interaction between the hydrogen molecule and the open metal sites, the interaction has been studied. The results show that the Fe-MOF structure has a deeper potential well and, due to the effective separation of the zero-point energy, it creates a higher chance for isotope separation.",
+        "url": "https://en.civilica.com/doc/1768561/"
+    },
+    {
+        "title": "The effect of nickel-coated straight and elliptical neutron guide systems on neutron intensity distribution",
+        "authors": [
+            "Kamran Keshiri",
+            "Ruhollah Razavinejad",
+            "Mohsen Shayesteh",
+            "Mehdi Eshghi"
+        ],
+        "affiliations": [
+            "\"Imam Hussein Comprehensive University\"",
+            "\"Imam Hussein Comprehensive University\"",
+            "\"Imam Hussein University\"",
+            "\"Imam Hussein Comprehensive University\""
+        ],
+        "year": 2019,
+        "journal": "\"Scientific Journal of Advanced Defense Science and Technology\"",
+        "abstract": "Focusing neutrons emitted from neutron sources onto a target with a specific energy and intensity distribution plays an important role in various applications. In this paper, the effect of a direct and elliptical guide system on focusing the neutron intensity from a cylindrical neutron source with a Maxwellian distribution and in the wavelength range of 0.5 angstroms to 5 angstroms on the sample has been investigated. Simulations have been performed using the McStas Monte Carlo simulation code and the effect of different parameters of the direct and elliptical neutron guide on the neutron intensity has been investigated. Then, the results of the direct and elliptical guide systems have been compared with each other. An investigation of the role of the length of the direct and elliptical guide shows that the output intensity increases with increasing the guide length and decreases after reaching an optimal length. For the direct guide, optimizing the source-to-guide distance has the greatest impact on the output neutron intensity in terms of wavelength, while for the elliptical guide, optimizing the source radius has the greatest impact on the output neutron intensity in terms of wavelength. Finally, the results show that after optimization, the elliptical guide performs better than the direct guide.",
+        "url": "https://en.civilica.com/doc/934541/"
+    },
+    {
+        "title": "Effect of external magnetic field on electron energy deposition inside dense fuel in a rapid-shock ignition model using Geant4 simulation tool",
+        "authors": [
+            "Seyyed Abolfazl Ghasemi",
+            "Amir Moslehi",
+            "Samira Faghih"
+        ],
+        "affiliations": [
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Damghan University\""
+        ],
+        "year": 2020,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "In this study, the effects of an external magnetic field T(0-1000) = Bext on the energy deposition rate of relativistic electrons into a dense plasma with a density range for a combined fast-shock ignition model using the Geant4 simulation tool have been investigated and studied. In the simulation model, two types of exponential and quasi-bithermal energy distributions for relativistic electrons with a range of elementary momentum energy have been considered. The simulation results in the presence of an external magnetic field show that the dynamics of relativistic electrons are affected by the external magnetic field, resulting in optimal energy transfer into the fuel. A comparison of the simulation results shows that the optimal energy deposition per density in the presence of a magnetic field is achieved with a wavelength of the igniting laser λ = 0.35 mm and a laser intensity of I = 2-W.cm 1021, so that it can be said that the energy deposition rate grows slowly and steadily with increasing the external magnetic field. In this study, the effects of an external magnetic field T(0-1000) = Bext on the energy deposition rate of relativistic electrons into a dense plasma with a density range for a combined fast-shock ignition model using the Geant4 simulation tool have been investigated and studied. In the simulation model, two types of exponential and quasi-bithermal energy distributions for relativistic electrons with a range of primary energy are considered. The simulation results in the presence of an external magnetic field show that the dynamics of relativistic electrons are affected by the external magnetic field, resulting in optimal energy transfer into the fuel. Comparison of the simulation results shows that the optimal energy deposition per density in the presence of a magnetic field is achieved with a wavelength of the ignition laser λ = 0.35 mm and a laser intensity of I = 2-W.cm 1021, so that it can be said that the energy deposition rate grows slowly with increasing the external magnetic field.",
+        "url": "https://en.civilica.com/doc/1361408/"
+    },
+    {
+        "title": "Improving the safety system and neutronic analysis of the Tehran Research Reactor during nuclear accidents",
+        "authors": [
+            "Mohammad Morshedi Towfiq",
+            "Mustafa Hassanzadeh",
+            "Morteza Akbari Hesar"
+        ],
+        "affiliations": [
+            "\"Islamic Azad University\"",
+            "\"Atomic Energy Organization of Iran\"",
+            "\"Islamic Azad University\""
+        ],
+        "year": 2019,
+        "journal": "\"International Conference on Interdisciplinary Studies in Management and Engineering\"",
+        "abstract": "The purpose of this study is to analyze the neutronics of the core of the Tehran Research Reactor and to investigate and improve the safety systems of the Tehran Research Reactor during nuclear accidents using modeling by nuclear simulator codes with probabilistic calculations, Monte Carlo. Therefore, after modeling the reactor core with the MCNPX nuclear simulator code, neutronics parameters such as multiplication factor, excess reactivity, flux in different energy ranges and different states of arrangement in the core, power and value of control rods were calculated and the calculated values were compared with various reports and articles to ensure the accuracy of the modeling, which results indicate good compatibility with the results presented in various modeling in this article with previous reports and articles. In another part of the calculations, an attempt was made to design a passive safety system to reduce the neutron population and consequently shut down the reactor during accidents by changing the containment walls so that the most optimal arrangement could be selected to achieve the goal.",
+        "url": "https://en.civilica.com/doc/1022930/"
+    },
+    {
+        "title": "Increasing the simulation capabilities of betavoltaic microbatteries using the MCNPX-SILVACO hybrid code",
+        "authors": [
+            "Pedram Maleki",
+            "Gholamreza Eataati"
+        ],
+        "affiliations": [
+            "\"University of Mazandaran\"",
+            "\"Amirkabir University of Technology\""
+        ],
+        "year": 2020,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "The accuracy of each simulation is a very important factor, the increase of which brings the simulation results closer to reality. The aim of this study is to improve the accuracy of calculating the parameters of the beta-voltaic battery. For this purpose, first, the distribution of energy accumulation resulting from the spectrum of beta particles of the nickel-63 source inside the silicon semiconductor is simulated using the MCNPX code, then, by taking advantage of one of the capabilities of the Silvaco code (the F.RADIATE parameter of the BEAM command), the interpreter function is defined in the C++ environment. Finally, the Silvaco code is used to calculate the electrical characteristics of the battery based on the location-dependent results of the MCNPX. First, for validation, calculations were performed for a battery sample made with a cross-section of 2mm16 and a source with an activity of mCi1, and its results were compared with experimental results and two analytical methods. Then, these calculations were performed for a battery with an activity of mCi100, a cross-section of 2cm1, and its results were compared with the results of an analytical method. The results showed that simulating microbattery characteristics by the combined MCNPX-SILVACO code using the three-dimensional electron-hole distribution in the semiconductor and using the full spectrum of beta particles provides a significant increase in the accuracy of calculations and provides a suitable capability for optimizing battery design.",
+        "url": "https://en.civilica.com/doc/1361423/"
+    },
+    {
+        "title": "Review and analysis of the Tehran Research Reactor in critical times",
+        "authors": [
+            "Hamideh Bakhshi"
+        ],
+        "affiliations": [],
+        "year": 2021,
+        "journal": "\"Interdisciplinary Research in Engineering and Management\"",
+        "abstract": "Research reactors have a wider range of designs, fuel compositions, and operating modes than power reactors. The need for greater flexibility in their use requires comprehensive approaches to safety analysis. According to the International Atomic Energy Agency documents, nuclear research reactors are divided into four categories in terms of hazard, with the Tehran Research Reactor being a category 2 facility with a medium hazard rating. This hazard rating can be reduced from 2 to 1 due to specific tests conducted at the Tehran Reactor, including fuel testing. Some activities have been carried out to increase safety in the country&#39;s research reactors, but because reactors have various electrical, mechanical, instrumentation, structural, etc. parts, the safety of this part of the fuel containment vessel has not been given much attention in safety studies. The fact that a long period of time has passed since the design and operation of a reactor causes wear and tear due to the passage of time, the continuous operation of these facilities, and the aforementioned developments necessitate the need for updates and changes in order to increase safety and reduce the risks arising from it. Therefore, the purpose of this study is to analyze the neutronics of the Tehran Research Reactor core and to investigate and improve the safety systems of the Tehran Research Reactor during nuclear accidents using modeling by the MCNPX code. In order to improve the safety system in this study, an attempt was made to install the most optimal secondary shutdown system for the reactor in the event scenario by focusing on the fuel containment networks. The calculations from the code showed that by creating a distance of 32 cm between rows 4 and 5 of the reactor core, the neutron population can be significantly reduced and the reactor can be brought to a shutdown. The calculations of the neutronic and thermohydraulic parameters of the reactor core performed by the code in this article also proved this fact.",
+        "url": "https://en.civilica.com/doc/1418335/"
+    },
+    {
+        "title": "Investigation of the fusion efficiency of fast ignition with conical targets",
+        "authors": [
+            "Mohammad Jafar Tabatabaei",
+            "Abbas Ghasemizad"
+        ],
+        "affiliations": [
+            "\"University of Guilan\"",
+            "\"University of Guilan\""
+        ],
+        "year": 2010,
+        "journal": "\"The Physics Society Of Iran\"",
+        "abstract": "Fast ignition is a new method for inertial confinement fusion. In this fusion method, the interaction of a high-intensity laser beam with the holram surface enclosing a deuterium-tritium (DT) fuel capsule causes an internal explosion and compression of the fuel to a high density, and subsequently the fast protons produced near the holram surface as a result of this interaction penetrate into the compressed fuel and deposit their energy in a small part of it, causing a hot ignition zone. In this paper, following the energy efficiency of a spherical target and considering the dependence of the fuel consumption fraction on the fuel consumption time, we obtain the energy efficiency of conical targets with a characteristic angle β and find that a hemispherical capsule (β = π/2) has an efficiency of 96% of that of a spherical capsule. In addition, by examining the simulations performed by Atzeni et al., it has been determined that the results of these simulations are qualitatively in good agreement with the aforementioned result.",
+        "url": "https://en.civilica.com/doc/1802346/"
+    },
+    {
+        "title": "Investigation of the penetration depth of the beta spectrum of nickel-63 in silicon by the Monte Carlo method using the MCNPX code",
+        "authors": [
+            "Davoud Ghasemabadi",
+            "Masoud Abdollah Zadeh"
+        ],
+        "affiliations": [
+            "\"Imam Hossein Comprehensive University\"",
+            "\"Imam Hossein Comprehensive University\""
+        ],
+        "year": 2020,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "In this study, the beta energy spectrum of nickel-63 is considered as the full energy spectrum, the average energy spectrum, and the maximum energy spectrum to investigate the penetration depth in silicon. The Monte Carlo calculations were performed using the MCNPX code in a specific geometry; then the stopping power of electrons with different energies in silicon was calculated using the ESTAR computational code. The results obtained are in good agreement with each other. The calculations performed can be used in the design of semiconductor components of nuclear detectors and dosimeters.",
+        "url": "https://en.civilica.com/doc/1423136/"
+    },
+    {
+        "title": "Investigation of effective parameters on deuterium-tritium fuel yield in laser beam-triggered shock ignition method",
+        "authors": [
+            "Behnaz Kaleji",
+            "Babak Khan Babaei",
+            "The Covenant of Kasaian"
+        ],
+        "affiliations": [
+            "\"Technical and Vocational University\"",
+            "\"Damghan University\"",
+            "\"Damghan University\""
+        ],
+        "year": 2021,
+        "journal": "\"KARAFAN\"",
+        "abstract": "Shock ignition is one of the methods considered in the idea of inertial confinement fusion. In this fusion method, two-stage inertial confinement, compression and fuel ignition are performed separately, which reduces the requirements of the actuators and increases the efficiency. In the shock ignition idea, a strong spherical shock wave converging at the end of the initial laser pulse ignites the pre-compressed fuel. In shock ignition, when the hot spot pressure is much larger than the surrounding cold fuel pressure, the fuel structure is considered to be non-isostatic. In this study, the ignition conditions and fuel efficiency in the shock ignition method are investigated, then the fuel efficiency relations as well as the hot spot radius in the non-isostatic model are improved and compared with the numerical results of the equimolar deuterium-tritium (DT) fuel in the shock method. The calculations show that the conditions for hot spot formation depend on the density of the hot spot and the surrounding cold fuel. Also, using the improved energy efficiency equation, the role of physical parameters, including fuel mass and different ratios of hot spot pressure to surrounding cold fuel pressure, in energy efficiency was investigated.",
+        "url": "https://en.civilica.com/doc/1271749/"
+    },
+    {
+        "title": "Measurement of tritium concentration in heavy water by azeotropic distillation",
+        "authors": [
+            "Reza Pourimani",
+            "Mohammad Reza Zare",
+            "Mehrdad Aghamohammadi"
+        ],
+        "affiliations": [
+            "\"Arak University\"",
+            "\"University of Isfahan\"",
+            "\"Arak University\""
+        ],
+        "year": 2023,
+        "journal": "\"Radiation Physics and Engineering\"",
+        "abstract": "In this work, the concentration of tritium in D۲O of various degrees of purity was measured. Samples were taken from the Arak heavy water plant and tritium concentrations were determined using a liquid scintillation detector (LSC) based on tritium decay. In this work, instead of simple distillation, is used the azeotropic distillation method. Absorption and fluorescence spectra were recorded using a Shimadzu UV-۲۱۰۰ spectrometer and an LS۵۰B fluorescence spectrometer. The tritium concentration in the samples varied from ۱.۷۵ ± ۰.۸۰ to ۶.۱۶ ± ۱.۰۱ Bq.L-۱ in D۲O enrichment from ۰.۳۵% to ۷۷.۵۰%. The correlation coefficient between tritium concentration and D۲O purity in heavy water was obtained as R۲ = ۰.۸۵۳. Deviation for ۹۹.۸% D۲O enriched in heavy water. This was observed from a straight line, leading to a drop in R۲. The results of this measurement showed that the tritium concentration did not exceed the value set by the Nuclear Regulatory Commission (NRC).",
+        "url": "https://en.civilica.com/doc/1681192/"
+    },
+    {
+        "title": "Investigation of microwave sintering and its effects on the crystal structure, microstructure and microwave dielectric properties of Li2TiO3 ceramics",
+        "authors": [
+            "Somayeh Ghaffari",
+            "Touraj Ebadzadeh",
+            "Masoud Alizadeh",
+            "Keyvan Asadian"
+        ],
+        "affiliations": [
+            "\"Materials and Energy Research Institute\"",
+            "\"Materials and Energy Research Institute\"",
+            "\"Materials and Energy Research Institute\"",
+            "\"Materials and Energy Research Institute\""
+        ],
+        "year": 2019,
+        "journal": "\"Advanced Materials and Technologies\"",
+        "abstract": "In this study, Li2TiO3 ceramic sintering was performed by two conventional and microwave methods. The maximum density of 3.08 g/cm3 (90.58% of theoretical density) was obtained by conventional sintering at 1200˚C and a holding time of 3 hours, while the maximum density of 3.12 g/cm3 (91.76% of theoretical density) was obtained by microwave sintering at 1300˚C and without holding time. Thermal behavior was investigated by DTA-TG, phase analysis of the samples was performed by XRD, and microstructural analysis of the samples was performed by FE-SEM. Also, the microwave dielectric properties of the sintered sinter samples were measured. XRD results show that the peak (002) appearing at 2θ=18.46˚, which is related to the regularization of cation layers in the structure and the formation of superlattice, is more intense in microwave sintering. Microstructural observations with SEM show that the sintered pieces sintered in the microwave furnace are finer grained than the same sample in the conventional furnace. The maximum microwave dielectric properties after sintering in the conventional furnace were obtained at 1200˚C and were equal to εr=20.29 and Q×f=26191 GHz, while the maximum microwave dielectric properties after sintering in the microwave furnace were obtained at 1300˚C and were equal to εr=20.86 and Q×f=25610 GHz.",
+        "url": "https://en.civilica.com/doc/951458/"
+    },
+    {
+        "title": "Monte Carlo study of neutron activation products of the neutron source of Bahonar University of Kerman",
+        "authors": [
+            "Arezo Riahi",
+            "Mohammadreza Rezaei"
+        ],
+        "affiliations": [
+            "\"University of Advanced Industrial and Technology\"",
+            "\"University of Advanced Industrial and Technology\""
+        ],
+        "year": 2021,
+        "journal": "\"National Conference on Technological Advances in Applied Physics\"",
+        "abstract": "Neutrons penetrate different materials, activating neutrons and producing new radionuclides. The aim of this paper is to investigate the radioisotopes produced by materials irradiated by the neutron source of Bahonar University of Kerman. For this purpose, simulation with the MCNPX code based on Monte Carlo methods is used. In this coding, the geometry of the neutron source chamber of Bahonar University of Kerman is defined and materials with different densities are placed inside the chamber. In this paper, the production yield of radionuclides produced in aluminum, brass and carbon targets due to neutron activation by the neutron source of Bahonar University of Kerman is reported. The results of the radionuclides produced show that the neutron source of Bahonar University of Kerman is capable of producing the elements 65Zn, 54Mn, 24Na, 14C, and 10Be with yields of 0.00314%, 0.0000164%, 0.0746%, 0.000000326%, and 2.6%, respectively.",
+        "url": "https://en.civilica.com/doc/1483885/"
+    },
+    {
+        "title": "Nd:YAG laser telescopic intensifier design",
+        "authors": [
+            "Iraj Shahmari Namin",
+            "Abbas Maleki",
+            "Abolhassan Mobasheri",
+            "Hassan Ebadian"
+        ],
+        "affiliations": [
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2022,
+        "journal": "\"National Conference of Laboratory Equipment and Technologies\"",
+        "abstract": "In this paper, a Nd:YAG pulsed laser telescopic intensifier is designed to increase the TEM00 mode volume and correct the thermal lensing effects. The designed laser active medium is blown by a flash lamp. The Nd:YAG laser rod is 7 mm in diameter and 110 mm in length, which is blown with an electric blowing energy of 100 J at a blowing repetition rate of 1 to 20 Hz. Calculations show that increasing the laser repetition rate causes a thermal lens with a focal length of 196556/15 cm in the laser rod and increases the divergence to 3.7295×10-3. Placing a 2x telescope inside the intensifier and optimizing the distance between its lenses at different repetition rates reduces the divergence to 3.42187×10-3.",
+        "url": "https://en.civilica.com/doc/1549715/"
+    },
+    {
+        "title": "Neutronic analysis of the V-1000 zero power Mock-Up reactor core using MCNPX2.7.0, WIMS &amp; CITATION codes and the advanced SuperMC3.2.0 program",
+        "authors": [
+            "Hossein Khameh",
+            "Saeed Zare Ganjarudi",
+            "Ali the Acceptor",
+            "Yasser the bowl maker"
+        ],
+        "affiliations": [
+            "\"Islamic Azad University\"",
+            "\"Islamic Azad University\"",
+            "\"Islamic Azad University\"",
+            "\"Atomic Energy Organization of Iran\""
+        ],
+        "year": 2019,
+        "journal": "\"International Conference on Interdisciplinary Studies in Management and Engineering\"",
+        "abstract": "The purpose of this research is to analyze the neutronic core of the V-1000 reactor, which is a model research reactor for the VVER-1000 reactor, using the MCNPX2.7.0, WIMS &amp; CITATION codes and the advanced SuperMC3.2.0 program. In order to ensure the accuracy of the modeling, the main reactor parameters such as the effective multiplication factor, excess core reactivity, flux distribution in different energy ranges, and power distribution were examined and compared. Calculations were performed in the MCNPX2.7.0 code and the SuperMC3.2.0 program using a probabilistic method with 700,000 historical particles in 200 active cycles using the KCODE command, so that the average deviation from the standard of multiplication factor calculations was less than 0.0003, which indicates good consistency with the results presented in various modeling in this article with previous reports and articles. According to calculations performed in various modeling, the reactor core reaches a critical state by inserting 10% of the group ten control rods, in which case the maximum flux and axial power are at a height of approximately 142 centimeters from the bottom of the reactor core.",
+        "url": "https://en.civilica.com/doc/1022834/"
+    },
+    {
+        "title": "Numerical Analysis of The Crater Diameter and Penetration Depth of The Target Due to The Impact of Short-Rod Segmented Projectiles at High Velocity",
+        "authors": [
+            "behnam yasemi",
+            "Hamid Soleimanimehr",
+            "Hossein Khodarahmi",
+            "pure mercy",
+            "najmeh khazraian"
+        ],
+        "affiliations": [
+            "\"Islamic Azad University\"",
+            "\"Islamic Azad University\"",
+            "\"Imam Hossein University\"",
+            "\"Islamic Azad University\"",
+            "\"Islamic Azad University\""
+        ],
+        "year": 2022,
+        "journal": "\"International Journal of Advanced Design and Manufacturing Technology\"",
+        "abstract": "This paper deals with the numerical simulation of segmented projectiles. A segmented projectile is a subset of kinetic energy projectiles. The segmented projectile is made of tungsten and the target is semi-infinite and is made of ۴۳۴۰ steels. Due to the disadvantages of segmented projectiles with, the simulation of segmented projectile with is discussed. Projectiles with aspect ratio greater than one are known as short-rod projectiles. This aspect ratio range forms both the primary and secondary phase of penetration. Numerical simulation was performed by AUTODYN software with Smoothed Particle Hydrodynamic (SPH) method. The use of SPH approach is most consistent with the experimental results. In order to have effective segmented projectiles, greater speeds were used in the simulations. In this range of velocity, due to the hydrodynamic penetration and complete erosion of the rods, the maximum penetration depth is obtained. After a relatively good correlation between the simulation results and the experimental and Hydrocode results, the numerical analysis of the segmented projectiles is performed. The results show an increase in the penetration depth of segmented projectile relative to the continuous type. In the following, the relationship between velocity increase and penetration depth and crater diameter of this type of projectile is investigated. An increase in penetration depth of ۴۰ to ۶۰% has been observed in this type of projectile compared to the continuous projectiles. An increase in penetration depth and crater diameter is observed with increasing impact velocity.",
+        "url": "https://en.civilica.com/doc/1611420/"
+    },
+    {
+        "title": "Numerical simulation of the deformation profile of a triangular plate under a gas mixture explosion",
+        "authors": [
+            "Mojtaba Haqgoo",
+            "Hashem Babaei",
+            "Tohid Mirza Baba Mostofi"
+        ],
+        "affiliations": [
+            "\"University of Guilan\"",
+            "\"University of Guilan\"",
+            "\"Ivanka University\""
+        ],
+        "year": 2023,
+        "journal": "\"Aerospace Mechanics\"",
+        "abstract": "An advanced numerical study involving fluid-solid interaction is carried out using the immersed boundary method to investigate the effect of pre-burst pressure and plastic deformation time of thin triangular sheets subjected to gas explosion. Other numerical simulation objectives such as calculating the deformation and material stress contour at high strain rates are achieved based on the strain rate-dependent Johnson-Cook material model. The simulation is based on the explosion modeling with chemical reaction kinetics and using a finite element solver to solve for the explosion propagation. The immersed boundary method uses the calculation of the fluid pressure distribution on the sheet surface to simulate the motion of the interface between the exploded gas and the deformed sheet. The numerical tool relates the pressure distribution and gas explosion parameters to the macroscopic deformation of the sheet by using the multi-component reaction Euler equations and the Lagrangian equation of the sheet. The numerical method is a suitable tool in calculating the deformation profile of the triangular sheet, showing the reduction of deformation with a smaller size of the uncoated sheet surface.",
+        "url": "https://en.civilica.com/doc/1574180/"
+    },
+    {
+        "title": "Numerical study of composite sandwich panels with compound cellular core of auxetic lattice structure and foam under low velocity impact load.",
+        "authors": [
+            "What is Zahedan?",
+            "Hamed Ahmadi",
+            "GholamHossein Liaghat"
+        ],
+        "affiliations": [
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\""
+        ],
+        "year": 2020,
+        "journal": "\"National Conference on Manufacturing Engineering\"",
+        "abstract": "Updated standards in safety of vehicles and related facilities have led to use of smart designs and advanced manufacturing techniques. The shock generated at impacts could cause serious damages both to the system’s structure and the human body. A conventional method used to reduce the impact shock is to employ cellular material, e.g. low density foams in forms of sandwich structures. In the present work, performance of fiberglass-epoxy composite panels with Expanded Polystyrene (EPS) foam core under low velocity impact is enhanced by employing ۳D printable lattice structure inside the sandwich panel. Lattice structure is designed based on re-entrant auxetic pattern and it is manufactured using ABS material. Tests are conducted numerically using LS-DYNA explicit code at two different impact speeds. Results are discussed based on rigid body acceleration of the impactor to investigate the effect of adding auxetic structure on the shock attenuation. Furthermore, core arrangement of upgraded specimen is changed in three different ways are results are presented.",
+        "url": "https://en.civilica.com/doc/1278036/"
+    },
+    {
+        "title": "Numerical investigation of titanium and steel composite tube fabrication by explosive welding",
+        "authors": [
+            "Alireza Moradi"
+        ],
+        "affiliations": [
+            "\"Khajeh Nasiruddin Toosi University\""
+        ],
+        "year": 2024,
+        "journal": "\"National Conference of Applied Researches in Electrical, Mechanical and Mechatronics Engineering\"",
+        "abstract": "Explosive welding, a well-known composite processing method, can combine different materials. Explosive welding creates periodic wave surfaces in the joint area. And causes microstructural welding of the materials. In this research, we have numerically investigated the method of making composite pipes and the materials under study are titanium and steel. In this way, the titanium pipe should completely fill the inner surface of the steel pipe by TNT explosion. In this research, the phenomena of explosive stress and pressure and velocity have been investigated, using the finite element simulation software Abaqus.",
+        "url": "https://en.civilica.com/doc/2024177/"
+    },
+    {
+        "title": "Optimization of the radiation angle of the 241Am-Be neutron source particles embedded in the neutron porosimeter tool in order to increase the accuracy in determining the porosity of the calcite formation",
+        "authors": [
+            "Faezeh Rahmani",
+            "Hadi Darvish, the trustee"
+        ],
+        "affiliations": [
+            "\"Khajeh Nasiruddin Toosi University of Technology\"",
+            "\"Khajeh Nasiruddin Toosi University of Technology\""
+        ],
+        "year": 2019,
+        "journal": "\"The Physics Society Of Iran\"",
+        "abstract": "Today, the evaluation of hydrocarbon reserves is of great importance, so it is necessary to explore and evaluate these resources with greater accuracy. One of these methods is well logging, which measures one or more formation characteristics by sending a measuring instrument into the borehole. The measuring instruments in nuclear well logging include a radioactive source and a detector. In this paper, using simulation with the Monte Carlo code MCNPX2/6, the optimal angle of radiation (relative to the horizontal coordinate axis) of particles from an amersium-beryllium neutron source into the calcite formation has been investigated in order to achieve the highest possible accuracy for determining the water porosity of the formation. The results show that the emission angle of 20 degrees, in addition to high accuracy (porosity resolution of 3%) due to the increase in the counting statistics in the detectors without a noticeable change in the penetration depth, will increase the speed of the tool in sampling.",
+        "url": "https://en.civilica.com/doc/1157634/"
+    },
+    {
+        "title": "Investigation of energy absorption of PA/GF6 thermoplastic composite produced by hot pressing method under low velocity impact test",
+        "authors": [
+            "Amir Mohammad Manouchehri",
+            "Gholamhossein Liaqat",
+            "Hamed Ahmadi"
+        ],
+        "affiliations": [
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\"",
+            "\"Tarbiat Modares University\""
+        ],
+        "year": 2023,
+        "journal": "\"Journal of Solid and Fluid Mechanics\"",
+        "abstract": "Thermoplastic composite sheets have attracted increasing attention in various industries due to their high strength to weight and energy absorption capacity. In the present study, the behavior of a composite sheet with a thermoplastic polyamide 6 matrix and continuous glass fibers (PA6/GF) under quasi-static penetration and weight drop tests was investigated. Since the polyamide matrix is significantly sensitive to the effects of strain rate, the required mechanical properties at different strain rates were extracted by the Hopkinson test. Based on this test, the strength of the studied composite increased by 47% at a strain rate similar to the weight drop test compared to quasi-static penetration. Due to the impact of the projectile, failure modes of fiber breakage, fiber separation from the matrix, and vertical and horizontal cracks with respect to the fiber direction were observed. Also, numerical simulation was performed with LS-DYNA software and the strain rate effects extracted from the Hopkinson test were applied in the numerical simulation, which increased the simulation accuracy in calculating the maximum force to 9.6%. Based on the results of numerical simulation, at thicknesses less than 2.5 mm, the energy absorption values are constant as a function of the weight of the composite sheet; also, the maximum energy absorption in the 4-layer composite was related to the [902/02] layer with an absorption of 18 joules of energy.",
+        "url": "https://en.civilica.com/doc/1677001/"
+    },
+    {
+        "title": "Dispersion patterns of radioactive materials released due to accidents at nuclear power plants around Iran",
+        "authors": [
+            "Kamal Mostafa Nejad",
+            "Mohammadreza Kardan",
+            "Hossein Afrideh",
+            "Mitra Athari Alaf",
+            "Asad Babakhani",
+            "Ayub Benoshi"
+        ],
+        "affiliations": [
+            "\"Islamic Azad University\"",
+            "\"AEOI\"",
+            "\"Amirkabir University of Technology\"",
+            "\"Islamic Azad University\"",
+            "\"AEOI\"",
+            "\"AEOI\""
+        ],
+        "year": 2017,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "Radioactive materials released from a power plant during an accident may be dispersed by atmospheric currents to distant lands. Models have been proposed to predict how this dispersion will occur. This article reports part of the results of a study in which, using one of these models, the HYSPLIT model, the distribution patterns of some radioactive isotopes of cesium and iodine from ten power plants located at 20 to 50 degrees north latitude (N) and 25 to 75 degrees east longitude (E) were studied. The results show that all of these power plants could contaminate Iran if seriously damaged. Thus, measures to deal with nuclear accidents should take into account not only the Bushehr power plant, but also all power plants in this region. The results of this simulation can be used to locate immediate warning stations for radioactive materials.",
+        "url": "https://en.civilica.com/doc/1423241/"
+    },
+    {
+        "title": "Applications of plasma technology in medical matters and removal of microbial contamination and measurement of plasma damage to the skin using HyperChem and GEANT4 software",
+        "authors": [
+            "Muhammad Nikosfat",
+            "Ardeshir Bagheri",
+            "Hamidreza Shakour",
+            "Zahra Shahbazi Rad",
+            "Ali Roohi"
+        ],
+        "affiliations": [
+            "\"Imam Hossein University\"",
+            "\"Imam Hossein University\"",
+            "\"Imam Hossein University\"",
+            "\"Shahid Beheshti University\"",
+            "\"Imam Hossein (AS) University\""
+        ],
+        "year": 2020,
+        "journal": "\"National Conference on Defense Science and Engineering\"",
+        "abstract": "In this study, various applications of plasmas produced by electrical discharges in the field of health and medicine are evaluated. These applications include cold (corona discharge and dielectric barrier discharge) and hot (radiofrequency and microwave discharges) plasmas. Most direct applications of plasmas are in the form of sterilization and providing conditions for improving the condition of patients, but the elimination of solid waste and hospital waste is also considered. Indirect applications include ozone production and ozone therapy in liquid environments, as well as air purification and disinfection of sensitive medical areas. It was also observed using HyperChem and GEANT4 software that plasma radiation does not cause any damage to the epidermal layer of the skin, and therefore plasma radiation is an effective and safe method for removing contamination from the skin of the body.",
+        "url": "https://en.civilica.com/doc/1235521/"
+    },
+    {
+        "title": "Modeling plasmoids caused by radionuclides present on the Earth&#39;s surface for remote monitoring of nuclear contamination",
+        "authors": [
+            "Mohammad Niko Sefat",
+            "Ardeshir Bagheri",
+            "Zahra Shahbazi Rad"
+        ],
+        "affiliations": [
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\"",
+            "\"Shahid Beheshti University\""
+        ],
+        "year": 2021,
+        "journal": "\"Defense Science Research Journal\"",
+        "abstract": "On the surfaces of the Earth that have been contaminated by radionuclides due to a radiation event, the radioactivity of nuclear contamination leads to ionization and excitation in the atmosphere, and as a result, a low-temperature quasi-neutral plasma with weak ionization is formed in the atmosphere above the contaminated area. Currently, there are many methods for remote sensing of the Earth that allow the identification of areas with extensive nuclear contamination. These methods rely on various physical principles, and each has certain limitations, advantages, and disadvantages. When developing airborne monitoring systems for areas with nuclear contamination, the use of a spatial distribution model of low-temperature electron-ion plasma formed over highly contaminated areas and soils will be a novel and effective method. This model expresses the unique spatial characteristics of the distribution of the electron-ion density of the formed plasma, and using it, surface nuclear contamination of soils and territories can be reliably identified remotely. The development of remote sensing technologies for nuclear contamination is important because for highly contaminated areas such as damaged nuclear reactors, even human residence for a very short period of time is fatal, and therefore, remote diagnostic methods should be used to measure contamination. In this study, the general principles of the plasma method for remote monitoring of nuclear contamination are presented. According to the results obtained, the development of plasma technology for remote monitoring of nuclear contamination will play an important role in achieving the goals of territorial safety and passive defense.",
+        "url": "https://en.civilica.com/doc/1925525/"
+    },
+    {
+        "title": "Plastic deformation of homogeneous and heterogeneous metal multilayer sheets with constant surface density under repeated repulsive loading",
+        "authors": [
+            "Mojtaba Zia Shamami",
+            "Hashem Babaei",
+            "Tohid Mirza Baba Mostofi",
+            "Hossein Khodarahmi"
+        ],
+        "affiliations": [
+            "\"Imam Hussein University\"",
+            "\"University of Kilan\"",
+            "\"Ivanki University\"",
+            "\"Imam Hussein (AS)\""
+        ],
+        "year": 2022,
+        "journal": "\"Aerospace Mechanics\"",
+        "abstract": "In the present study, the mechanism of large plastic deformation of single and multilayer circular sheets of homogeneous and heterogeneous metals with constant surface density under uniform repeated repulsive loading has been investigated. A ballistic pendulum system with a 200 mm charge deployment tube was used to apply explosive load to the sample. 40 test specimens were considered in three different layerings of single, double and triple layers with eight different arrangements. To create the same loading and experimental conditions, 10 grams of plastic explosive was used and the dynamic response of each structure was studied up to 5 repeated loadings. The laboratory results indicate large plastic deformation accompanied by thinning at the clamp boundaries and also tearing in some tests. The results also showed that with increasing the number of explosions, the maximum permanent deflection of the sheets increases and with increasing the number of explosions, the progressive deflection of the sheet in its center decreases exponentially. In addition, placing a thick layer in front and supporting a structure with a thinner layer gives the test specimen better performance against repeated explosive loading. The results obtained for homogeneous multilayer structures are completely consistent with the results for heterogeneous structures.",
+        "url": "https://en.civilica.com/doc/1489896/"
+    },
+    {
+        "title": "Preparation and characterization of scintillating BaMgAl10O17:Eu2+ nanoparticles and their investigation as a detector in beta particle counters",
+        "authors": [
+            "Vali Alizadeh",
+            "Parviz Hossein Khani",
+            "Mustafa Najafi",
+            "Masoud Abdollah Zadeh",
+            "Javad Afshar"
+        ],
+        "affiliations": [
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hussein (AS) University\"",
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hussein (AS) University\""
+        ],
+        "year": 2021,
+        "journal": "\"Scientific Journal of Advanced Defense Science and Technology\"",
+        "abstract": "In this work, BaMgAl10O17 nanoparticles with and without Eu2+ doping were prepared by a novel, simple combustion synthesis method with a mixed urea and glycine fuel without the use of a reducing atmosphere. The morphology, structure, phase purity and luminescence properties of the nanoparticles were investigated by field emission scanning electron microscopy (FE-SEM), X-ray diffraction (XRD) and photoluminescence (PL), respectively. The effect of urea fuel alone and in combination with glycine on the reduction of Eu3+ to Eu2+ was studied. The morphology and X-ray diffraction results indicate a narrow rod-like structure similar to rice grains with dimensions of approximately 45 to 65 nm with relatively high purity. In the europium-doped sample synthesized with a mixed urea and glycine fuel, the photoluminescence emission spectrum was observed in the wavelength range of 400 to 500 nm with a center of 447 nm. The scintillation response of the samples to radiation from 90Sr and 241Am sources as charged particle and gamma emitting sources and the ability to separate beta and gamma radiation in the 90Y/90Sr source were investigated. The results showed that Eu+2-doped BaMgAl10O17 nanoparticles show good sensitivity to beta particles and can be a suitable option for beta particle detection applications.",
+        "url": "https://en.civilica.com/doc/1223935/"
+    },
+    {
+        "title": "The role of Li6 in the production and reproduction of tritium",
+        "authors": [
+            "Muhammad Siddiq"
+        ],
+        "affiliations": [
+            "\"Shahrood University of Technology\""
+        ],
+        "year": 2023,
+        "journal": "\"Applied Research in Science and Technology of Iran\"",
+        "abstract": "To keep the plasma hot, a thick and heavy complex structure is required to fulfill three main purposes: a) to trap neutrons produced by fusion and convert their energy into heat b) to produce tritium to fuel the deuterium (Dt) reaction and c) to protect the superconducting magnets from neutron radiation. The tokamak has features such as a vacuum chamber that is toroidal and contains the plasma. The chamber, whose main function is to absorb MeV14 neutrons and feed the plasma with the tritium needed for the reaction to occur. Toroidal coils, the currents flowing in these coils, produce a polar field, and the polar coils, the currents in these coils produce a toroidal field.",
+        "url": "https://en.civilica.com/doc/1672890/"
+    },
+    {
+        "title": "Simulating the effects of proton and electron radiation on protective layers in a digital logic cell within an FPGA chip using the FLUKA code",
+        "authors": [
+            "Nafiseh Khosravi",
+            "Mojtaba Tajik",
+            "Behzad Boqrati"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Damghan University\"",
+            "\"University of Damghan\""
+        ],
+        "year": 2020,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "In this paper, the effects of proton and electron radiation on the protective layers in a digital logic cell in an FPGA chip are simulated using the FLUKA code. Using the Monte Carlo code, the transport of electrons and protons in a logic cell related to a digital gate in an FPGA chip is investigated. In this simulation, the maximum energy of electrons and protons entering the logic cell of the chip is between 30 and 50 MeV, and the effects of radiation-induced disorders on semiconductor materials as well as some of the destructive effects of electron and proton radiation in five different structures using aluminum, silicon, silicon dioxide, boron, and boron oxide layers are investigated. The simulation results show that using a thick layer of silicon dioxide in several different layers will reduce the effects of disorders compared to other structures.",
+        "url": "https://en.civilica.com/doc/1423119/"
+    },
+    {
+        "title": "Simulation and performance evaluation of a coded cavity gamma imaging system with a wide field of view",
+        "authors": [
+            "Seyyed Mohammadreza Hashemi",
+            "Parviz Hosseinkhani",
+            "Hamidreza Shakour"
+        ],
+        "affiliations": [
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\""
+        ],
+        "year": 2023,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "Accurate localization of radioactive materials is very important in nuclear imaging. Safety and security against the increasing threat of attacks using radioactive materials, border surveillance, terrorism, as well as the increase in the number of nuclear power plants, necessitate the development of a reliable system for imaging a wide range of gamma rays at different distances; so that it can identify radioactive sources at the right time and place them in the field of view. Radioactive materials are used in medicine, non-destructive testing, nuclear weapons, power generation, etc. The main advantage of coded aperture imaging (CAI) over other imaging methods is due to the multiple apertures that increase the number of photons entering the detector, resulting in a better and more complex image. After the decoding process, the resolution is significantly increased by applying the MLEM algorithm. In this paper, a gamma camera simulation with mosaic MURA coded holes was performed in the GATE code for imaging cesium-137 and amersium-241 sources using a NaI(Tl) detector with dimensions of 2×27×27. The resolution of this system for the two sources was investigated at a distance of 3 meters from the camera and an appropriate angular resolution was achieved (about 7 degrees). Furthermore, the minimum equivalent dose for imaging at a distance of 10 meters for the cesium-137 source was estimated to be 0.179 (with a source activity of 6 microcuries), and the signal-to-noise ratio at this distance was found to be 3.10, and by applying the MLEM algorithm, its value was 17.96. The importance of this research is based on the study of radioactive source localization, especially during nuclear disarmament, border monitoring, and decontamination, because the actual location of the radioactive source is often unknown.",
+        "url": "https://en.civilica.com/doc/1795266/"
+    },
+    {
+        "title": "Simulation and performance evaluation of a coded cavity gamma imaging system with a wide field of view",
+        "authors": [
+            "Seyyed Mohammadreza Hashemi",
+            "Parviz Hosseinkhani",
+            "Hamidreza Shakour"
+        ],
+        "affiliations": [
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\"",
+            "\"Imam Hossein (AS) University\""
+        ],
+        "year": 2023,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "Accurate localization of radioactive materials is very important in nuclear imaging. Safety and security against the increasing threat of attacks using radioactive materials, border surveillance, terrorism, as well as the increase in the number of nuclear power plants, necessitate the development of a reliable system for imaging a wide range of gamma rays at different distances; so that it can identify radioactive sources at the right time and place them in the field of view. Radioactive materials are used in medicine, non-destructive testing, nuclear weapons, power generation, etc. The main advantage of coded aperture imaging (CAI) over other imaging methods is due to the multiple apertures that increase the number of photons entering the detector, resulting in a better and more complex image. After the decoding process, the resolution is significantly increased by applying the MLEM algorithm. In this paper, a gamma camera simulation with mosaic MURA coded holes was performed in the GATE code for imaging cesium-137 and amersium-241 sources using a NaI(Tl) detector with dimensions of 2×27×27. The resolution of this system for the two sources was investigated at a distance of 3 meters from the camera and an appropriate angular resolution was achieved (about 7 degrees). Furthermore, the minimum equivalent dose for imaging at a distance of 10 meters for the cesium-137 source was estimated to be 0.179 (with a source activity of 6 microcuries), and the signal-to-noise ratio at this distance was found to be 3.10, and by applying the MLEM algorithm, its value was 17.96. The importance of this research is based on the study of radioactive source localization, especially during nuclear disarmament, border monitoring, and decontamination, because the actual location of the radioactive source is often unknown.",
+        "url": "https://en.civilica.com/doc/1795266/"
+    },
+    {
+        "title": "Simulation and measurement of interfering cosmic muon radiation in the Mini-Iran detector",
+        "authors": [
+            "Mohammad Javad Safari",
+            "Elham Taqavi",
+            "Sahar Hadavandi",
+            "Hamed Roohi",
+            "Soroush Mohatsami",
+            "Mohammadreza Ghorbani",
+            "Zahra Shahbazi Rad"
+        ],
+        "affiliations": [
+            "\"Amirkabir University of Technology\"",
+            "\"Shahid Beheshti University\"",
+            "\"Khajeh Nasiruddin Toosi University of Technology\"",
+            "\"University of Isfahan\"",
+            "\"Amirkabir University of Technology\"",
+            "\"Shahid Beheshti University\"",
+            "\"Shahid Beheshti University\""
+        ],
+        "year": 2023,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "Today, reactor antineutrino detection is of great interest, as it can be used to estimate the burn-up status and fuel consumption characteristics remotely. Neutrino measurements are usually based on the reverse beta decay reaction of neutrinos with protons (hydrogen atoms) in scintillating materials. In this study, the Irand scintillating detector with a segmented design was developed and its scaled model, called the Mini Irand, was built. Neutrino measurements face challenges, including the fact that interfering factors in neutrino measurements must be well identified and separated from the main signals, of which cosmic muons are among the most important. This requires an accurate understanding of the detector&#39;s response to cosmic muons. In this study, the behavior of muons in the Mini Irand detector has been investigated from various aspects using the GIANT4 tool and Monte Carlo simulation. By experimental measurements for 21 days, muon-related events are identified and their characteristics are determined. The experiment was carried out by developing a special digital data acquisition system and developing appropriate processing algorithms. The results provide an estimate of the spectrum of instantaneous (Michele spectrum) and delayed (Landau spectrum) events. The agreement between the experimental and simulation results indicates the correctness of the procedure followed in the simulation and experimental sections.",
+        "url": "https://en.civilica.com/doc/1623560/"
+    },
+    {
+        "title": "Simulation-based dosimetry study for electron therapy during breast surgery.",
+        "authors": [
+            "Mojtaba Tajik",
+            "Hassan Ranjbar"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Nuclear Fuel Cycle Research Institute\""
+        ],
+        "year": 2022,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "Intraoperative electron therapy is a relatively new method of delivering ionizing radiation directly to a tumor or its bed during surgery. In order to properly treat the target, it is necessary to examine the radiation dose curve and the shielding used to protect healthy tissue and organs. Radiation therapy during breast surgery requires protection of tissues below the target volume, such as the heart and lung. In this situation, a thin layer of high-Z material is placed between the treated tissue (breast) and the underlying vital part. Using the MCNPX code, the breast tissue, shielding, and lung were irradiated as three coaxial cylinders with 6, 9, 12, and 18 megaelectron volts of electrons. The flux and dose of electrons and secondary photons in different tissues were calculated. Studies showed that for 6 megaelectron volts of electrons, the use of shielding has a negligible effect on the dose received by the tissues around the breast. At energies of 9 and 12 Mv, the Al-Pb shield and the St-PMMA shield have almost the same performance in reducing the dose received by the tissues around the breast. At energy of 18 Mv, the Al-Pb absorber performs better than the St-PMMA absorber in reducing the dose received by the organs adjacent to the breast tissue.",
+        "url": "https://en.civilica.com/doc/1648085/"
+    },
+    {
+        "title": "Simulation-based dosimetry study for electron therapy during breast surgery.",
+        "authors": [
+            "Mojtaba Tajik",
+            "Hassan Ranjbar"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Nuclear Fuel Cycle Research Institute\""
+        ],
+        "year": 2022,
+        "journal": "\"Iranian Journal of Radiation Safety and Measurement\"",
+        "abstract": "Intraoperative electron therapy is a relatively new method of delivering ionizing radiation directly to a tumor or its bed during surgery. In order to properly treat the target, it is necessary to examine the radiation dose curve and the shielding used to protect healthy tissue and organs. Radiation therapy during breast surgery requires protection of tissues below the target volume, such as the heart and lung. In this situation, a thin layer of high-Z material is placed between the treated tissue (breast) and the underlying vital part. Using the MCNPX code, the breast tissue, shielding, and lung were irradiated as three coaxial cylinders with 6, 9, 12, and 18 megaelectron volts of electrons. The flux and dose of electrons and secondary photons in different tissues were calculated. Studies showed that for 6 megaelectron volts of electrons, the use of shielding has a negligible effect on the dose received by the tissues around the breast. At energies of 9 and 12 Mv, the Al-Pb shield and the St-PMMA shield have almost the same performance in reducing the dose received by the tissues around the breast. At energy of 18 Mv, the Al-Pb absorber performs better than the St-PMMA absorber in reducing the dose received by the organs adjacent to the breast tissue.",
+        "url": "https://en.civilica.com/doc/1648085/"
+    },
+    {
+        "title": "Simulation of a pulsed neutron source experiment in the heart of the Tehran Research Reactor",
+        "authors": [
+            "Mohammad Arkani"
+        ],
+        "affiliations": [
+            "\"Institute of Nuclear Science and Technology\""
+        ],
+        "year": 2022,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "One of the useful methods for measuring the instantaneous neutron decay constant in the core of a nuclear reactor is the pulsed neutron source experiment. Since the MCNPX computational code is based on the Monte Carlo method, this code is able to track the time-dependent behavior of particles in static systems. This capability was used in this study and the pulsed neutron source experiment was simulated in the core of the Tehran Research Reactor. For this purpose, the core system of the Tehran Research Reactor was investigated in different subcritical states using the above method and the instantaneous neutron decay constant was estimated in each state. In this way, using the instantaneous neutron decay constant of the core of the reactor, the kinetic parameters of the core of the reactor were also calculated. The calculated values are in good agreement with the results reported in the references.",
+        "url": "https://en.civilica.com/doc/1430018/"
+    },
+    {
+        "title": "Study of shock wave ignition approach in reactor-scale DT targets in heavy ion fusion",
+        "authors": [
+            "Sabria Hassani",
+            "Behnaz Kaleji",
+            "Soheil Khoshbinfar"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Damghan University\"",
+            "\"University of Guilan\""
+        ],
+        "year": 2017,
+        "journal": "\"The Physics Society Of Iran\"",
+        "abstract": "Pre-compressed fuel ignition by a convergent shock wave is considered as a new scheme in inertial confinement fusion, under the name of shock ignition with the aim of achieving high yield and providing ignition at a lower energy threshold. In this research, energy optimization with respect to hydrodynamic efficiency and energy yield in a five-layer fuel pellet with the scales of nuclear fusion reactors with heavy ion launchers has been carried out by the one-dimensional code DEIRA 4. Then, by replacing the box pulse with a three-stage pulse of shock wave ignition, the power and time of each stage of the pulse have been optimized and its effect on the amount of energy consumed, fuel yield and reduction of Rayleigh-Taylor instabilities has been investigated. Calculations show that in the optimized target with DT fuel by applying a three-stage pulse of a heavy ion beam of lead-207, an energy yield of 542 was achieved, corresponding to a 21% increase in energy yield and a 19% decrease in the launcher energy. Also, the decrease in internal detonation velocity and the exponential growth parameter of 1 indicate greater fuel stability in shock wave ignition against hydrodynamic instabilities compared to central ignition.",
+        "url": "https://en.civilica.com/doc/820484/"
+    },
+    {
+        "title": "Study of the biological effects of fast neutrons (MeV14-2) using the Monte Carlo method on the atomic structure of the genetic material of living cells",
+        "authors": [
+            "Azam Zabihi",
+            "Qasem Foruzani",
+            "Farid Samsarha",
+            "Amir Moslehi",
+            "Peyman Rezaian"
+        ],
+        "affiliations": [
+            "\"Bu-Ali Sina University\"",
+            "\"Payam Noor University\"",
+            "\"University of Tehran\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\""
+        ],
+        "year": 2020,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "The present study investigates the direct effects of fast neutron beams in the energy range of 2 to 14 MeV and calculates single-strand and double-strand breaks of the DNA atomic structure using the Monte Carlo method. For this purpose, the Geant4 tool and the Geant4-DNA low-energy package were used. The DNA atomic structure extracted from the protein database and the water substance were selected as the environment. In the physics of the list related to low energies, the step length is in the order of nanometers and less, and on the other hand, the mean free path of neutrons in the range under discussion was obtained in the order of centimeters. Under these conditions, the execution of the program using a computational computer will also be long. As a result, the spectrum of secondary particles resulting from the interaction of neutrons with atoms of water molecules was irradiated to the target. The spectrum of secondary particles was extracted with the help of the ENDF library and theoretical calculations. With this method, the execution time of the program was reduced to more than almost one tenth. The relative biological effectiveness, RBE, of the neutrons was then calculated by choosing cobalt-60 gamma rays as the reference radiation. The results predict a nearly constant behavior for the RBE as a function of energy, which is also in very good agreement with other studies.",
+        "url": "https://en.civilica.com/doc/1361464/"
+    },
+    {
+        "title": "Study of the effect of Au impurity on DT fuel combustion conditions in fusion plasma using inertial confinement method",
+        "authors": [
+            "Mehdi Nazirzadeh",
+            "Babak Khan Babai",
+            "Hamidreza Albarzania"
+        ],
+        "affiliations": [
+            "\"Khatam Al-Anbiya University\"",
+            "\"Damghan University\"",
+            "\"Khatam Al-Anbiya University\""
+        ],
+        "year": 2023,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "The ignition and ignition conditions of nuclear fusion fuels in the presence of impurities are one of the important issues that must be considered in the design of fuel pellets. In this paper, the effect of the heavy gold core impurity on all combustion processes in the non-equilibrium plasma of deuterium-tritium fuel in a four-temperature model in which the shape of the energy distribution function affects the thermal behavior of photons has been investigated. This study includes investigating the negative effects of fuel impurities during the formation of a hot spot and fuel ignition. The results of numerical calculations obtained from the simulation of all processes effective in combustion show that due to the presence of these impurities, the effective ionic charge and consequently the bremsstrahlung increase, which ultimately reduces the fuel efficiency.",
+        "url": "https://en.civilica.com/doc/1768547/"
+    },
+    {
+        "title": "Study of the role of high-density carbon-polystyrene double-layer stripping in the ignition of inert fusion targets",
+        "authors": [
+            "Maryam Nasserian",
+            "Babak Khan Babai"
+        ],
+        "affiliations": [
+            "\"Damghan University\"",
+            "\"Damghan University\""
+        ],
+        "year": 2023,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "High-density carbon cladding is a promising option for thermonuclear ignition in inertial confinement fusion targets. In order to reduce hydrodynamic instabilities and also protect the fuel from preheating, a double cladding layer design with a high-density carbon outer layer, which has recently attracted attention from researchers, has been used. Therefore, in this study, we investigated the optimization of the double cladding layer of an arbitrary spherical target with a single polystyrene cladding layer using the MULTI-IFE hydrodynamic code. This target was irradiated with symmetric laser beams with a pulse length of 22.7 ns, a wavelength of 0.25 µm, and a total energy of 1.7 MJ. Our calculations show that the optimal thickness of the high-density carbon is about 6.5 mm. The use of a double cladding layer increases the absorbed laser energy at the target surface by about 8%. The increase in absorbed energy resulted in an increase of about 5% in the alpha power produced, resulting in an increase in the fuel consumption fraction of about 1.5%. Ultimately, the fuel efficiency increased by about 12%.",
+        "url": "https://en.civilica.com/doc/1623554/"
+    },
+    {
+        "title": "Study of the stability and degradation mechanism of germanium-carbon coatings in salt fog environment",
+        "authors": [
+            "Hossein Jamali",
+            "Reza Mozaffarinia",
+            "Akbar Ishaqi",
+            "Fatima Sosni"
+        ],
+        "affiliations": [
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University\"",
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2020,
+        "journal": "\"Iranian Journal of Surface Science and Engineering\"",
+        "abstract": "In the present study, germanium-carbon (Ge1-x-Cx) coatings were deposited on silicon and glass substrates by plasma-enhanced chemical vapor deposition (PECVD) using GeH4 and CH4 gaseous precursors. Salt spray test was used to investigate the environmental stability of the coatings. Field emission scanning electron microscope (FESEM) equipped with energy dispersive spectrometer (EDS) and X-ray photoelectron spectrometer (XPS) were used to characterize the microstructure and bonding of the coatings, respectively. Physical quality examination of the samples after 24 hours of exposure to salt spray showed very good stability of all deposited germanium-carbon coatings under different conditions; no signs of peeling, peeling, cracking, or blistering were observed on the samples. Scanning electron microscopy evaluations of the surface of the coatings also confirmed this. Only for the carbon-rich Ge1-x-Cx coating, parts of the coating edges were degraded. The mechanism of coating degradation was identified as blistering and crack development due to the penetration of water molecules into the free coating/substrate interface.",
+        "url": "https://en.civilica.com/doc/1361796/"
+    },
+    {
+        "title": "Synthesis and characterization of copper/silver core-shell nanoparticles synthesized by laser ablation with a nanosecond Nd:YAG laser in acetone",
+        "authors": [
+            "Hamed Naderi Samani",
+            "Reza Shoja Razavi",
+            "Reza Mozaffarinia"
+        ],
+        "affiliations": [
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2023,
+        "journal": "\"Journal of Advanced Materials in Engineering\"",
+        "abstract": "In this study, copper/silver core-shell nanoparticles were synthesized by liquid laser ablation using a nanosecond Nd:YAG laser. The synthesis of copper/silver core-shell nanoparticles by liquid laser ablation was performed in a single step by adjusting the process parameters to 450 mJ/pulse energy, 1064 nm wavelength, 3 Hz frequency, and 6 mm/s scanning speed in acetone medium. The synthesized nanoparticles were characterized using UV-Vis spectroscopy, atomic absorption spectroscopy (AAS), dynamic light diffraction (DLS), field emission scanning electron microscopy (FESEM), high-resolution transmission electron microscopy (HRTEM), and X-ray diffraction (XRD). The studies confirmed that the CACS nanoparticles have nanometer size, spherical morphology, and pure copper/silver core-shell structure.",
+        "url": "https://en.civilica.com/doc/1942282/"
+    },
+    {
+        "title": "Criteria for allowable parameters for hot spot ignition in ion-doped deuterium-tritium fuel",
+        "authors": [
+            "Faezeh Mehdizadeh",
+            "Soheil Khoshbinfar"
+        ],
+        "affiliations": [
+            "\"University of Guilan\"",
+            "\"University of Guilan\""
+        ],
+        "year": 2023,
+        "journal": "\"Iranian Journal of Applied Physics\"",
+        "abstract": "Before the ignition starts, the fuel may enter from various paths, including the target cutting layer materials, the holram walls, the interaction of the cone guide sidewall with the fuel in the internal explosion stage, and the cone tip material, leading to the release and mixing of their constituent elements into the corona plasma environment and even the pure dense DT fuel. First, in the framework of central spark ignition, the permissible ignition zone of the DT hot spot was plotted on the Hs-Ts plane and it was shown that for a certain input percentage of gold impurity, with a relative increase in the internal explosion velocity, the boundary of the permissible ignition zone gradually becomes larger and at internal explosion velocities smaller than 1.7 × 107 cm/s, there are two ignition islands. Also, for common metal contaminants, the increase in the impurity fraction in the hot spot region causes a limitation in the permissible ignition parameters, which, with its gradual increase, will lead to the extinction of the hot spot. Next, within the framework of the idea of rapid ignition, the surface density of a hot spot in a non-equilibrium deuterium-tritium ignition plasma doped with a small fraction of carbon and gold impurity ions was extracted. Accordingly, the parallel curves of the permissible surface density parameter in the two-temperature model were drawn in the Te-Ti temperature plane. It was shown that with increasing impurity fraction, we will witness a sharp increase in the radiation flux exiting the hot spot boundary, as a result of which the permissible ignition range decreases with speed and the fuel ignition conditions become much more difficult than in the pure fuel case. The sensitivity of these changes is directly dependent on the bremsstrahlung power increase factor, which is a function of the impurity concentration percentage parameters αimp and the impurity ion atomic number (degree of ionization), Zimp. In addition, the minimum permissible ion temperature for the initiation of ignition in metal-doped deuterium-tritium fuel can also be observed in the parallel curves.",
+        "url": "https://en.civilica.com/doc/1803768/"
+    },
+    {
+        "title": "The effect of electron characteristics on optimal transport within dense pre-plasma in the fast-shock ignition model",
+        "authors": [
+            "Seyyed Abolfazl Ghasemi",
+            "Samira Faghih",
+            "Babak Khan Babaei"
+        ],
+        "affiliations": [
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Damghan University\"",
+            "\"Damghan University\""
+        ],
+        "year": 2020,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "In this study, the effect of the initial electron energy ranging from 1 to 10 MeV, its distribution function, and the background pre-plasma temperature Te = 0.5-10 keV on the optimal transport in a pre-compressed fuel with a density of ρc = 828-292-3 g.cm in a fast-shock ignition model has been studied semi-analytically. The results showed that for keV ≤ Te, the Coulomb logarithm of charged particle collisions has a weak dependence on temperature, and it seems that the plasma stopping power is almost independent of the background temperature. Therefore, the pre-plasma temperature is not an influential factor in increasing the electron penetration into the fuel, and with increasing electron energy and decreasing density, the electron penetration into the fuel increases; so that suitable conditions can be considered in the energy range of 4.5 MeV and a density of 300-3 g.cm ≈ cρ. The study of the effect of the fast-ignition wavelength and the electron distribution function on the improvement of energy transfer showed that the energy distribution function is almost independent of the background temperature and by considering a two-temperature spectrum for electrons and a fast-ignition wavelength of the order of 0.35 µm ≈ λif, the deposition of electron energy occurs at a more uniform rate in the plasma. The semi-analytical results have been verified by Monte Carlo simulation and show good agreement with it.",
+        "url": "https://en.civilica.com/doc/1361465/"
+    },
+    {
+        "title": "Title Not Found",
+        "authors": [],
+        "affiliations": [],
+        "year": "Unknown",
+        "journal": "\"Unknown\"",
+        "abstract": "No Abstract Available",
+        "url": "https://www.sid.ir/paper/939350/fa"
+    },
+    {
+        "title": "The role of tritium reduction in determining the yield of deuterium-tritium fusion reactions considering fast combustion via laser fusion",
+        "authors": [
+            "Nasrin Hosseini Motlagh",
+            "Mohammad Ali Zarei"
+        ],
+        "affiliations": [
+            "\"Islamic Azad University\"",
+            "\"Payam Noor University\""
+        ],
+        "year": 2020,
+        "journal": "\"Optoelectronic\"",
+        "abstract": "One of our current goals is to investigate the DT fuel efficiency by choosing a very small fraction of tritium fuel, in the new ICF achievements, through the concept of fast combustors. These calculations certainly confirm the possibility of using a fast combustor and especially the possibility of a suitable exciter and explain well the sufficient coupling of the pulse in the compressed material. In fact, in this project, our main goal was to investigate the rate of change of efficiency with changing the tritium concentration fraction, which is more economically viable as the tritium concentration is lower, of course, this rate should not be so low that it affects the desired efficiency for fusion.",
+        "url": "https://en.civilica.com/doc/1844919/"
+    },
+    {
+        "title": "Title Not Found",
+        "authors": [],
+        "affiliations": [],
+        "year": "Unknown",
+        "journal": "\"Unknown\"",
+        "abstract": "No Abstract Available",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4113618"
+    },
+    {
+        "title": "Thermohydraulic analysis of a ring fuel assembly under normal operating conditions of the Tehran Research Reactor core",
+        "authors": [
+            "Mustafa Hassanzadeh",
+            "Masoud Amin Mozaffari",
+            "Farrokh Khoshhaul",
+            "Rahman Qarai",
+            "Hassan Esmaili"
+        ],
+        "affiliations": [
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\"",
+            "\"Nuclear Science and Technology Research Institute\""
+        ],
+        "year": 2022,
+        "journal": "\"Journal of Nuclear Science and Technology\"",
+        "abstract": "The purpose of this paper is to investigate the possibility of using tubular fuel in the Tehran Research Reactor from a thermohydraulic perspective. Tubular fuels have been successfully used in many Russian-model research reactors in the last few decades. The most important advantages of this fuel include higher neutron flux, higher reactivity, and lower fuel loading requirements compared to the current plate fuel. In this study, by selecting a tubular fuel assembly of the M4IRT type, which geometrically matches the geometry and dimensions of the core support grid, and modeling it in Fluent software and RELAP5/Mod3.2 code, the thermohydraulic parameters of this assembly were calculated under the operating conditions of a standard fuel element. The results of these calculations showed that the maximum cladding temperature in both devices used is sufficiently lower than 105˚C, which indicates that the heat generated in the tubular fuel can be well harvested without changing the current core flow rate. Also, the maximum fuel temperature is about 10˚C lower than the maximum fuel temperature in the current standard fuel element, which is another advantage of the ring fuel.",
+        "url": "https://en.civilica.com/doc/1430032/"
+    },
+    {
+        "title": "Investigation of creating uniform thickness in the formation of hemispherical supercapacitor made of Ti-6Al-4V",
+        "authors": [
+            "Hamid Arabi",
+            "Milad Anvari Mehr",
+            "Ali Akbar Namjoomanesh",
+            "Mehrdad Khandani"
+        ],
+        "affiliations": [
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\"",
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2023,
+        "journal": "\"International Conference on Civil Engineering, Architecture and Urban Management\"",
+        "abstract": "Spherical fuel tanks produced by super-bubble forming undergo thickness changes after forming, such that the thickness reaches the lowest value at the tip of the hemisphere. A reduction in sheet thickness at the tip of the hemisphere has been reported to be about 60% of the initial thickness. The phenomenon of thickness reduction is one of the most important defects of tanks produced by this method. In this study, the optimal conditions for super-bubble forming of Ti-6Al-4V alloy were first determined using hot tensile tests. The best temperature was 878 °C and the best strain rate was 0.005/s. Under the optimal conditions, super-bubble forming of Ti-6Al-4V sheet was performed. To create a uniform thickness at the end of the forming process, a sheet with a variable initial thickness was used. Thus, a lower initial thickness was considered at the edges, which will have less deformation, and a higher thickness was considered in the center of the sheet, which tolerates high deformation. The results obtained were compared with a sheet with a uniform thickness. Forming under optimal conditions of temperature and strain rate and machined sheet profile resulted in obtaining a hemisphere with uniform thickness. The results obtained indicate that this method can be an effective method for creating uniform thickness after forming.",
+        "url": "https://en.civilica.com/doc/2007249/"
+    },
+    {
+        "title": "Simulation of the peak pressure caused by a TNT propellant explosion",
+        "authors": [
+            "Nasser Hassanzadeh",
+            "Mohammad Hossein Keshavarz"
+        ],
+        "affiliations": [
+            "Unable to extract core name as the text does not contain any research organization or journal/conference.",
+            "\"Malek Ashtar University of Technology\""
+        ],
+        "year": 2022,
+        "journal": "\"National Conference on the Application of New Technologies in Chemistry and Chemical Engineering\"",
+        "abstract": "To simulate the peak pressure caused by the explosion of propellants, the AUTODYN hydrodynamic code can be used. Given that the empirical equations are based on the equivalent mass of TNT and sometimes using these equations for other explosions of other propellants leads to errors, today the use of AUTODYN software to investigate the peak pressure has attracted the attention of researchers. In this study, the peak pressure caused by the incident and return shock waves of the TNT propellant explosion was simulated and the causes of the increase in the peak pressure of the return shock wave were investigated. The extent of the damage caused by the incident and return shock waves to human health was expressed at distances of 3.81 m and 2.54 m. As a result, by using the simulation of the explosion of propellants, the risks of explosions during the synthesis of these materials can be prevented.",
+        "url": "https://en.civilica.com/doc/1504011/"
+    }
+]
