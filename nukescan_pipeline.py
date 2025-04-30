@@ -43,14 +43,14 @@ def extract_core_name(text):
     if not text: return text
     prompt = f"""Extract the core name of research organizations and journals/conferences from the following text.
 
-Rules:
-• For research organizations: Keep only the university, institute, or main organization name. Remove departments, labs, addresses, and personal titles.
-• For journals/conferences: Keep only the journal or conference name. Remove volume, issue numbers, and extra formatting.
+            Rules:
+            • For research organizations: Keep only the university, institute, or main organization name. Remove departments, labs, addresses, and personal titles.
+            • For journals/conferences: Keep only the journal or conference name. Remove volume, issue numbers, and extra formatting.
 
-Only return the cleaned-up name without any explanations. If you can't extract a core name, do not modify the input.
+            Only return the cleaned-up name without any explanations. If you can't extract a core name, do not modify the input.
 
-Text: "{text}"
-Core Name:"""
+        Text: "{text}"
+        Core Name:"""
     try:
         response = gpt_client.chat.completions.create(
             model="gpt-4",
@@ -65,14 +65,17 @@ Core Name:"""
 def resolve_name(name, standard_list, category, url):
     if not standard_list:
         return prompt_user(name, category, url, standard_list)
-
+    #turn the Name into an embedding
     name_embedding = model.encode(name, convert_to_tensor=True)
+    #turn the standard list into an embedding. It produces a list of embeddings corresponding to the standard list.
     standard_embeddings = model.encode(standard_list, convert_to_tensor=True)
+    #calculate the tensore of similarity between the name and each name in the standard list. It produces a list of tensor similarities between the name and each name in the standard list.
     cosine_scores = util.cos_sim(name_embedding, standard_embeddings)[0]
-
+    #this returns the index of the highest similarity score. ".item()" turns it into a simple python integer.
     best_score_idx = torch.argmax(cosine_scores).item()
+    #this returns the actual similarity score of the index.
     best_score = cosine_scores[best_score_idx].item()
-
+    #this asks the user for the standard input if the similarity was less that ideal (see def prompt_user). If the similarity index is above the threshold, the function return the highest match name form the standard list and also passes on the standard list--untouched in this case.
     if best_score > 0.85:
         return standard_list[best_score_idx], standard_list
     return prompt_user(name, category, url, standard_list)
