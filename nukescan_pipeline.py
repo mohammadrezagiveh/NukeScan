@@ -1,7 +1,6 @@
 import json
 import os
 import re
-import csv
 import argparse
 import requests
 from bs4 import BeautifulSoup
@@ -10,6 +9,7 @@ from google.cloud import translate_v2 as translate
 import openai
 from sentence_transformers import SentenceTransformer, util
 import torch
+import uuid
 
 _prompt_handler = None
 
@@ -43,14 +43,14 @@ def extract_core_name(text):
     if not text: return text
     prompt = f"""Extract the core name of research organizations and journals/conferences from the following text.
 
-            Rules:
-            • For research organizations: Keep only the university, institute, or main organization name. Remove departments, labs, addresses, and personal titles.
-            • For journals/conferences: Keep only the journal or conference name. Remove volume, issue numbers, and extra formatting.
+Rules:
+• For research organizations: Keep only the university, institute, or main organization name. Remove departments, labs, addresses, and personal titles.
+• For journals/conferences: Keep only the journal or conference name. Remove volume, issue numbers, and extra formatting.
 
-            Only return the cleaned-up name without any explanations. If you can't extract a core name, do not modify the input.
+Only return the cleaned-up name without any explanations. If you can't extract a core name, do not modify the input.
 
-        Text: "{text}"
-        Core Name:"""
+Text: "{text}"
+Core Name:"""
     try:
         response = gpt_client.chat.completions.create(
             model="gpt-4",
@@ -62,53 +62,117 @@ def extract_core_name(text):
         print(f"[OpenAI Error] {e}")
         return text
 
-def resolve_name(name, standard_list, category, url):
-    if not standard_list:
-        return prompt_user(name, category, url, standard_list)
-    #turn the Name into an embedding
-    name_embedding = model.encode(name, convert_to_tensor=True)
-    #turn the standard list into an embedding. It produces a list of embeddings corresponding to the standard list.
-    standard_embeddings = model.encode(standard_list, convert_to_tensor=True)
-    #calculate the tensore of similarity between the name and each name in the standard list. It produces a list of tensor similarities between the name and each name in the standard list.
-    cosine_scores = util.cos_sim(name_embedding, standard_embeddings)[0]
-    #this returns the index of the highest similarity score. ".item()" turns it into a simple python integer.
-    best_score_idx = torch.argmax(cosine_scores).item()
-    #this returns the actual similarity score of the index.
-    best_score = cosine_scores[best_score_idx].item()
-    #this asks the user for the standard input if the similarity was less that ideal (see def prompt_user). If the similarity index is above the threshold, the function return the highest match name form the standard list and also passes on the standard list--untouched in this case.
-    if best_score > 0.85:
-        return standard_list[best_score_idx], standard_list
-    return prompt_user(name, category, url, standard_list)
-
-def prompt_user(name, category, url, standard_list):
-    if _prompt_handler:
-        user_input = _prompt_handler(category, name)
-    else:
-        print(f"\nUnrecognized {category} in {url}:\n{name}")
-        user_input = input("Enter standardized version or press Enter to keep as-is: ").strip()
-
-    if user_input:
-        standard_list.append(user_input)
-        return user_input, standard_list
-    return name, standard_list
-
 def load_standard_list(file_path):
+    """Load standard list from JSON file with rich structure"""
     if os.path.exists(file_path):
-        with open(file_path, newline='', encoding='utf-8') as f:
-            return [row[0] for row in csv.reader(f) if row]
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except json.JSONDecodeError:
+            print(f"Error loading {file_path}, creating empty list")
     return []
 
 def save_standard_list(file_path, data_list):
-    existing = set()
-    if os.path.exists(file_path):
-        with open(file_path, newline='', encoding='utf-8') as f:
-            existing = {row[0] for row in csv.reader(f) if row}
+    """Save standard list to JSON file"""
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data_list, f, ensure_ascii=False, indent=4)
 
-    combined = sorted(existing.union(data_list))
-    with open(file_path, "w", newline='', encoding='utf-8') as f:
-        writer = csv.writer(f)
-        for item in combined:
-            writer.writerow([item])
+def resolve_name(name, standard_list, category, url):
+    """Resolve a name against a standard list with variants"""
+    name_embedding = model.encode(name, convert_to_tensor=True)
+    
+    # Check all standard names and variants
+    best_match = None
+    best_score = 0
+    best_entry = None
+    
+    for entry in standard_list:
+        # Check the standard name
+        standard_embedding = model.encode(entry["standard_name"], convert_to_tensor=True)
+        score = util.cos_sim(name_embedding, standard_embedding)[0][0].item()
+        
+        if score > best_score:
+            best_score = score
+            best_match = entry["standard_name"]
+            best_entry = entry
+        
+        # Check all variants
+        for variant in entry["variants"]:
+            variant_embedding = model.encode(variant, convert_to_tensor=True)
+            score = util.cos_sim(name_embedding, variant_embedding)[0][0].item()
+            
+            if score > best_score:
+                best_score = score
+                best_match = entry["standard_name"]
+                best_entry = entry
+
+    # If we found a good match, add this as a new variant if not already present
+    if best_score > 0.85 and best_entry:
+        if name not in best_entry["variants"]:
+            best_entry["variants"].append(name)
+        return best_match, standard_list
+    
+    # No good match found, prompt user
+    return prompt_user(name, category, url, standard_list)
+
+def prompt_user(name, category, url, standard_list):
+    """Prompt user for a new standard name or to select an existing one"""
+    if _prompt_handler:
+        user_input, additional_info = _prompt_handler(category, name)
+    else:
+        print(f"\nUnrecognized {category} in {url}:\n{name}")
+        user_input = input("Enter standardized version or press Enter to keep as-is: ").strip()
+        additional_info = {}
+        
+        if user_input and category == "Affiliation":
+            additional_info["city"] = input("Enter city (optional): ").strip()
+            additional_info["province_state"] = input("Enter province/state (optional): ").strip()
+        elif user_input and category == "Journal":
+            additional_info["publisher"] = input("Enter publisher ID (optional): ").strip()
+
+    if user_input:
+        # Check if this standard name already exists
+        existing_entry = next((entry for entry in standard_list if entry["standard_name"] == user_input), None)
+        
+        if existing_entry:
+            # Add this name as a variant to the existing entry
+            if name not in existing_entry["variants"]:
+                existing_entry["variants"].append(name)
+            return user_input, standard_list
+        else:
+            # Create a new entry
+            new_entry = {
+                "id": str(uuid.uuid4()),
+                "standard_name": user_input,
+                "variants": [name] if name != user_input else []
+            }
+            
+            # Add category-specific fields
+            if category == "Affiliation":
+                new_entry["city"] = additional_info.get("city", "")
+                new_entry["province_state"] = additional_info.get("province_state", "")
+            elif category == "Journal":
+                new_entry["publisher"] = additional_info.get("publisher", "")
+                
+            standard_list.append(new_entry)
+            return user_input, standard_list
+    
+    # User wants to keep the original name
+    new_entry = {
+        "id": str(uuid.uuid4()),
+        "standard_name": name,
+        "variants": []
+    }
+    
+    # Add category-specific fields
+    if category == "Affiliation":
+        new_entry["city"] = ""
+        new_entry["province_state"] = ""
+    elif category == "Journal":
+        new_entry["publisher"] = ""
+        
+    standard_list.append(new_entry)
+    return name, standard_list
 
 def scrape_url(url):
     try:
@@ -151,13 +215,14 @@ def run_pipeline(input_csv, output_json):
     with open(input_csv, mode='r', encoding='utf-8-sig') as infile:
         urls = [line.strip() for line in infile if line.strip().startswith("http")]
 
-    authors_csv = "standard_authors.csv"
-    affiliations_csv = "standard_affiliations.csv"
-    journals_csv = "standard_journals.csv"
+    # Use JSON files instead of CSV for richer data structure
+    authors_json = "standard_authors.json"
+    affiliations_json = "standard_affiliations.json"
+    journals_json = "standard_journals.json"
 
-    standard_authors = load_standard_list(authors_csv)
-    standard_affiliations = load_standard_list(affiliations_csv)
-    standard_journals = load_standard_list(journals_csv)
+    standard_authors = load_standard_list(authors_json)
+    standard_affiliations = load_standard_list(affiliations_json)
+    standard_journals = load_standard_list(journals_json)
 
     processed_data = []
     for url in urls:
@@ -194,9 +259,9 @@ def run_pipeline(input_csv, output_json):
     with open(output_json, mode='w', encoding='utf-8-sig') as f:
         json.dump(processed_data, f, ensure_ascii=False, indent=4)
 
-    save_standard_list(authors_csv, standard_authors)
-    save_standard_list(affiliations_csv, standard_affiliations)
-    save_standard_list(journals_csv, standard_journals)
+    save_standard_list(authors_json, standard_authors)
+    save_standard_list(affiliations_json, standard_affiliations)
+    save_standard_list(journals_json, standard_journals)
 
     print(f"\n✅ All done! Output saved to {output_json}")
 
