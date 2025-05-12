@@ -44,8 +44,8 @@ def extract_core_name(text):
     prompt = f"""Extract the core name of research organizations and journals/conferences from the following text.
 
 Rules:
-• For research organizations: Keep only the university, institute, or main organization name. Remove departments, labs, addresses, and personal titles.
-• For journals/conferences: Keep only the journal or conference name. Remove volume, issue numbers, and extra formatting.
+- For research organizations: Keep only the university, institute, or main organization name. Remove departments, labs, addresses, and personal titles.
+- For journals/conferences: Keep only the journal or conference name. Remove volume, issue numbers, and extra formatting.
 
 Only return the cleaned-up name without any explanations. If you can't extract a core name, do not modify the input.
 
@@ -62,23 +62,35 @@ Core Name:"""
         print(f"[OpenAI Error] {e}")
         return text
 
-def load_standard_list(file_path):
-    """Load standard list from JSON file with rich structure"""
+# gets the file path to the standard entities json file and returns a python list of diciotnaries that contain each enitiy in the json file
+def load_entities(file_path):
+    """Load all entities from a single JSON file"""
+    # checks to see if the file path exists
     if os.path.exists(file_path):
         try:
+            # opens the json file as f
             with open(file_path, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                # stores the json file (f object) in "entities" variable as a list of multiple dictionaries
+                entities = json.load(f)
+                # checks if the variable "entities" is a list or not. if not, it initilizes a an empty list and returns it to end the function
+                if not isinstance(entities, list):
+                    return []
+                return entities
+        # specifically catches any error related to decoding json and prints put a user friendly message explaining that it is initializing and empty list instead
         except json.JSONDecodeError:
             print(f"Error loading {file_path}, creating empty list")
-    return []
+    return []  # start with an empty list if file doesn't exist or is invalid
 
-def save_standard_list(file_path, data_list):
-    """Save standard list to JSON file"""
+def save_entities(file_path, entities):
+    """Save all entities to a single JSON file"""
     with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(data_list, f, ensure_ascii=False, indent=4)
+        json.dump(entities, f, ensure_ascii=False, indent=4)
 
-def resolve_name(name, standard_list, category, url):
-    """Resolve a name against a standard list with variants"""
+def resolve_name(name, all_entities, entity_type, url):
+    """Resolve a name against entities of a specific type with variants"""
+    # Filter entities by type
+    entity_list = [e for e in all_entities if e.get("type") == entity_type]
+    
     name_embedding = model.encode(name, convert_to_tensor=True)
     
     # Check all standard names and variants
@@ -86,7 +98,7 @@ def resolve_name(name, standard_list, category, url):
     best_score = 0
     best_entry = None
     
-    for entry in standard_list:
+    for entry in entity_list:
         # Check the standard name
         standard_embedding = model.encode(entry["standard_name"], convert_to_tensor=True)
         score = util.cos_sim(name_embedding, standard_embedding)[0][0].item()
@@ -110,70 +122,80 @@ def resolve_name(name, standard_list, category, url):
     if best_score > 0.85 and best_entry:
         if name not in best_entry["variants"]:
             best_entry["variants"].append(name)
-        return best_match, standard_list
+        return best_match, all_entities
     
     # No good match found, prompt user
-    return prompt_user(name, category, url, standard_list)
+    return prompt_user(name, entity_type, url, all_entities)
 
-def prompt_user(name, category, url, standard_list):
+def prompt_user(name, entity_type, url, all_entities):
     """Prompt user for a new standard name or to select an existing one"""
     if _prompt_handler:
-        user_input, additional_info = _prompt_handler(category, name)
+        user_input, additional_info = _prompt_handler(entity_type, name)
     else:
-        print(f"\nUnrecognized {category} in {url}:\n{name}")
-        user_input = input("Enter standardized version or press Enter to keep as-is: ").strip()
+        print(f"\nUnrecognized {entity_type} in {url}:\n{name}")
+        user_input = input(f"Enter standardized version for this {entity_type} or press Enter to keep as-is: ").strip()
         additional_info = {}
         
-        if user_input and category == "Affiliation":
-            additional_info["city"] = input("Enter city (optional): ").strip()
-            additional_info["province_state"] = input("Enter province/state (optional): ").strip()
-        elif user_input and category == "Journal":
-            additional_info["publisher"] = input("Enter publisher ID (optional): ").strip()
+        # Collect additional fields based on entity type
+        if user_input:
+            if entity_type == "affiliation":
+                additional_info["city"] = input("Enter city (optional): ").strip()
+                additional_info["province_state"] = input("Enter province/state (optional): ").strip()
+                additional_info["country"] = input("Enter country (optional): ").strip()
+            elif entity_type == "journal":
+                additional_info["publisher"] = input("Enter publisher ID (optional): ").strip()
 
     if user_input:
         # Check if this standard name already exists
-        existing_entry = next((entry for entry in standard_list if entry["standard_name"] == user_input), None)
+        existing_entry = next((entry for entry in all_entities 
+                              if entry.get("type") == entity_type and 
+                              entry["standard_name"] == user_input), None)
         
         if existing_entry:
             # Add this name as a variant to the existing entry
             if name not in existing_entry["variants"]:
                 existing_entry["variants"].append(name)
-            return user_input, standard_list
+            return user_input, all_entities
         else:
-            # Create a new entry
+            # Create a new entry with common fields
             new_entry = {
                 "id": str(uuid.uuid4()),
+                "type": entity_type,
                 "standard_name": user_input,
                 "variants": [name] if name != user_input else []
             }
             
-            # Add category-specific fields
-            if category == "Affiliation":
+            # Add entity-specific fields
+            if entity_type == "affiliation":
                 new_entry["city"] = additional_info.get("city", "")
                 new_entry["province_state"] = additional_info.get("province_state", "")
-            elif category == "Journal":
+                new_entry["country"] = additional_info.get("country", "")
+            elif entity_type == "journal":
                 new_entry["publisher"] = additional_info.get("publisher", "")
                 
-            standard_list.append(new_entry)
-            return user_input, standard_list
+            all_entities.append(new_entry)
+            return user_input, all_entities
     
     # User wants to keep the original name
     new_entry = {
         "id": str(uuid.uuid4()),
+        "type": entity_type,
         "standard_name": name,
         "variants": []
     }
     
-    # Add category-specific fields
-    if category == "Affiliation":
+    # Add entity-specific fields with empty values
+    if entity_type == "affiliation":
         new_entry["city"] = ""
         new_entry["province_state"] = ""
-    elif category == "Journal":
+        new_entry["country"] = ""
+    elif entity_type == "journal":
         new_entry["publisher"] = ""
         
-    standard_list.append(new_entry)
-    return name, standard_list
+    all_entities.append(new_entry)
+    return name, all_entities
 
+# it gets the url, and returns a dictionary with title, authors, ... as keys
 def scrape_url(url):
     try:
         response = requests.get(url)
@@ -182,16 +204,16 @@ def scrape_url(url):
 
         title_element = soup.find('h1', class_="font-bold h_title mb-2 border-b pb-2") or \
                         soup.find('h1', class_="font-bold h_title mb-2 border-b pb-2 ltr")
-        title = title_element.text.strip() if title_element else "Title Not Found"
+        title = title_element.text.strip() if title_element else "No Title Available"
 
         authors = [div.find('a', {"title": True}).text.strip() for div in soup.find_all('div', class_="flex flex-col") if div.find('a', {"title": True})]
         affiliations = [div.find('p').text.strip() for div in soup.find_all('div', class_="flex flex-col") if div.find('p')]
 
         journal_element = soup.find('span', class_='font-bold')
-        journal_name = journal_element.find_next('a').text.strip() if journal_element else "Unknown"
+        journal_name = journal_element.find_next('a').text.strip() if journal_element else "No Journal Available"
 
         year_element = soup.find('div', class_="text-color-base dark:text-color-base-dark flex py-2")
-        year = int(year_element.text.strip().split(":")[1].strip()) + 621 if year_element else "Unknown"
+        year = int(year_element.text.strip().split(":")[1].strip()) + 621 if year_element else "No Year Available"
 
         abstract_element = soup.find('div', class_="prose max-w-none my-6 text-color-black text-justify") or \
                            soup.find('div', class_="prose max-w-none my-6 text-color-black text-justify ltr")
@@ -212,24 +234,25 @@ def scrape_url(url):
 
 # === Main Pipeline ===
 def run_pipeline(input_csv, output_json):
+    # opens the input csv file, assigns it to the variable "infile". iterates through "infile" and extracts the url of any text in every line that starst with "http"
     with open(input_csv, mode='r', encoding='utf-8-sig') as infile:
+        # the result is saved as a list in variable "urls"
         urls = [line.strip() for line in infile if line.strip().startswith("http")]
 
-    # Use JSON files instead of CSV for richer data structure
-    authors_json = "standard_authors.json"
-    affiliations_json = "standard_affiliations.json"
-    journals_json = "standard_journals.json"
+    # sets the file path of the standard json file to "entities_json" variable. loades the content of the standard json file as a list of dictionaries to "all_entities"
+    entities_json = "standard_entities.json"
+    all_entities = load_entities(entities_json)
 
-    standard_authors = load_standard_list(authors_json)
-    standard_affiliations = load_standard_list(affiliations_json)
-    standard_journals = load_standard_list(journals_json)
-
+    # initializes an empty list named "processed_data"
     processed_data = []
+    # iterates through each url in the list "urls"
     for url in urls:
+        # tells the user which url is the code processing at the time
         print(f"🔍 Processing {url}")
+        # for each url, it scrapes the information from the internet and saves it into "raw" as a dictionary
         raw = scrape_url(url)
         if not raw: continue
-
+        # opens a new empty dictionary as "entry"
         entry = {}
         entry["url"] = url
         entry["year"] = raw.get("year", "")
@@ -240,18 +263,18 @@ def run_pipeline(input_csv, output_json):
         entry["authors"] = []
         for a in raw.get("authors", []):
             trans = clean_text(translate_text(a))
-            resolved, standard_authors = resolve_name(trans, standard_authors, "Author", url)
+            resolved, all_entities = resolve_name(trans, all_entities, "author", url)
             entry["authors"].append(resolved)
 
         entry["affiliations"] = []
         for a in raw.get("affiliations", []):
             trans = clean_text(extract_core_name(translate_text(a)))
-            resolved, standard_affiliations = resolve_name(trans, standard_affiliations, "Affiliation", url)
+            resolved, all_entities = resolve_name(trans, all_entities, "affiliation", url)
             entry["affiliations"].append(resolved)
 
         journal = raw.get("journal", "")
         journal_clean = clean_text(extract_core_name(translate_text(journal)))
-        resolved, standard_journals = resolve_name(journal_clean, standard_journals, "Journal", url)
+        resolved, all_entities = resolve_name(journal_clean, all_entities, "journal", url)
         entry["journal"] = resolved
 
         processed_data.append(entry)
@@ -259,9 +282,7 @@ def run_pipeline(input_csv, output_json):
     with open(output_json, mode='w', encoding='utf-8-sig') as f:
         json.dump(processed_data, f, ensure_ascii=False, indent=4)
 
-    save_standard_list(authors_json, standard_authors)
-    save_standard_list(affiliations_json, standard_affiliations)
-    save_standard_list(journals_json, standard_journals)
+    save_entities(entities_json, all_entities)
 
     print(f"\n✅ All done! Output saved to {output_json}")
 
