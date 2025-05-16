@@ -1,0 +1,34 @@
+[
+    {
+        "id": "062e6d7f-3b3e-4708-8d09-db7a24481a0c",
+        "type": "author",
+        "standard_name": "nasser hassanzadeh",
+        "variants": []
+    },
+    {
+        "id": "74bd9fa4-89ef-4be7-b0f9-071fde9637ce",
+        "type": "author",
+        "standard_name": "mohammadhossein keshavarz",
+        "variants": [
+            "mohammad hossein keshavarz"
+        ]
+    },
+    {
+        "id": "39f178ee-6d1c-4e5d-8588-fe0771e87c1c",
+        "type": "affiliation",
+        "standard_name": "malek ashtar university of technology",
+        "variants": [],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "a5226eb0-e8ff-4b39-ac26-c0b7c2b2a65d",
+        "type": "journal",
+        "standard_name": "national conference on the application of new technologies in chemistry and chemical engineering",
+        "variants": [
+            "application of new technologies in chemistry and chemical engineering"
+        ],
+        "publisher": ""
+    }
+]

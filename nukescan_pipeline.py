@@ -133,17 +133,25 @@ def prompt_user(name, entity_type, url, all_entities):
         user_input, additional_info = _prompt_handler(entity_type, name)
     else:
         print(f"\nUnrecognized {entity_type} in {url}:\n{name}")
-        user_input = input(f"Enter standardized version for this {entity_type} or press Enter to keep as-is: ").strip()
+        print("Options: Enter standardized version, type 'empty' for no value, or press Enter to keep as-is")
+        raw_input = input(f"Your choice: ").strip()
+        
+        # Handle empty values without cleaning
+        if raw_input.lower() in ["empty", "none"]:
+            return "", all_entities
+            
+        # Clean the input for all other cases
+        user_input = clean_text(raw_input) if raw_input else ""
         additional_info = {}
         
         # Collect additional fields based on entity type
         if user_input:
             if entity_type == "affiliation":
-                additional_info["city"] = input("Enter city (optional): ").strip()
-                additional_info["province_state"] = input("Enter province/state (optional): ").strip()
-                additional_info["country"] = input("Enter country (optional): ").strip()
+                additional_info["city"] = clean_text(input("Enter city (optional): ").strip())
+                additional_info["province_state"] = clean_text(input("Enter province/state (optional): ").strip())
+                additional_info["country"] = clean_text(input("Enter country (optional): ").strip())
             elif entity_type == "journal":
-                additional_info["publisher"] = input("Enter publisher ID (optional): ").strip()
+                additional_info["publisher"] = clean_text(input("Enter publisher ID (optional): ").strip())
 
     if user_input:
         # Check if this standard name already exists
@@ -177,24 +185,38 @@ def prompt_user(name, entity_type, url, all_entities):
             return user_input, all_entities
     
     # User wants to keep the original name
-    new_entry = {
-        "id": str(uuid.uuid4()),
-        "type": entity_type,
-        "standard_name": name,
-        "variants": []
-    }
-    
-    # Add entity-specific fields with empty values
-    if entity_type == "affiliation":
-        new_entry["city"] = ""
-        new_entry["province_state"] = ""
-        new_entry["country"] = ""
-    elif entity_type == "journal":
-        new_entry["publisher"] = ""
+    if not user_input:
+        print(f"Keeping original name: {name}")
+        user_input = name
         
-    all_entities.append(new_entry)
-    return name, all_entities
-
+        # Still ask for additional information
+        if entity_type == "affiliation":
+            print("Would you like to add location information?")
+            additional_info["city"] = clean_text(input("Enter city (optional): ").strip())
+            additional_info["province_state"] = clean_text(input("Enter province/state (optional): ").strip())
+            additional_info["country"] = clean_text(input("Enter country (optional): ").strip())
+        elif entity_type == "journal":
+            additional_info["publisher"] = clean_text(input("Enter publisher ID (optional): ").strip())
+    
+        # Create a new entry with common fields
+        new_entry = {
+            "id": str(uuid.uuid4()),
+            "type": entity_type,
+            "standard_name": user_input,
+            "variants": []
+        }
+        
+        # Add entity-specific fields
+        if entity_type == "affiliation":
+            new_entry["city"] = additional_info.get("city", "")
+            new_entry["province_state"] = additional_info.get("province_state", "")
+            new_entry["country"] = additional_info.get("country", "")
+        elif entity_type == "journal":
+            new_entry["publisher"] = additional_info.get("publisher", "")
+            
+        all_entities.append(new_entry)
+        return user_input, all_entities
+        
 # it gets the url, and returns a dictionary with title, authors, ... as keys
 def scrape_url(url):
     try:
@@ -260,22 +282,27 @@ def run_pipeline(input_csv, output_json):
         entry["title"] = clean_text(translate_text(raw.get("title", "")))
         entry["abstract"] = clean_text(translate_text(raw.get("abstract", "")))
 
+        # For authors
         entry["authors"] = []
         for a in raw.get("authors", []):
             trans = clean_text(translate_text(a))
             resolved, all_entities = resolve_name(trans, all_entities, "author", url)
-            entry["authors"].append(resolved)
+            if resolved:  # Only add non-empty values
+                entry["authors"].append(resolved)
 
+        # For affiliations
         entry["affiliations"] = []
         for a in raw.get("affiliations", []):
             trans = clean_text(extract_core_name(translate_text(a)))
             resolved, all_entities = resolve_name(trans, all_entities, "affiliation", url)
-            entry["affiliations"].append(resolved)
+            if resolved:  # Only add non-empty values
+                entry["affiliations"].append(resolved)
 
+        # For journal
         journal = raw.get("journal", "")
         journal_clean = clean_text(extract_core_name(translate_text(journal)))
         resolved, all_entities = resolve_name(journal_clean, all_entities, "journal", url)
-        entry["journal"] = resolved
+        entry["journal"] = resolved  # This can be empty if user chooses "empty"
 
         processed_data.append(entry)
 
