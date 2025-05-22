@@ -1,0 +1,16 @@
+﻿[
+    {
+        "url": "https://en.civilica.com/doc/1504010/",
+        "year": 2022,
+        "title": "computational model for predicting shock wave attenuation resulting from propellant explosions",
+        "abstract": "using the autodyn hydrodynamic code blasts resulting from the explosion of high explosives such as cl20 hmx rdx tnt etc can be simulated the results of such calculations can be used to investigate the effects of the shock wave resulting from the blast on structures located at different distances from the center of the explosion sometimes the geometry of the system limits the possibility of using simulation software for example in simulating an explosion inside a reactor determining the peak pressure of the explosion at distances far from the reactor requires a very high computational cost to overcome this shortcoming the peak pressure can be calculated at two or more points near the reactor and using a statistical regression model the trend of peak pressure changes at different distances can be predicted and based on this the safe distance for industrial equipment or people in the vicinity of the explosion site can be determined",
+        "authors": [
+            "nasser hassanzadeh",
+            "mohammadhossein keshavarz"
+        ],
+        "affiliations": [
+            "malek ashtar university of technology"
+        ],
+        "journal": "national conference on the application of new technologies in chemistry and chemical engineering"
+    }
+]

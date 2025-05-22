@@ -25,6 +25,9 @@ translator = translate.Client()
 gpt_client = openai.OpenAI()
 model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
 
+# Global variable to store user preference for confirming matches
+CONFIRM_MATCHES = False
+
 # === Utilities ===
 def translate_text(text):
     if not text.strip(): return text
@@ -62,21 +65,15 @@ Core Name:"""
         print(f"[OpenAI Error] {e}")
         return text
 
-# gets the file path to the standard entities json file and returns a python list of diciotnaries that contain each enitiy in the json file
 def load_entities(file_path):
     """Load all entities from a single JSON file"""
-    # checks to see if the file path exists
     if os.path.exists(file_path):
         try:
-            # opens the json file as f
             with open(file_path, 'r', encoding='utf-8') as f:
-                # stores the json file (f object) in "entities" variable as a list of multiple dictionaries
                 entities = json.load(f)
-                # checks if the variable "entities" is a list or not. if not, it initilizes a an empty list and returns it to end the function
                 if not isinstance(entities, list):
                     return []
                 return entities
-        # specifically catches any error related to decoding json and prints put a user friendly message explaining that it is initializing and empty list instead
         except json.JSONDecodeError:
             print(f"Error loading {file_path}, creating empty list")
     return []  # start with an empty list if file doesn't exist or is invalid
@@ -97,6 +94,7 @@ def resolve_name(name, all_entities, entity_type, url):
     best_match = None
     best_score = 0
     best_entry = None
+    best_match_source = None  # Track if match came from standard name or variant
     
     for entry in entity_list:
         # Check the standard name
@@ -107,6 +105,7 @@ def resolve_name(name, all_entities, entity_type, url):
             best_score = score
             best_match = entry["standard_name"]
             best_entry = entry
+            best_match_source = "standard"
         
         # Check all variants
         for variant in entry["variants"]:
@@ -117,12 +116,30 @@ def resolve_name(name, all_entities, entity_type, url):
                 best_score = score
                 best_match = entry["standard_name"]
                 best_entry = entry
+                best_match_source = "variant"
 
-    # If we found a good match, add this as a new variant if not already present
+    # If we found a good match
     if best_score > 0.85 and best_entry:
-        if name not in best_entry["variants"]:
-            best_entry["variants"].append(name)
-        return best_match, all_entities
+        # If user wants to confirm matches, ask for confirmation
+        if CONFIRM_MATCHES:
+            match_info = f"variant '{variant}'" if best_match_source == "variant" else f"standard name '{best_match}'"
+            print(f"\nFound potential match for '{name}':")
+            print(f"Match: {best_match} (similarity: {best_score:.2f})")
+            print(f"Matched with {match_info}")
+            confirm = input("Accept this match? (y/n): ").strip().lower()
+            
+            if confirm in ['y', 'yes']:
+                if name not in best_entry["variants"]:
+                    best_entry["variants"].append(name)
+                return best_match, all_entities
+            else:
+                # User rejected the match, prompt for manual input
+                return prompt_user(name, entity_type, url, all_entities)
+        else:
+            # Auto-accept the match without confirmation
+            if name not in best_entry["variants"]:
+                best_entry["variants"].append(name)
+            return best_match, all_entities
     
     # No good match found, prompt user
     return prompt_user(name, entity_type, url, all_entities)
@@ -216,8 +233,7 @@ def prompt_user(name, entity_type, url, all_entities):
             
         all_entities.append(new_entry)
         return user_input, all_entities
-        
-# it gets the url, and returns a dictionary with title, authors, ... as keys
+
 def scrape_url(url):
     try:
         response = requests.get(url)
@@ -254,70 +270,198 @@ def scrape_url(url):
         print(f"[Scrape Error] {url} - {e}")
         return None
 
-# === Main Pipeline ===
-def run_pipeline(input_csv, output_json):
-    # opens the input csv file, assigns it to the variable "infile". iterates through "infile" and extracts the url of any text in every line that starst with "http"
-    with open(input_csv, mode='r', encoding='utf-8-sig') as infile:
-        # the result is saved as a list in variable "urls"
-        urls = [line.strip() for line in infile if line.strip().startswith("http")]
+def manual_entry():
+    """Allow user to manually enter paper details"""
+    print("\n=== Manual Paper Entry ===")
+    
+    entry = {}
+    entry["url"] = ""  # No URL for manual entries
+    
+    # Get title
+    title = input("Enter paper title (or 'empty' to skip): ").strip()
+    if title.lower() == "empty":
+        entry["title"] = ""
+    else:
+        entry["title"] = clean_text(title)
+    
+    # Get year
+    year = input("Enter publication year (or 'empty' to skip): ").strip()
+    if year.lower() == "empty":
+        entry["year"] = ""
+    else:
+        try:
+            entry["year"] = int(year)
+        except ValueError:
+            print("Invalid year format. Setting to empty.")
+            entry["year"] = ""
+    
+    # Get abstract
+    abstract = input("Enter abstract (or 'empty' to skip): ").strip()
+    if abstract.lower() == "empty":
+        entry["abstract"] = ""
+    else:
+        entry["abstract"] = clean_text(abstract)
+    
+    # Get authors
+    entry["authors"] = []
+    while True:
+        author = input("Enter author name (or 'done' when finished, 'empty' to skip): ").strip()
+        if author.lower() == "done":
+            break
+        if author.lower() == "empty":
+            continue
+        entry["authors"].append(clean_text(author))
+    
+    # Get affiliations
+    entry["affiliations"] = []
+    while True:
+        affiliation = input("Enter affiliation (or 'done' when finished, 'empty' to skip): ").strip()
+        if affiliation.lower() == "done":
+            break
+        if affiliation.lower() == "empty":
+            continue
+        clean_affiliation = clean_text(extract_core_name(affiliation))
+        entry["affiliations"].append(clean_affiliation)
+    
+    # Get journal
+    journal = input("Enter journal/conference (or 'empty' to skip): ").strip()
+    if journal.lower() == "empty":
+        entry["journal"] = ""
+    else:
+        entry["journal"] = clean_text(extract_core_name(journal))
+    
+    return entry
 
-    # sets the file path of the standard json file to "entities_json" variable. loades the content of the standard json file as a list of dictionaries to "all_entities"
+def standardize_entry(entry, all_entities):
+    """Standardize names in a manually entered or scraped entry"""
+    # Temporary URL for display purposes in prompts
+    url = entry.get("url", "manual entry")
+    
+    # For authors
+    standardized_authors = []
+    for author in entry.get("authors", []):
+        if not author: continue
+        resolved, all_entities = resolve_name(author, all_entities, "author", url)
+        if resolved:  # Only add non-empty values
+            standardized_authors.append(resolved)
+    entry["authors"] = standardized_authors
+    
+    # For affiliations
+    standardized_affiliations = []
+    for affiliation in entry.get("affiliations", []):
+        if not affiliation: continue
+        resolved, all_entities = resolve_name(affiliation, all_entities, "affiliation", url)
+        if resolved:  # Only add non-empty values
+            standardized_affiliations.append(resolved)
+    entry["affiliations"] = standardized_affiliations
+    
+    # For journal
+    journal = entry.get("journal", "")
+    if journal:
+        resolved, all_entities = resolve_name(journal, all_entities, "journal", url)
+        entry["journal"] = resolved
+    
+    return entry, all_entities
+
+def run_pipeline(input_csv, output_json):
+    # Load existing standardized entities
     entities_json = "standard_entities.json"
     all_entities = load_entities(entities_json)
-
-    # initializes an empty list named "processed_data"
+    
+    # Ask user if they want to confirm matches
+    global CONFIRM_MATCHES
+    confirm = input("Would you like to confirm all automatic matches? (y/n): ").strip().lower()
+    CONFIRM_MATCHES = confirm in ['y', 'yes']
+    
+    # Ask user if they want to use Civilica CSV or manual entry
+    mode = input("Choose input mode: (1) Process Civilica URLs from CSV, (2) Manual entry: ").strip()
+    
     processed_data = []
-    # iterates through each url in the list "urls"
-    for url in urls:
-        # tells the user which url is the code processing at the time
-        print(f"🔍 Processing {url}")
-        # for each url, it scrapes the information from the internet and saves it into "raw" as a dictionary
-        raw = scrape_url(url)
-        if not raw: continue
-        # opens a new empty dictionary as "entry"
-        entry = {}
-        entry["url"] = url
-        entry["year"] = raw.get("year", "")
-
-        entry["title"] = clean_text(translate_text(raw.get("title", "")))
-        entry["abstract"] = clean_text(translate_text(raw.get("abstract", "")))
-
-        # For authors
-        entry["authors"] = []
-        for a in raw.get("authors", []):
-            trans = clean_text(translate_text(a))
-            resolved, all_entities = resolve_name(trans, all_entities, "author", url)
-            if resolved:  # Only add non-empty values
-                entry["authors"].append(resolved)
-
-        # For affiliations
-        entry["affiliations"] = []
-        for a in raw.get("affiliations", []):
-            trans = clean_text(extract_core_name(translate_text(a)))
-            resolved, all_entities = resolve_name(trans, all_entities, "affiliation", url)
-            if resolved:  # Only add non-empty values
-                entry["affiliations"].append(resolved)
-
-        # For journal
-        journal = raw.get("journal", "")
-        journal_clean = clean_text(extract_core_name(translate_text(journal)))
-        resolved, all_entities = resolve_name(journal_clean, all_entities, "journal", url)
-        entry["journal"] = resolved  # This can be empty if user chooses "empty"
-
-        processed_data.append(entry)
-
+    
+    if mode == "1":
+        # If input_csv wasn't provided as an argument, ask for it now
+        if not input_csv:
+            input_csv = input("Enter the path to your Civilica URLs CSV file: ").strip()
+        
+        # Process URLs from CSV file
+        try:
+            with open(input_csv, mode='r', encoding='utf-8-sig') as infile:
+                urls = [line.strip() for line in infile if line.strip().startswith("http")]
+            
+            if not urls:
+                print(f"No URLs found in {input_csv}. Please check the file format.")
+                return
+                
+            print(f"Found {len(urls)} URLs to process.")
+        except FileNotFoundError:
+            print(f"Error: File {input_csv} not found.")
+            return
+        except Exception as e:
+            print(f"Error reading CSV: {e}")
+            return
+        
+        for url in urls:
+            print(f"🔍 Processing {url}")
+            raw = scrape_url(url)
+            if not raw: continue
+            
+            entry = {}
+            entry["url"] = url
+            entry["year"] = raw.get("year", "")
+            entry["title"] = clean_text(translate_text(raw.get("title", "")))
+            entry["abstract"] = clean_text(translate_text(raw.get("abstract", "")))
+            
+            # Authors
+            entry["authors"] = []
+            for a in raw.get("authors", []):
+                trans = clean_text(translate_text(a))
+                entry["authors"].append(trans)
+            
+            # Affiliations
+            entry["affiliations"] = []
+            for a in raw.get("affiliations", []):
+                trans = clean_text(extract_core_name(translate_text(a)))
+                entry["affiliations"].append(trans)
+            
+            # Journal
+            journal = raw.get("journal", "")
+            entry["journal"] = clean_text(extract_core_name(translate_text(journal)))
+            
+            # Standardize the entry
+            standardized_entry, all_entities = standardize_entry(entry, all_entities)
+            processed_data.append(standardized_entry)
+    
+    elif mode == "2":
+        # Manual entry mode
+        while True:
+            print("\nEntering paper manually...")
+            entry = manual_entry()
+            
+            # Standardize the entry
+            standardized_entry, all_entities = standardize_entry(entry, all_entities)
+            processed_data.append(standardized_entry)
+            
+            another = input("\nAdd another paper? (y/n): ").strip().lower()
+            if another not in ['y', 'yes']:
+                break
+    
+    else:
+        print("Invalid mode selection. Exiting.")
+        return
+    
+    # Save processed data and updated entities
     with open(output_json, mode='w', encoding='utf-8-sig') as f:
         json.dump(processed_data, f, ensure_ascii=False, indent=4)
-
+    
     save_entities(entities_json, all_entities)
-
+    
     print(f"\n✅ All done! Output saved to {output_json}")
 
 # === CLI Interface ===
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="NukeScan Academic Preprocessing Pipeline")
-    parser.add_argument("--input", type=str, required=True, help="Path to URL CSV file")
-    parser.add_argument("--output", type=str, required=True, help="Path to save final processed JSON")
+    parser.add_argument("--output", type=str, help="Path to save final processed JSON")
     args = parser.parse_args()
 
-    run_pipeline(args.input, args.output)
+    output_json = args.output if args.output else input("Enter output JSON file path: ").strip()
+    run_pipeline(None, output_json)

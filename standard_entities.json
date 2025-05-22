@@ -3,7 +3,9 @@
         "id": "062e6d7f-3b3e-4708-8d09-db7a24481a0c",
         "type": "author",
         "standard_name": "nasser hassanzadeh",
-        "variants": []
+        "variants": [
+            "nasser hassanzadeh"
+        ]
     },
     {
         "id": "74bd9fa4-89ef-4be7-b0f9-071fde9637ce",
@@ -17,7 +19,9 @@
         "id": "39f178ee-6d1c-4e5d-8588-fe0771e87c1c",
         "type": "affiliation",
         "standard_name": "malek ashtar university of technology",
-        "variants": [],
+        "variants": [
+            "malek ashtar university of technology"
+        ],
         "city": "tehran",
         "province_state": "tehran",
         "country": "iran"
