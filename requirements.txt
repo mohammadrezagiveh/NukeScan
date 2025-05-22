@@ -5,3 +5,4 @@ google-cloud-translate==2.0.1
 openai
 sentence-transformers
 torch
+Neo4j

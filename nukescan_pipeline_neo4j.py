@@ -11,6 +11,9 @@ from sentence_transformers import SentenceTransformer, util
 import torch
 import uuid
 
+# Import Neo4j functionality
+from neo4j_integration import import_to_neo4j
+
 _prompt_handler = None
 
 def set_prompt_handler(handler):
@@ -362,7 +365,7 @@ def standardize_entry(entry, all_entities):
     
     return entry, all_entities
 
-def run_pipeline(input_csv, output_json):
+def run_pipeline(input_csv, output_json, use_neo4j=False, clear_neo4j=False):
     # Load existing standardized entities
     entities_json = "standard_entities.json"
     all_entities = load_entities(entities_json)
@@ -455,12 +458,36 @@ def run_pipeline(input_csv, output_json):
     save_entities(entities_json, all_entities)
     
     print(f"\n✅ All done! Output saved to {output_json}")
+    
+    # NEW: Ask user about Neo4j import
+    if not use_neo4j:
+        neo4j_choice = input("\nWould you like to import the data to Neo4j? (y/n): ").strip().lower()
+        use_neo4j = neo4j_choice in ['y', 'yes']
+        
+        if use_neo4j:
+            clear_choice = input("Clear existing Neo4j database before import? (y/n): ").strip().lower()
+            clear_neo4j = clear_choice in ['y', 'yes']
+    
+    # NEW: Import to Neo4j if requested
+    if use_neo4j:
+        print("\n🚀 Starting Neo4j import...")
+        try:
+            success = import_to_neo4j(output_json, clear_db=clear_neo4j)
+            if success:
+                print("✅ Neo4j import completed successfully!")
+            else:
+                print("❌ Neo4j import failed. Check your Neo4j connection and credentials.")
+        except Exception as e:
+            print(f"❌ Neo4j import error: {e}")
+            print("Make sure Neo4j is running and your credentials are correct in .env file")
 
 # === CLI Interface ===
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="NukeScan Academic Preprocessing Pipeline")
     parser.add_argument("--output", type=str, help="Path to save final processed JSON")
+    parser.add_argument("--neo4j", action="store_true", help="Import to Neo4j after processing")
+    parser.add_argument("--clear-neo4j", action="store_true", help="Clear Neo4j database before import")
     args = parser.parse_args()
 
     output_json = args.output if args.output else input("Enter output JSON file path: ").strip()
-    run_pipeline(None, output_json)
+    run_pipeline(None, output_json, use_neo4j=args.neo4j, clear_neo4j=args.clear_neo4j)
