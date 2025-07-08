@@ -50,18 +50,37 @@ class NuclearResearchGraphRAG:
         self.embeddings_dir.mkdir(exist_ok=True)
         
         # Neo4j connection (using your existing setup)
-        self.neo4j_uri = os.getenv("NEO4J_URI", "neo4j+s://cb46beab.databases.neo4j.io")
-        self.neo4j_username = os.getenv("NEO4J_USERNAME", "neo4j")
+        # Neo4j connection from .env file
+        self.neo4j_uri = os.getenv("NEO4J_URI")
+        self.neo4j_username = os.getenv("NEO4J_USERNAME")
         self.neo4j_password = os.getenv("NEO4J_PASSWORD")
+
+        # Validate required environment variables
+        if not all([self.neo4j_uri, self.neo4j_username, self.neo4j_password]):
+            missing = [var for var, val in [("NEO4J_URI", self.neo4j_uri), 
+                                           ("NEO4J_USERNAME", self.neo4j_username), 
+                                           ("NEO4J_PASSWORD", self.neo4j_password)] if not val]
+            raise ValueError(f"Missing required Neo4j credentials in .env file: {', '.join(missing)}")
         
         # Connect to Neo4j
-        self.driver = GraphDatabase.driver(
-            self.neo4j_uri, 
-            auth=(self.neo4j_username, self.neo4j_password)
-        )
+        try:
+            self.driver = GraphDatabase.driver(
+                self.neo4j_uri, 
+                auth=(self.neo4j_username, self.neo4j_password)
+            )
+            # Test connection
+            with self.driver.session() as session:
+                session.run("RETURN 1")
+            print(f"✅ Connected to Neo4j at {self.neo4j_uri}")
+        except Exception as e:
+            raise ConnectionError(f"Failed to connect to Neo4j: {e}")
         
         # Initialize embeddings model
         self._setup_embeddings()
+
+        # Validate OpenAI API key
+        if not os.getenv("OPENAI_API_KEY"):
+            raise ValueError("Missing OPENAI_API_KEY in .env file")
         
         # Initialize LLM
         self.llm = OpenAILLM(
@@ -101,6 +120,8 @@ class NuclearResearchGraphRAG:
             print("✅ Local embeddings model loaded")
         else:
             print("🌐 Using OpenAI embeddings...")
+            if not os.getenv("OPENAI_API_KEY"):
+                raise ValueError("Missing OPENAI_API_KEY in .env file for OpenAI embeddings")
             self.embedder = OpenAIEmbeddings(model="text-embedding-3-large")
             print("✅ OpenAI embeddings configured")
     
