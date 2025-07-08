@@ -347,13 +347,38 @@ Keywords: nuclear science, nuclear engineering, nuclear safety, nuclear technolo
             neo4j_schema=nuclear_schema
         )
         
-        # 3. Hybrid Retriever - THE KEY: combines both automatically
+        # 3. Hybrid Retriever - combines vector and fulltext search
+        # First, we need to create a fulltext index for hybrid search
+        self._create_fulltext_index()
+
         self.hybrid_retriever = HybridRetriever(
             driver=self.driver,
-            vector_retriever=self.vector_retriever,
-            text2cypher_retriever=self.text2cypher_retriever,
-            # GraphRAG will automatically choose the best combination
+            vector_index_name=self.vector_index_name,
+            fulltext_index_name="nuclear_papers_fulltext_index",
+            embedder=self.embedder if not self.use_local_embeddings else self._wrap_huggingface_embedder(),
+            return_properties=["title", "abstract", "url"]
         )
+
+    def _create_fulltext_index(self):
+        """Create fulltext index for hybrid search"""
+        try:
+            with self.driver.session() as session:
+                # Check if fulltext index exists
+                result = session.run("SHOW INDEXES")
+                existing_indexes = [record["name"] for record in result]
+
+                if "nuclear_papers_fulltext_index" not in existing_indexes:
+                    # Create fulltext index on Paper nodes
+                    session.run("""
+                        CREATE FULLTEXT INDEX nuclear_papers_fulltext_index
+                        FOR (p:Paper) ON EACH [p.title, p.abstract]
+                    """)
+                    print("✅ Fulltext index 'nuclear_papers_fulltext_index' created")
+                else:
+                    print("✅ Fulltext index 'nuclear_papers_fulltext_index' already exists")
+                
+        except Exception as e:
+            print(f"❌ Error creating fulltext index: {e}")
     
     def _wrap_huggingface_embedder(self):
         """Wrap HuggingFace embedder to be compatible with Neo4j GraphRAG"""
