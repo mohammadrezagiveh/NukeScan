@@ -4,7 +4,8 @@
         "type": "author",
         "standard_name": "nasser hassanzadeh",
         "variants": [
-            "nasser hassanzadeh"
+            "nasser hassanzadeh",
+            "mustafa hassanzadeh"
         ]
     },
     {
@@ -20,7 +21,8 @@
         "type": "affiliation",
         "standard_name": "malek ashtar university of technology",
         "variants": [
-            "malek ashtar university of technology"
+            "malek ashtar university of technology",
+            "malek ashtar university"
         ],
         "city": "tehran",
         "province_state": "tehran",
@@ -33,6 +35,1526 @@
         "variants": [
             "application of new technologies in chemistry and chemical engineering"
         ],
+        "publisher": ""
+    },
+    {
+        "id": "4e3dd1cb-026a-4d4a-8ce3-57e14dbeeb5a",
+        "type": "author",
+        "standard_name": "iraj shahmari namin",
+        "variants": []
+    },
+    {
+        "id": "a90b3639-5590-4631-aef8-2800c0c2e97e",
+        "type": "author",
+        "standard_name": "abbas maleki",
+        "variants": []
+    },
+    {
+        "id": "154236e7-34b0-4680-9797-aed4df2be7c9",
+        "type": "author",
+        "standard_name": "abolhassan mobasheri",
+        "variants": []
+    },
+    {
+        "id": "f401b491-121e-463b-a7d8-9abf86660bde",
+        "type": "author",
+        "standard_name": "hassan ebadian",
+        "variants": []
+    },
+    {
+        "id": "35f869e6-72f5-4709-9acc-c6761e10784f",
+        "type": "journal",
+        "standard_name": "national conference of laboratory equipment and technologies",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "d058ff8e-b537-4ebb-bb1f-a0f083094217",
+        "type": "affiliation",
+        "standard_name": "teacher",
+        "variants": [
+            "unable to extract core name",
+            "unable to extract a core name"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "e75f4f67-1a7c-44d1-9623-1cf79ae1ea11",
+        "type": "author",
+        "standard_name": "seyed reza hashemi",
+        "variants": [
+            "seyed reza hashemi"
+        ]
+    },
+    {
+        "id": "4af8fc5d-e0d6-4a22-9778-684bfcb6d0fe",
+        "type": "author",
+        "standard_name": "mojtaba tajik",
+        "variants": [
+            "mojtaba tajik"
+        ]
+    },
+    {
+        "id": "e2564781-371e-4c7d-9b94-0a6f605c34da",
+        "type": "author",
+        "standard_name": "eskandar asadi amirabadi",
+        "variants": [
+            "eskandar asadi amirabadi"
+        ]
+    },
+    {
+        "id": "102f96e8-0a84-409f-871b-1dab36c78435",
+        "type": "affiliation",
+        "standard_name": "damghan university",
+        "variants": [
+            "damghan university",
+            "school of physics damghan university p o box ۳۶۷۱۶۴۱۱۶۷ damghan iran",
+            "university of damghan"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "3d4ac0c4-0eb5-4403-9c3d-77e47e0ec5ec",
+        "type": "affiliation",
+        "standard_name": "university of mazandaran",
+        "variants": [
+            "university of mazandaran"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "429258d8-82aa-4da2-85c7-96e811b4a111",
+        "type": "journal",
+        "standard_name": "iranian journal of radiation safety and measurement",
+        "variants": [
+            "iranian journal of radiation safety and measurement",
+            "iranian journal of radiation safety and measurement vol 8 issue 4"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "937d9917-c220-4a87-9601-2767dd001d89",
+        "type": "author",
+        "standard_name": "javad zamani",
+        "variants": [
+            "j modern"
+        ]
+    },
+    {
+        "id": "d9f1176c-0f7c-43b4-8956-6c50874caa4d",
+        "type": "author",
+        "standard_name": "mohammad ali samimi",
+        "variants": [
+            "ma sincere"
+        ]
+    },
+    {
+        "id": "53e22336-fabe-41a2-840d-8aebc2410b28",
+        "type": "author",
+        "standard_name": "forough sardarzadeh",
+        "variants": [
+            "f sardarzadeh"
+        ]
+    },
+    {
+        "id": "7658ca7b-3902-471c-a011-13b8b95c5faf",
+        "type": "author",
+        "standard_name": "mohammad hossein ghezelayagh",
+        "variants": [
+            "mh ghezelayagh"
+        ]
+    },
+    {
+        "id": "074bf949-5ca0-4535-87d5-9d62953d14f1",
+        "type": "affiliation",
+        "standard_name": "k n toosi university of technology",
+        "variants": [
+            "kntoosi university",
+            "k n toosi university of technology"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "0b52982e-ab39-40f2-ab95-73155161970e",
+        "type": "journal",
+        "standard_name": "international journal of engineering",
+        "variants": [
+            "international journal of engineering"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "f9ff224c-60d2-412d-ab68-1095d272e39f",
+        "type": "author",
+        "standard_name": "zohreh gholamzadeh",
+        "variants": [
+            "zohreh gholamzadeh"
+        ]
+    },
+    {
+        "id": "e83bb6ca-b378-42ef-aa65-9ff1caa80d62",
+        "type": "author",
+        "standard_name": "reza ebrahimzadeh",
+        "variants": [
+            "reza ebrahimzadeh"
+        ]
+    },
+    {
+        "id": "332e0571-0842-4c05-984a-5b6b8cacfbba",
+        "type": "author",
+        "standard_name": "mohammad hossein choopan dastjerdi",
+        "variants": [
+            "mohammad hossein choopan dastjerdi",
+            "mohammad hossein choupan dastjerdi"
+        ]
+    },
+    {
+        "id": "bec68934-b92a-4bee-b133-474f75d503cf",
+        "type": "author",
+        "standard_name": "javad mokhtari",
+        "variants": [
+            "javad mokhtari"
+        ]
+    },
+    {
+        "id": "3b0f635f-f17c-4c57-9bf0-287a946fb46f",
+        "type": "affiliation",
+        "standard_name": "nuclear science and technology research institute",
+        "variants": [
+            "nuclear science and technology research institute atomic energy organization of iran",
+            "nuclear science and technology",
+            "institute of nuclear science and technology",
+            "reactor and nuclear safety research institute institute of nuclear science and technology po box 133914155 tehran iran",
+            "nuclear science and technology research institute atomic energy organization",
+            "institute of nuclear sciences and technologies",
+            "nuclear science and technology research institute nstri",
+            "radiation application research institute nuclear science and technology research institute atomic energy organization of iran",
+            "nuclear fuel cycle research institute nuclear science and technology research institute atomic energy organization of iran",
+            "radiation application research institute nuclear science and technology research institute atomic energy organization",
+            "atomic energy organization of iran nuclear science and technology research institute reactor and nuclear safety research institute",
+            "nuclear fuel cycle research institute peugeot nuclear science and technology center",
+            "radiation application research institute nuclear science and technology research institute",
+            "nuclear science and technology research institute"
+        ],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "acb2927b-fa3a-4458-8ccd-590491bbcffc",
+        "type": "journal",
+        "standard_name": "radiation physics and engineering",
+        "variants": [
+            "radiation physics and engineering",
+            "radiation physics and engineering vol 4 issue 4"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "935ec424-9c7c-4a73-b88b-4ff02f1db9dd",
+        "type": "author",
+        "standard_name": "majid zamani",
+        "variants": [
+            "majid zamani"
+        ]
+    },
+    {
+        "id": "558c0300-800c-4f03-8b67-ce168a6b500b",
+        "type": "author",
+        "standard_name": "mohsen shayesteh",
+        "variants": [
+            "mohsen shayesteh"
+        ]
+    },
+    {
+        "id": "e403b733-844b-4ede-a205-680a4f5406a1",
+        "type": "affiliation",
+        "standard_name": "imam hossein university",
+        "variants": [
+            "imam hossein university",
+            "imam hussein university",
+            "imam hussein comprehensive university",
+            "imam hossein as university",
+            "phd student in nuclear physics at imam hussein university",
+            "assistant professor and faculty member nuclear physics department imam hussein university as",
+            "imam hossein comprehensive university",
+            "unable to extract a core name as the provided text does not refer to a research organization or a journalconference",
+            "imam hussein as university"
+        ],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "4a6ae0c9-484f-4796-9697-91a2fff7a393",
+        "type": "author",
+        "standard_name": "sarah sadrzadeh",
+        "variants": []
+    },
+    {
+        "id": "6ddfc433-0d72-4fe5-9759-d40d7afd1f34",
+        "type": "author",
+        "standard_name": "mahdi ghaed rahmati",
+        "variants": []
+    },
+    {
+        "id": "e47b9688-74a2-46ab-a86c-871e3444ce35",
+        "type": "author",
+        "standard_name": "mostafa hassanadeh",
+        "variants": []
+    },
+    {
+        "id": "4aad8767-7117-44de-9cfa-8ab307c5a60d",
+        "type": "author",
+        "standard_name": "seyed amir hossein feghhi",
+        "variants": []
+    },
+    {
+        "id": "8c907e7f-fb7d-4737-aa6d-88d8b1cf5043",
+        "type": "affiliation",
+        "standard_name": "islamic azad university",
+        "variants": [
+            "kurdistan university of science and research",
+            "islamic azad university"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "a9212414-7bed-4f65-aec9-7e831ac3c78f",
+        "type": "affiliation",
+        "standard_name": "shahid beheshti university",
+        "variants": [
+            "shahid beheshti university"
+        ],
+        "city": "tehran",
+        "province_state": "theran",
+        "country": "iran"
+    },
+    {
+        "id": "f215d691-fa03-4a83-bab0-e2123a2f3336",
+        "type": "author",
+        "standard_name": "afroz asgari",
+        "variants": []
+    },
+    {
+        "id": "15440626-d3f8-4d5f-a3d0-aa989c08b868",
+        "type": "author",
+        "standard_name": "seyyed abolfazl hosseini",
+        "variants": []
+    },
+    {
+        "id": "e6f6f2e5-30ac-4c9f-b6c4-5af8a6577091",
+        "type": "affiliation",
+        "standard_name": "sharif university of technology",
+        "variants": [
+            "sharif university of technology"
+        ],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "b98e6b28-bb8b-4356-be4e-4a9e32a1a227",
+        "type": "affiliation",
+        "standard_name": "atomic energy organization of iran",
+        "variants": [
+            "atomic energy of iran",
+            "aeoi"
+        ],
+        "city": "teharn",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "3964fe9e-4f13-4b4d-8efd-977d3b246491",
+        "type": "author",
+        "standard_name": "javad bayat",
+        "variants": []
+    },
+    {
+        "id": "08f08674-786a-4a91-83e5-c70e6e7c3f44",
+        "type": "journal",
+        "standard_name": "national conference on new technologies in electrical computer and mechanical engineering of iran",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "3113570d-681a-48ef-b096-aa4ac310a307",
+        "type": "author",
+        "standard_name": "farrokh khoshhal",
+        "variants": [
+            "farrokh khoshhaul"
+        ]
+    },
+    {
+        "id": "9752790a-344f-436a-b3a5-95e25346cc81",
+        "type": "author",
+        "standard_name": "masoud amin mozaffari",
+        "variants": [
+            "masoud amin mozaffari"
+        ]
+    },
+    {
+        "id": "cb9c7796-17e3-4a5e-b1bc-c9fbd790cf82",
+        "type": "author",
+        "standard_name": "mohammad amin amirkhani",
+        "variants": []
+    },
+    {
+        "id": "5609a461-8e04-42ca-aace-c1b86661cdd9",
+        "type": "author",
+        "standard_name": "ahmad lashkari",
+        "variants": []
+    },
+    {
+        "id": "3104c4ec-5d41-40ce-8103-f4ecaa3586b1",
+        "type": "author",
+        "standard_name": "mohammad rajaee",
+        "variants": []
+    },
+    {
+        "id": "97970302-af63-4961-b1ac-19b2f00249a6",
+        "type": "journal",
+        "standard_name": "journal of nuclear science and technology",
+        "variants": [
+            "journal of nuclear science and technology",
+            "journal of nuclear science and technology vol 43 issue 2"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "c7a14444-d25d-4991-abec-e96d7986b356",
+        "type": "author",
+        "standard_name": "mahsa nejadjabari",
+        "variants": []
+    },
+    {
+        "id": "4f615b7c-83a3-47a8-86de-2993833ec45b",
+        "type": "author",
+        "standard_name": "seyyed reza shoja razavi",
+        "variants": [
+            "reza shoja razavi"
+        ]
+    },
+    {
+        "id": "353df290-9f00-4132-a301-b504e44c320d",
+        "type": "author",
+        "standard_name": "reza mozaffarinia",
+        "variants": [
+            "reza mozaffarinia"
+        ]
+    },
+    {
+        "id": "70423550-d4f9-4e41-a9cd-12ccc871d664",
+        "type": "journal",
+        "standard_name": "international conference and exhibition on materials science mettallurgical engeneering",
+        "variants": [
+            "international conference  exhibition on materials science  metallurgical engineering"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "8db9fa27-d190-496c-a39e-45a50f2324f4",
+        "type": "author",
+        "standard_name": "ameneh kargarian",
+        "variants": [
+            "amine kargarian"
+        ]
+    },
+    {
+        "id": "3aadc1d4-fe41-49c3-8c71-30872fa89c61",
+        "type": "author",
+        "standard_name": "maryam qapanuri",
+        "variants": []
+    },
+    {
+        "id": "3fe067da-057d-4266-85a0-d615672ba24e",
+        "type": "author",
+        "standard_name": "morteza sedaghat",
+        "variants": []
+    },
+    {
+        "id": "8430e62a-220e-4b02-92d4-2fc619d169c6",
+        "type": "author",
+        "standard_name": "alireza asl zaeem",
+        "variants": []
+    },
+    {
+        "id": "a72ae16b-d7cc-40db-8f56-eb23e6599077",
+        "type": "author",
+        "standard_name": "ali bagheri",
+        "variants": []
+    },
+    {
+        "id": "f28fe22f-19cb-497b-86cf-0d5ba6b14830",
+        "type": "author",
+        "standard_name": "moslem kazemi",
+        "variants": [
+            "muslim kazmi"
+        ]
+    },
+    {
+        "id": "756ad923-e8cf-40b8-88f2-60f2331254f6",
+        "type": "author",
+        "standard_name": "hamidreza mirzaei",
+        "variants": []
+    },
+    {
+        "id": "5096be60-c940-491b-8d7e-b326f7c9332b",
+        "type": "author",
+        "standard_name": "gholamreza eataati",
+        "variants": [
+            "gholamreza eataati"
+        ]
+    },
+    {
+        "id": "2d67af9d-3430-4bfc-b62f-c2e1082470e2",
+        "type": "author",
+        "standard_name": "ehsan roustai",
+        "variants": []
+    },
+    {
+        "id": "0ccbf3ec-40fe-478d-8907-df835a231457",
+        "type": "affiliation",
+        "standard_name": "amirkabir university of technology",
+        "variants": [
+            "amirkabir university of technology"
+        ],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "dd77c341-1845-45fc-ab2c-87b4591b04cb",
+        "type": "affiliation",
+        "standard_name": "university of tehran",
+        "variants": [
+            "university of tehran"
+        ],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "dedecfdf-585c-4b6f-9b2c-8282bd4ef8da",
+        "type": "journal",
+        "standard_name": "national vacuum conference of iran",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "fd0bdbc0-565e-44f6-a4ee-1daef9b3711d",
+        "type": "author",
+        "standard_name": "safa peyman",
+        "variants": []
+    },
+    {
+        "id": "349eacdd-9f1b-488e-897f-d813fa2dca1e",
+        "type": "author",
+        "standard_name": "hadi toolabi",
+        "variants": [
+            "hadi tolabi"
+        ]
+    },
+    {
+        "id": "137f59f3-23c2-449b-b494-1e2044b7c66b",
+        "type": "journal",
+        "standard_name": "scientific journal of advanced defense science and technology",
+        "variants": [
+            "scientific journal of advanced defense science and technology",
+            "defense science research journal"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "f45e3d01-97bc-4db8-b5d9-efa245ae11b7",
+        "type": "author",
+        "standard_name": "mohammad nikoosefat",
+        "variants": [
+            "muhammad nikosfat",
+            "mohammad niko sefat"
+        ]
+    },
+    {
+        "id": "76c2ff88-05b2-48ec-9672-7679ddcc61de",
+        "type": "author",
+        "standard_name": "ardeshir bagheri",
+        "variants": [
+            "ardeshir bagheri"
+        ]
+    },
+    {
+        "id": "344191eb-bd71-413b-9d19-02b8f96dbe24",
+        "type": "author",
+        "standard_name": "hamidreza shakour",
+        "variants": [
+            "hamidreza shakour"
+        ]
+    },
+    {
+        "id": "64c49b59-383d-4782-a5d1-a29452f29643",
+        "type": "author",
+        "standard_name": "zahra shahbazi rad",
+        "variants": [
+            "zahra shahbazi rad"
+        ]
+    },
+    {
+        "id": "f4be654d-36ef-4dc9-bb95-1fd3061efd09",
+        "type": "author",
+        "standard_name": "nabi javadi",
+        "variants": []
+    },
+    {
+        "id": "2ced94cb-9db3-45d1-94b8-8d1f87219c0f",
+        "type": "author",
+        "standard_name": "iman setayeshfar",
+        "variants": []
+    },
+    {
+        "id": "4454a5a8-2779-4ab9-8e6c-d25de22cb23f",
+        "type": "journal",
+        "standard_name": "national defense science and engineering conference",
+        "variants": [
+            "national conference on defense science and engineering"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "5e0faecc-06c7-40ac-8416-89dd19e13e5a",
+        "type": "author",
+        "standard_name": "babak khanbabaei",
+        "variants": [
+            "khanbabaei chapter",
+            "babak khan babaei",
+            "babak khan babai"
+        ]
+    },
+    {
+        "id": "72f7b275-7d74-4c41-9053-1d93df41a6ce",
+        "type": "author",
+        "standard_name": "seyyed mohammadreza hashemi",
+        "variants": [
+            "seyyed mohammadreza hashemi"
+        ]
+    },
+    {
+        "id": "02d4c64f-d1ed-42c8-a7c1-7763e6d10f59",
+        "type": "author",
+        "standard_name": "parviz hosseinkhani",
+        "variants": [
+            "parviz hossein khani",
+            "parviz hosseinkhani"
+        ]
+    },
+    {
+        "id": "be0fb051-a594-4c98-99bb-89a616e7163d",
+        "type": "journal",
+        "standard_name": "conference on artificial intelligence and intelligent processing",
+        "variants": [
+            "the first conference on artificial intelligence and intelligent processing"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "ef30b23a-11b7-4e39-a5b6-5a1a60b50f7b",
+        "type": "author",
+        "standard_name": "hossein jarrahi",
+        "variants": [
+            "hossein jarahi"
+        ]
+    },
+    {
+        "id": "58fb1817-aa3a-48b7-aad5-7a40f802f7a3",
+        "type": "author",
+        "standard_name": "yaser kasehsaz",
+        "variants": [
+            "yasser the bowl maker"
+        ]
+    },
+    {
+        "id": "84de4488-9300-40e5-8419-1d867b3c032a",
+        "type": "author",
+        "standard_name": "behzad salmasian",
+        "variants": []
+    },
+    {
+        "id": "73bd4b4b-6981-41fe-8014-12a3fdfe16f4",
+        "type": "author",
+        "standard_name": "ataollah rabiei",
+        "variants": [
+            "ataullah rabiei"
+        ]
+    },
+    {
+        "id": "48fa402d-d283-428d-8418-f8f3a2077d88",
+        "type": "author",
+        "standard_name": "mohammadreza nematollahi",
+        "variants": []
+    },
+    {
+        "id": "948d62ea-8570-4549-aaa1-17e00b495745",
+        "type": "author",
+        "standard_name": "ahmad pirouzmand",
+        "variants": []
+    },
+    {
+        "id": "594d2be4-1e58-499c-a6a5-0a795d23fa8d",
+        "type": "affiliation",
+        "standard_name": "shiraz university",
+        "variants": [
+            "department of nuclear engineering faculty of mechanical engineering shiraz university po box 8433471964 shiraz iran"
+        ],
+        "city": "shiraz",
+        "province_state": "shiraz",
+        "country": "iran"
+    },
+    {
+        "id": "a9f816e5-1343-4309-881c-c80a7cd1fdde",
+        "type": "author",
+        "standard_name": "javad nik zare",
+        "variants": [
+            "javad nikzare"
+        ]
+    },
+    {
+        "id": "ed7c156a-a37c-4f88-b24b-acda2ff48099",
+        "type": "author",
+        "standard_name": "gholamhossein liaghat",
+        "variants": [
+            "gholamhossein liaqat",
+            "gholam hossein liaghat",
+            "gholamhossein liaghat"
+        ]
+    },
+    {
+        "id": "a6ef390e-350b-4896-8055-0c598ea3ecc3",
+        "type": "author",
+        "standard_name": "hamed ahmadi",
+        "variants": [
+            "hamed ahmadi"
+        ]
+    },
+    {
+        "id": "7508657c-2dd6-4585-9839-67f2b3e06d05",
+        "type": "affiliation",
+        "standard_name": "tarbiat modarres university",
+        "variants": [
+            "tarbiat modares university",
+            "tarbiat modares university kingston university"
+        ],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "8a4e3296-15c3-45a9-86ad-7d7fcc79c543",
+        "type": "journal",
+        "standard_name": "iranian journal of manufacturing engineering",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "1d922c1c-e296-4613-82ac-368865e6df4e",
+        "type": "journal",
+        "standard_name": "journal of solid and fluid mechanics",
+        "variants": [
+            "journal of solid and fluid mechanics"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "7b3f5864-0f04-4d95-bf8c-57eef201ffad",
+        "type": "author",
+        "standard_name": "nima zahedan",
+        "variants": [
+            "what is zahedan"
+        ]
+    },
+    {
+        "id": "d9432a91-4b29-48c8-9393-edb2ed98fd5d",
+        "type": "journal",
+        "standard_name": "mechanics of advanced composite structures",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "32823ed4-9b25-42ff-b00b-2a5e10db9012",
+        "type": "author",
+        "standard_name": "hamid arabi",
+        "variants": [
+            "hamid arabi"
+        ]
+    },
+    {
+        "id": "35aec9a2-b820-4f3b-a6f4-a5c9eb6fb144",
+        "type": "journal",
+        "standard_name": "international conference on welding and non destructive testing",
+        "variants": [
+            "international conference on welding and non destructive testing national conference on welding  inspection national conference on ndt"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "9f2e9716-3046-4839-bc29-74899f79a9bd",
+        "type": "author",
+        "standard_name": "hassan akhtari qomi",
+        "variants": []
+    },
+    {
+        "id": "344409ab-e22e-4546-9114-f26c68128923",
+        "type": "author",
+        "standard_name": "mohammad javad safari",
+        "variants": [
+            "mohammad javad safari"
+        ]
+    },
+    {
+        "id": "e3fa249f-070f-4b24-ad01-7fd950e2b73b",
+        "type": "author",
+        "standard_name": "fereydoun abbasi davani",
+        "variants": []
+    },
+    {
+        "id": "20cf9f65-0577-4e49-bbbb-23dc6fd01767",
+        "type": "author",
+        "standard_name": "masoud arabieh",
+        "variants": []
+    },
+    {
+        "id": "24701056-b0ce-49f1-8b59-6266ee21259c",
+        "type": "author",
+        "standard_name": "yavar taghipour azar",
+        "variants": []
+    },
+    {
+        "id": "b6cb029b-1c48-42fe-8c87-0db6250e5ab5",
+        "type": "author",
+        "standard_name": "seyed shahaboddin naqavi",
+        "variants": [
+            "syed shahabuddin naqvi"
+        ]
+    },
+    {
+        "id": "ebddf0d5-47f0-40d9-a38c-558e22b8cbe6",
+        "type": "author",
+        "standard_name": "seyyed javad ahmadi",
+        "variants": []
+    },
+    {
+        "id": "8676886b-614f-4ba6-a46f-65876bdc8698",
+        "type": "author",
+        "standard_name": "mohammad ali khazai",
+        "variants": []
+    },
+    {
+        "id": "b39ff83f-e18f-4163-8953-c458939f9dd4",
+        "type": "author",
+        "standard_name": "kamran keshiri",
+        "variants": []
+    },
+    {
+        "id": "e3bbd56f-d3ec-4285-a8e2-9d3a43fa89e3",
+        "type": "author",
+        "standard_name": "ruhollah razavinejad",
+        "variants": []
+    },
+    {
+        "id": "78172e47-5af6-42cc-ab7a-87190852c217",
+        "type": "author",
+        "standard_name": "mehdi eshghi",
+        "variants": []
+    },
+    {
+        "id": "7f05a18a-1798-4f4b-be6c-8fb5fd1f76b3",
+        "type": "author",
+        "standard_name": "seyyed abolfazl ghasemi",
+        "variants": [
+            "seyyed abolfazl ghasemi"
+        ]
+    },
+    {
+        "id": "835b6c28-859e-48dd-b83e-db2fa450781c",
+        "type": "author",
+        "standard_name": "amir moslehi",
+        "variants": [
+            "amir moslehi"
+        ]
+    },
+    {
+        "id": "3e2377b2-ddd8-439f-aff8-a3a80b2f3128",
+        "type": "author",
+        "standard_name": "samira faghih",
+        "variants": [
+            "samira faghih"
+        ]
+    },
+    {
+        "id": "c7a5078e-13c5-4636-8f5a-c92cac4eb5e6",
+        "type": "author",
+        "standard_name": "mohammad morshedi tofigh",
+        "variants": [
+            "mohammad morshedi towfiq"
+        ]
+    },
+    {
+        "id": "16d4f406-3312-4b5d-b408-49abac5fc1d2",
+        "type": "author",
+        "standard_name": "morteza akbari hesar",
+        "variants": []
+    },
+    {
+        "id": "f821615d-0e20-43f2-a185-38fc28e7fbd1",
+        "type": "journal",
+        "standard_name": "international conference on interdisciplinary studies in management and engineering",
+        "variants": [
+            "interdisciplinary research in engineering and management"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "375eb4fa-2145-4101-b9b3-236851e08bdb",
+        "type": "author",
+        "standard_name": "pedram maleki",
+        "variants": []
+    },
+    {
+        "id": "fd0f21ca-8a27-4c75-a8c0-b4130244ee44",
+        "type": "author",
+        "standard_name": "hamideh bakhshi",
+        "variants": []
+    },
+    {
+        "id": "4c482f59-caea-4a3b-a951-d4d2b9529888",
+        "type": "author",
+        "standard_name": "mohammad jafar tabatabaei",
+        "variants": []
+    },
+    {
+        "id": "d958e541-ffc0-406d-9481-b172f0ae1611",
+        "type": "author",
+        "standard_name": "abbas ghasemizad",
+        "variants": []
+    },
+    {
+        "id": "8c9706d1-2c57-4357-8c3e-6ddad9b08f23",
+        "type": "affiliation",
+        "standard_name": "university of guilan",
+        "variants": [
+            "university of guilan",
+            "university of kilan"
+        ],
+        "city": "rashit",
+        "province_state": "guilan",
+        "country": "iran"
+    },
+    {
+        "id": "656a0503-c9bb-47ff-817d-8369f76dc66c",
+        "type": "journal",
+        "standard_name": "the physics society of iran",
+        "variants": [
+            "physics society of iran",
+            "iranian journal of applied physics"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "6aeb3404-c26e-4bb8-b159-7042b4274560",
+        "type": "author",
+        "standard_name": "davoud ghasemabadi",
+        "variants": []
+    },
+    {
+        "id": "77925158-d805-4711-b6c2-f19d9cb2dd3a",
+        "type": "author",
+        "standard_name": "masoud abdollahzadeh",
+        "variants": [
+            "masoud abdollah zadeh"
+        ]
+    },
+    {
+        "id": "d7435fd0-a3a7-46d1-9ce3-4c84df7dfab0",
+        "type": "author",
+        "standard_name": "behnaz kaleji",
+        "variants": [
+            "behnaz kaleji"
+        ]
+    },
+    {
+        "id": "65dfa58d-26cd-46f8-8c0c-ec5e7eb5ec67",
+        "type": "author",
+        "standard_name": "misagh kasaian",
+        "variants": [
+            "the covenant of kasaian"
+        ]
+    },
+    {
+        "id": "d17b422d-5197-4871-a274-46c556a4ae2f",
+        "type": "affiliation",
+        "standard_name": "technical and vocational university",
+        "variants": [],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "7b0cbcd4-9b79-4494-9b7b-7013eaf212be",
+        "type": "journal",
+        "standard_name": "karafan",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "213a5229-2e99-4440-8e74-0c97fb4bb751",
+        "type": "author",
+        "standard_name": "reza pourimani",
+        "variants": []
+    },
+    {
+        "id": "2d8d9863-977c-4331-ae53-b0280ab0d49d",
+        "type": "author",
+        "standard_name": "mohammadreza zare",
+        "variants": [
+            "mohammad reza zare",
+            "mohammad ali zarei"
+        ]
+    },
+    {
+        "id": "f827eb4a-38a3-4cd7-97f0-0466713ca437",
+        "type": "author",
+        "standard_name": "mehrdad aghamohammadi",
+        "variants": []
+    },
+    {
+        "id": "50046ed5-c15a-4016-b139-67584609d9f9",
+        "type": "affiliation",
+        "standard_name": "arak university",
+        "variants": [
+            "arak university"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "e14ff6c4-a53b-490a-a92a-403f29335fa6",
+        "type": "affiliation",
+        "standard_name": "university of isfahan",
+        "variants": [
+            "university of isfahan"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "60188079-6032-4704-b3cd-65341f497832",
+        "type": "author",
+        "standard_name": "behnam yasemi",
+        "variants": []
+    },
+    {
+        "id": "26ab9841-39af-44e9-83ef-e7b93bc693d9",
+        "type": "author",
+        "standard_name": "hamid soleimanimehr",
+        "variants": []
+    },
+    {
+        "id": "54932a26-23b6-4c8e-8ba0-0890ff207ba1",
+        "type": "author",
+        "standard_name": "hossein khodarahmi",
+        "variants": [
+            "hossein khodarahmi"
+        ]
+    },
+    {
+        "id": "2e80ec6e-35e4-461d-9ba6-6dadc7dd90d3",
+        "type": "author",
+        "standard_name": "najmeh khazraian",
+        "variants": [
+            "pure mercy",
+            "najmeh khazraian"
+        ]
+    },
+    {
+        "id": "9131d55f-3230-4b43-a58d-7592fe6b460b",
+        "type": "journal",
+        "standard_name": "international journal of advanced design and manufacturing technology",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "f008463a-7758-4b8c-abab-da9d2774b04d",
+        "type": "author",
+        "standard_name": "mojtaba haghgoo",
+        "variants": [
+            "mojtaba haqgoo"
+        ]
+    },
+    {
+        "id": "1bc880ee-6946-4c7e-9feb-f78db5b8691c",
+        "type": "author",
+        "standard_name": "hashem babaei",
+        "variants": [
+            "hashem babaei"
+        ]
+    },
+    {
+        "id": "fade37b9-aedf-41cf-bb6d-0b0642c60170",
+        "type": "author",
+        "standard_name": "tohid mirzababaye mostofi",
+        "variants": [
+            "tohid mirza baba mostofi"
+        ]
+    },
+    {
+        "id": "bb8d03fa-11a8-4e16-869b-40d34e563d38",
+        "type": "affiliation",
+        "standard_name": "university of eyvanakey",
+        "variants": [
+            "ivanka university",
+            "ivanki university"
+        ],
+        "city": "eyvanekey",
+        "province_state": "semnan",
+        "country": "iran"
+    },
+    {
+        "id": "09dee03a-1bac-41f1-832e-b115b8e2b538",
+        "type": "journal",
+        "standard_name": "aerospace mechanics",
+        "variants": [
+            "aerospace mechanics"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "2615ae02-bb25-4bd8-bd35-7e6d674660bd",
+        "type": "journal",
+        "standard_name": "international conference on manufacturing engineering",
+        "variants": [
+            "national conference on manufacturing engineering international conference on manufacturing engineering"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "4055af98-0b9f-4865-96a0-a84084b44a6f",
+        "type": "author",
+        "standard_name": "alireza moradi",
+        "variants": []
+    },
+    {
+        "id": "6f3c24ae-5566-49eb-a9a2-c0a4b8893a1f",
+        "type": "affiliation",
+        "standard_name": "k n toosi university",
+        "variants": [
+            "khajeh nasiruddin toosi university",
+            "khajeh nasiruddin toosi university of technology"
+        ],
+        "city": "tehran",
+        "province_state": "tehran",
+        "country": "iran"
+    },
+    {
+        "id": "cafa77d0-f3d8-4aff-bdc8-271b8f062526",
+        "type": "journal",
+        "standard_name": "national conference of applied researches in electrical mechanical and mechatronics engineering",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "726e94df-2837-4aaa-a140-9b2e3130d33b",
+        "type": "author",
+        "standard_name": "faezeh rahmani",
+        "variants": []
+    },
+    {
+        "id": "ee2051ea-aadf-4752-94ec-8180449a889a",
+        "type": "author",
+        "standard_name": "hadi darvish motevalli",
+        "variants": [
+            "hadi darvish the trustee"
+        ]
+    },
+    {
+        "id": "513f707b-3aaf-47a1-80aa-b676ce4b90f0",
+        "type": "author",
+        "standard_name": "amirmohammad manouchehri",
+        "variants": [
+            "amir mohammad manouchehri"
+        ]
+    },
+    {
+        "id": "0b674120-95d4-466a-9e45-229963cf1c59",
+        "type": "author",
+        "standard_name": "kamal mostafanejad",
+        "variants": [
+            "kamal mostafa nejad"
+        ]
+    },
+    {
+        "id": "bd7026aa-e717-431f-b9d6-490d4897900e",
+        "type": "author",
+        "standard_name": "mohammadreza kardan",
+        "variants": []
+    },
+    {
+        "id": "e3f16100-48d2-4f45-a60d-31a516f66557",
+        "type": "author",
+        "standard_name": "hossein afarideh",
+        "variants": [
+            "hossein afrideh"
+        ]
+    },
+    {
+        "id": "8d6f4128-e658-4096-a5a8-372452b74a0c",
+        "type": "author",
+        "standard_name": "mitra athari alaf",
+        "variants": []
+    },
+    {
+        "id": "65f36b7a-8ef7-47b0-8966-04a84a40ea42",
+        "type": "author",
+        "standard_name": "asad babakhani",
+        "variants": []
+    },
+    {
+        "id": "93ca30ff-ca3a-4fae-8f40-f4d2fd0015f4",
+        "type": "author",
+        "standard_name": "ayyoub benoushi",
+        "variants": [
+            "ayub benoshi"
+        ]
+    },
+    {
+        "id": "02b34652-dac5-4f57-82eb-fba4264fb99e",
+        "type": "author",
+        "standard_name": "ali roohi",
+        "variants": []
+    },
+    {
+        "id": "8dd80a0b-2070-4f6c-b05a-50d1a1962df3",
+        "type": "author",
+        "standard_name": "mojtaba zia shamami",
+        "variants": []
+    },
+    {
+        "id": "a8112c74-0d8a-44de-9851-d30bf1b7f605",
+        "type": "author",
+        "standard_name": "vali alizadeh",
+        "variants": []
+    },
+    {
+        "id": "9e95e805-4500-4533-8e61-e0f7f6f266d9",
+        "type": "author",
+        "standard_name": "mostafa najafi",
+        "variants": [
+            "mustafa najafi"
+        ]
+    },
+    {
+        "id": "eba87911-df09-408f-af6d-96f1fe8583ac",
+        "type": "author",
+        "standard_name": "javad afshar",
+        "variants": []
+    },
+    {
+        "id": "dc0d4dec-263c-4618-a3ba-bea6e4dbdbc0",
+        "type": "author",
+        "standard_name": "mohammad seddigh",
+        "variants": [
+            "muhammad siddiq"
+        ]
+    },
+    {
+        "id": "1e7773a9-8d21-42d8-8d4d-3b2e24d4bb73",
+        "type": "affiliation",
+        "standard_name": "shahrood university of technology",
+        "variants": [],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "c46df9dc-adee-4b0e-af3a-e808e21a989d",
+        "type": "journal",
+        "standard_name": "scientific conference of applied research in science and technology of iran",
+        "variants": [
+            "applied research in science and technology of iran"
+        ],
+        "publisher": ""
+    },
+    {
+        "id": "f074f087-1ff7-4858-85f0-bc6e79b46284",
+        "type": "author",
+        "standard_name": "nafiseh khosravi",
+        "variants": []
+    },
+    {
+        "id": "3b8064b7-5801-47f1-a80b-55d011eb6444",
+        "type": "author",
+        "standard_name": "behzad boghrati",
+        "variants": [
+            "behzad boqrati"
+        ]
+    },
+    {
+        "id": "95890afa-1cdb-4d0d-ba8b-cf3200e088fe",
+        "type": "author",
+        "standard_name": "elham taghavi",
+        "variants": [
+            "elham taqavi"
+        ]
+    },
+    {
+        "id": "05bbba99-864f-48cf-86ed-8f88d3eaece8",
+        "type": "author",
+        "standard_name": "sahar hodavandi",
+        "variants": [
+            "sahar hadavandi"
+        ]
+    },
+    {
+        "id": "7a674c53-89d3-48f1-91e7-6020dd430a6b",
+        "type": "author",
+        "standard_name": "hamed roohi",
+        "variants": []
+    },
+    {
+        "id": "fa7aa820-a969-40ea-81b1-bfef4f75c139",
+        "type": "author",
+        "standard_name": "soroush mohtashami",
+        "variants": [
+            "soroush mohatsami"
+        ]
+    },
+    {
+        "id": "27281faa-96da-4b91-ba38-2e75c606ea24",
+        "type": "author",
+        "standard_name": "mohammadreza ghorbani",
+        "variants": []
+    },
+    {
+        "id": "f7d3a30f-a7fa-4b68-949b-53989b0ded73",
+        "type": "author",
+        "standard_name": "hassan ranjbar",
+        "variants": [
+            "hassan ranjbar"
+        ]
+    },
+    {
+        "id": "48a837da-fa8e-4c8d-84b0-4e7530e5aa2e",
+        "type": "author",
+        "standard_name": "mohammad arkani",
+        "variants": []
+    },
+    {
+        "id": "1a2ba65f-cff5-4bde-bff3-febb685663e3",
+        "type": "author",
+        "standard_name": "sabrieh hassani",
+        "variants": [
+            "sabria hassani"
+        ]
+    },
+    {
+        "id": "0bf69d9b-6075-4aec-b044-858120675fa7",
+        "type": "author",
+        "standard_name": "soheil khoshbinfar",
+        "variants": [
+            "soheil khoshbinfar"
+        ]
+    },
+    {
+        "id": "2cae152a-fd87-4c57-8847-467f0039cc32",
+        "type": "author",
+        "standard_name": "azam zabihi",
+        "variants": []
+    },
+    {
+        "id": "38f360e9-2a05-4c5e-9938-cf74e5af2169",
+        "type": "author",
+        "standard_name": "ghasem foruzani",
+        "variants": [
+            "qasem foruzani"
+        ]
+    },
+    {
+        "id": "f6846df3-76a1-478f-9f28-c341440949f0",
+        "type": "author",
+        "standard_name": "farid semsarha",
+        "variants": [
+            "farid samsarha"
+        ]
+    },
+    {
+        "id": "51be6cfa-71c1-407a-b019-ac42ac1f36ab",
+        "type": "author",
+        "standard_name": "peyman rezaian",
+        "variants": []
+    },
+    {
+        "id": "538dd44d-e8d7-47d9-975b-525cee0c6e79",
+        "type": "affiliation",
+        "standard_name": "bu ali sina university",
+        "variants": [
+            "buali sina university"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "de57fc5e-cd40-4c14-9a9a-cb4fad8eb29b",
+        "type": "affiliation",
+        "standard_name": "payam noor university",
+        "variants": [
+            "payam noor university"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "4889229f-3e01-4c58-b422-c43a0dc38a94",
+        "type": "author",
+        "standard_name": "mahdi nazirzadeh",
+        "variants": [
+            "mehdi nazirzadeh"
+        ]
+    },
+    {
+        "id": "696bc928-83d1-4d7e-8fbe-c8c286c3dd62",
+        "type": "author",
+        "standard_name": "hamidreza albarzania",
+        "variants": []
+    },
+    {
+        "id": "0ee9afcf-8401-49e9-bc80-8fd1759288e3",
+        "type": "affiliation",
+        "standard_name": "khatam alanbiya university",
+        "variants": [
+            "khatam alanbiya university"
+        ],
+        "city": "",
+        "province_state": "",
+        "country": ""
+    },
+    {
+        "id": "94ce1410-95c0-4240-a5ab-c3a7b6318ad7",
+        "type": "author",
+        "standard_name": "maryam naserian",
+        "variants": [
+            "maryam nasserian"
+        ]
+    },
+    {
+        "id": "f32f0cf7-dab6-4e17-bdda-7e32e004af3d",
+        "type": "author",
+        "standard_name": "hossein jamali",
+        "variants": []
+    },
+    {
+        "id": "91754ba6-76dc-4a15-bcec-55c530f49f94",
+        "type": "author",
+        "standard_name": "akbar eshaghi",
+        "variants": [
+            "akbar ishaqi"
+        ]
+    },
+    {
+        "id": "016aaef0-c198-4c13-9208-a0b73fc54370",
+        "type": "author",
+        "standard_name": "fatemeh sousani",
+        "variants": [
+            "fatima sosni"
+        ]
+    },
+    {
+        "id": "7c903760-9436-42f4-aad0-729b63126225",
+        "type": "journal",
+        "standard_name": "iranian journal of surface science and engineering",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "9a94a58e-5e79-4d02-9a9f-c2c5ddb8788b",
+        "type": "author",
+        "standard_name": "hamed naderi samani",
+        "variants": []
+    },
+    {
+        "id": "b793acb6-2f65-4eed-aee3-fdeb46b6f453",
+        "type": "journal",
+        "standard_name": "journal of advanced materials in engineering",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "76a3c8c6-40cf-4bf9-a28d-8dbb57581d0b",
+        "type": "author",
+        "standard_name": "faezeh mehdizadeh",
+        "variants": []
+    },
+    {
+        "id": "a18d1846-453e-427e-a66b-479519df5762",
+        "type": "author",
+        "standard_name": "nasrin hosseini motlagh",
+        "variants": []
+    },
+    {
+        "id": "072b0793-6ae3-4d6f-8db2-9c2d83e8f49f",
+        "type": "journal",
+        "standard_name": "optoelectronic",
+        "variants": [],
+        "publisher": ""
+    },
+    {
+        "id": "80b13bb6-a21a-4bba-b63e-6c421c8e1037",
+        "type": "author",
+        "standard_name": "rahman gharari",
+        "variants": [
+            "rahman qarai"
+        ]
+    },
+    {
+        "id": "a3e51a11-3798-4cd2-9a18-2ce8991fd06f",
+        "type": "author",
+        "standard_name": "hassan esmaili",
+        "variants": []
+    },
+    {
+        "id": "6620ef13-3982-41f2-ac5b-c6d26a1201c3",
+        "type": "author",
+        "standard_name": "milad anvari mehr",
+        "variants": []
+    },
+    {
+        "id": "b29e0a15-9e7e-49b9-9637-b086631d984e",
+        "type": "author",
+        "standard_name": "ali akbar namjoomanesh",
+        "variants": []
+    },
+    {
+        "id": "244b946c-e7ec-400e-85bf-07f5a5cd4c68",
+        "type": "author",
+        "standard_name": "mehrdad khandani",
+        "variants": []
+    },
+    {
+        "id": "d7731755-cc09-4086-b017-5ab264af0154",
+        "type": "journal",
+        "standard_name": "international conference on civil engineering architecture and urban management",
+        "variants": [],
         "publisher": ""
     }
 ]

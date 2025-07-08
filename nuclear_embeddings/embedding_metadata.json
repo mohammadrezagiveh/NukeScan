@@ -1,0 +1,7 @@
+{
+  "last_updated": "2025-07-08T06:11:15.248564",
+  "paper_count": 63,
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "use_local_embeddings": true
+}

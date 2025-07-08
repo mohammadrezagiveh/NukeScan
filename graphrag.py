@@ -519,14 +519,22 @@ Keywords: nuclear science, nuclear engineering, nuclear safety, nuclear technolo
         
         # Create GraphRAG with selected retriever
         selected_retriever = retrievers[retriever_type]
+        if retriever_type in ["text2cypher", "hybrid"] and hasattr(selected_retriever, "generate_cypher_query"):
+            print("🔬 Generated Cypher Query:")
+            print(selected_retriever.generate_cypher_query(user_question))
         temp_rag = GraphRAG(retriever=selected_retriever, llm=self.llm)
         
         try:
             # Execute query
             response = temp_rag.search(
-                query_text=user_question,
-                top_k=5
-            )
+                query_text=user_question,)
+            
+            # Limit to top_k results if applicable
+            top_k = 5
+            if isinstance(response, list):
+                response = response[:top_k]
+            elif hasattr(response, 'documents'):
+                response.documents = response.documents[:top_k]
             
             return {
                 "question": user_question,

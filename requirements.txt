@@ -6,3 +6,5 @@ openai
 sentence-transformers
 torch
 Neo4j
+neo4j_graphrag[openai]
+langchain-community
